@@ -132,14 +132,7 @@ h1, h2, h3, h4, h5, h6 { font-family: var(--font-primary); }
 }
 
 /* General Section Styling */
-.section-padding {
-  padding: 40px 20px;
-  background: white;
-  border-radius: 16px;
-  max-width: 1200px;
-  margin: 40px auto;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-}
+
 
 /* Title & Paragraph */
 .section-title {
@@ -168,6 +161,7 @@ h1, h2, h3, h4, h5, h6 { font-family: var(--font-primary); }
   display: block;
   text-align: center; /* optional: center text */
   margin: 0 auto 20px; /* add space below */
+  font-size: 1.1rem;
 }
 
 /* Introduction */
@@ -244,23 +238,24 @@ h1, h2, h3, h4, h5, h6 { font-family: var(--font-primary); }
   display: block;
   font-size: 22px;
   margin-bottom: 8px;
-  color: #0096a5;
+  color: #36C2C9;
 }
 .benefit-card h3 {
   margin: 10px 0 5px;
-  color: #004c54;
+  color: #36C2C9;
   font-size: 18px;
+  font-weight: 600;
 }
 .benefit-card p {
   font-size: 14px;
-  color: #333;
+  color: #090808;
 }
 
 .benefit-icon {
   display: inline-block;
   font-size: 28px;
   margin-bottom: 8px;
-  color: #0096a5;
+  color: #36C2C9;
 }
 
 /* Responsive */
@@ -274,98 +269,205 @@ h1, h2, h3, h4, h5, h6 { font-family: var(--font-primary); }
   }
 }
 
-/* Our Services */
+/* Services Offered */
+/* Section Paragraph Font Size */
+
+#benefits p {
+  font-size: 1.1rem;
+}
+
+/* Service Grid Layout */
 .service-grid {
   display: grid;
-  grid-template-columns: repeat(4,1fr);
-  gap: 35px;
+  grid-template-columns: repeat(4, 1fr); /* 4 boxes per row */
+  gap: 25px;
   margin-bottom: 45px;
   padding: 0 20px;
 }
+
+/* Service Item Styling */
 .service-item {
-  text-align: left;
-  padding: 25px;
-  background: linear-gradient(135deg, var(--white), #f5f7fa);
+  position: relative;
+  height: 250px;
+  background-size: cover;
+  background-position: center;
   border-radius: 12px;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
-  transition: all 0.4s ease;
-  border-left: 5px solid var(--teal);
+  overflow: hidden;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
+
+/* Overlay for Title & Button */
+.service-item .overlay {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* space title & button apart */
+  align-items: center;
+  text-align: center;
+  padding: 30px 20px; /* spacing top & bottom */
+  box-sizing: border-box;
+}
+
+/* Title Styling */
+.service-item h3 {
+  margin-top: 15px; /* spacing below top edge */
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #fff;
+}
+
+/* Button Styling */
+.en-button {
+  margin-bottom: 15px; /* spacing above bottom edge */
+  background: var(--teal);
+  color: white;
+  padding: 8px 15px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background 0.3s ease;
+}
+
+.en-button:hover {
+  background: #05abb3;
+}
+
+/* Hover Effect */
 .service-item:hover {
-  transform: translateY(-12px);
+  transform: translateY(-8px);
   box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
 }
-.service-icon {
-  font-size: var(--fs-h3);
-  margin-bottom: 18px;
-  color: var(--teal);
-  background: rgba(54, 194, 201, 0.15);
-  border-radius: 50%;
-  padding: 12px;
-  display: inline-block;
-  transition: transform 0.3s ease;
+
+/* ---------------------
+   Responsive Design
+--------------------- */
+@media (max-width: 1200px) {
+  .service-grid {
+    grid-template-columns: repeat(3, 1fr); /* 3 per row on medium screens */
+  }
+  .service-item {
+    height: 230px;
+  }
 }
-.service-item:hover .service-icon { transform: scale(1.1); }
-.service-item h3 {
-  font-family: var(--font-primary);
-  font-size: var(--fs-h3);
-  margin-bottom: 10px;
-  line-height: var(--lh-tight);
-  color: var(--teal);
-  font-weight: 700;
+
+@media (max-width: 900px) {
+  .service-grid {
+    grid-template-columns: repeat(2, 1fr); /* 2 per row on tablets */
+  }
+  .service-item {
+    height: 220px;
+  }
+  .service-item .overlay {
+    padding: 20px 15px;
+  }
 }
-.service-item p {
-  font-family: var(--font-secondary);
-  font-size: var(--fs-body);
-  color: var(--black);
-  line-height: var(--lh-normal);
-}
-.service-container {
-  display: flex;
-  gap: 20px;
-  flex-wrap: wrap;
-  align-items: center; /* Vertically centers image */
-}
-.service-benefits {
-  flex: 1;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 20px;
+
+@media (max-width: 600px) {
+  .service-grid {
+    grid-template-columns: 1fr; /* 1 per row on mobile */
+  }
+  .service-item {
+    height: 200px;
+  }
+  .service-item h3 {
+    font-size: 1rem;
+  }
+  .en-button {
+    padding: 6px 12px;
+    font-size: 0.85rem;
+  }
 }
 
 /* Why Choose Toast4Health? */
-.differentiators-list {
-  list-style: none;
-  padding: 0;
-  margin-bottom: 45px;
-display: flex;
-flex-wrap: wrap;
-  gap: 25px;
-  justify-items: center;
-  align-items: center;}
-.differentiators-list li {
-  width: 320px;
-  font-family: var(--font-secondary);
-  font-size: var(--fs-body);
+
+.section-padding {
+  
+  background: white;
+  width: 100%;
+  margin: 40px auto;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+/* Title Styling */
+.section-title {
+  text-align: center;
+  font-size: 32px;
+  font-weight: 700;
+  color: #36C2C9;
   margin-bottom: 20px;
+}
+
+/* Benefits Grid */
+.service-benefits {
   display: flex;
-  align-items: flex-start;
-  background: var(--white);
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* Benefit Card */
+.benefit-card {
+  background: #ffffff;
   padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
-  transition: all 0.4s ease;
-  border-left: 5px solid var(--orange);
- margin: 0 auto;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px #f6cdb8d3;
+  transition: 0.3s;
+  text-align: center;
+  flex: 1 1 250px;  /* Flexible card width */
+  max-width: 1000px; /* Keeps uniform size */
 }
-.differentiators-list li:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+
+.benefit-card:hover {
+  transform: translateY(-5px);
 }
-.differentiator-icon {
-  margin-right: 15px;
-  color: var(--orange);
-  font-size: var(--fs-small);
+
+/* Icon Styling */
+.benefit-icon {
+  display: inline-block;
+  font-size: 30px;
+  margin-bottom: 10px;
+  color: #36C2C9;
+}
+
+/* Title in Cards */
+.benefit-card h3 {
+  margin: 10px 0 5px;
+  color: #36C2C9;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+/* Description Text */
+.benefit-card p {
+  font-size: 14px;
+  color: #333;
+}
+
+/* Center Button */
+.btn-center {
+  display: block;
+  margin: 30px auto 0;
+  text-align: center;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .service-benefits {
+    flex-direction: column;
+    align-items: center;
+  }
+  .benefit-card {
+    max-width: 90%;
+  }
 }
 
 /* How It Works? */
@@ -553,41 +655,6 @@ flex-wrap: wrap;
 }
 
 /* Paragraph Left Aligned */
-#benefits p {
-  font-size: 16px;
-  line-height: 1.8;
-  color: #000000;
-  max-width: 800px;
-  margin: 0 auto;
-  text-align: left;
-}
-
-/* List Heading */
-#benefits .list-heading {
-  font-size: 20px;
-  font-weight: 700;
-  color: #36C2C9; /* Teal accent color */
-  margin: 25px 0 12px;
-  text-align: left;
-}
-
-/* Highlight List Left Aligned */
-#benefits .highlight-list {
-  list-style: none;
-  padding: 0;
-  margin: 0 auto 30px;
-  max-width: 700px;
-  text-align: left;
-}
-
-#benefits .highlight-list li {
-  margin-bottom: 10px;
-  /* padding-left: 25px; */
-  position: relative;
-  font-size: 15px;
-  color: #000000;
-}
-
 /* Custom bullet point */
 #benefits .highlight-list li::before {
   content: "✔";
@@ -597,40 +664,7 @@ flex-wrap: wrap;
   font-size: 16px;
 }
 
-#benefits .btn-cta {
-  width: 200px;
-  display: block;
-  margin: 20px auto 0;
-  padding: 8px 20px; /* Reduced padding */
-  font-size: 14px; /* Reduced font size */
-  font-weight: 600;
-  color: #ffffff;
-  background: #F15A22;
-  border-radius: 30px;
-  text-decoration: none;
-  text-align: center;
-  transition: all 0.3s ease;
-}
 
-#benefits .btn-cta:hover {
-  background: #d1580d;
-  transform: translateY(-2px);
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-  #benefits .title {
-    font-size: 24px;
-  }
-
-  #benefits p {
-    font-size: 14px;
-  }
-
-  #benefits .highlight-list li {
-    font-size: 14px;
-  }
-}
 #how-it-works {
   background: #f9f9f9;
   padding: 60px 20px;
@@ -819,49 +853,5 @@ h2{
   }
   .flex-caption p {
     font-size: 0.9rem;
-  }
-}
-.benefit-card {
-  background: #fff;
-  padding: 20px;
-  border-radius: 12px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-  transition: 0.3s;
-  text-align: center;
-}
-.benefit-card:hover {
-  transform: translateY(-5px);
-}
-.benefit-icon {
-  display: block;
-  font-size: 22px;
-  margin-bottom: 8px;
-  color: #0096a5;
-}
-.benefit-card h3 {
-  margin: 10px 0 5px;
-  color: #004c54;
-  font-size: 18px;
-}
-.benefit-card p {
-  font-size: 14px;
-  color: #333;
-}
-
-.benefit-icon {
-  display: inline-block;
-  font-size: 28px;
-  margin-bottom: 8px;
-  color: #0096a5;
-}
-
-/* Responsive */
-@media(max-width: 768px) {
-  .service-container {
-    flex-direction: column;
-    align-items: center;
-  }
-  .service-image img {
-    max-width: 100%;
   }
 }
