@@ -210,7 +210,7 @@
 
     <div class="steps-container">
       <div class="step" data-aos="fade-up" data-aos-delay="100">
-        <div class="step-icon">1️⃣</div>
+        <div class="step-icon"><i class="fa-solid fa-phone"></i></div>
         <div class="step-content">
           <h4>Book a Service</h4>
           <p>Call us or fill out our online form to schedule an appointment.</p>
@@ -218,7 +218,7 @@
       </div>
 
       <div class="step" data-aos="fade-up" data-aos-delay="200">
-        <div class="step-icon">2️⃣</div>
+        <div class="step-icon"><i class="fa-solid fa-user-check"></i></div>
         <div class="step-content">
           <h4>Patient Assessment</h4>
           <p>Our experts evaluate the patient’s condition for a personalized care plan.</p>
@@ -226,7 +226,7 @@
       </div>
 
       <div class="step" data-aos="fade-up" data-aos-delay="300">
-        <div class="step-icon">3️⃣</div>
+        <div class="step-icon"><i class="fa-solid fa-user-nurse"></i></div>
         <div class="step-content">
           <h4>Nurse Assignment</h4>
           <p>A trained nurse is assigned based on the required medical care.</p>
@@ -234,7 +234,7 @@
       </div>
 
       <div class="step" data-aos="fade-up" data-aos-delay="400">
-        <div class="step-icon">4️⃣</div>
+        <div class="step-icon"><i class="fa-solid fa-heart-pulse"></i></div>
         <div class="step-content">
           <h4>Continuous Monitoring</h4>
           <p>We ensure ongoing support and regular progress checks.</p>
@@ -245,6 +245,7 @@
     <a href="#book" class="btn-center btn-king mt-3">Book Your Service Now</a>
   </div>
 </section>
+
 
 
   <!-- Patient Testimonials -->
@@ -266,41 +267,51 @@
   </section>
 
   <!-- Booking & Contact Section -->
-  <section id="contactForm" class="py-5">
-     <div class="overlay">
-    <div class="container">
-      <h2 class="section-title">Book a Certified Home Nurse Today!</h2>
-      <p class="section-paragraph">Fill out the form below, and our team will get in touch with you shortly to discuss your nursing care requirements.</p>
-        <div class="form-wrapper">
-        <form class="booking-form" action="#" method="POST">
-           <div class="form-row"><label for="name">Name (Required)</label>
-          <input type="text" id="name" name="name" required></div>
-           <div class="form-row"><label for="mobile">Mobile Number (Required)</label>
-          <input type="tel" id="mobile" name="mobile" required></div>
-           <div class="form-row"><label for="email">Email (Optional)</label>
-          <input type="email" id="email" name="email">
-           <div class="form-row"><label for="location">Location (Required)</label>
-          <input type="text" id="location" name="location" required></div>
-           <div class="form-row"><label for="care-type">Type of Nursing Care Required</label>
-          <select id="care-type" name="care-type">
-            <option value="post-operative">Post-Operative Care</option>
-            <option value="iv-injections">IV Infusions & Injections</option>
-            <option value="tracheostomy">Tracheostomy & Catheter Care</option>
-            <option value="elderly-palliative">Elderly & Palliative Care</option>
-            <option value="diabetes-hypertension">Diabetes & Hypertension Management</option>
-            <option value="stroke-rehab">Stroke & Neurological Rehabilitation</option>
-          </select></div>
-           <div class="form-row"><label for="notes">Additional Notes</label>
-          <textarea id="notes" name="notes" rows="4"></textarea></div>
-           <div class="form-actions"> <button type="submit" class="btn-orange">Request a Callback</button> <a
-                class="btn-whatsapp" href="https://wa.me/9152101398" target="_blank" rel="noopener"> <img
-                  src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp"
-                  class="whatsapp-icon"> </a> </div>
-        </form>
- </div>
-      </div>
+<section id="contact-form-section">
+  <div class="overlay">
+    <h2 class="section-title">Book a Certified Home Nurse Today!</h2>
+    
+    <!-- Success Message Hidden Initially -->
+    <p class="section-subtitle" id="successMessage" style="display:none;">
+      We’ll get back to you as soon as possible
+    </p>
+
+    <div class="form-wrapper">
+      <form id="contactForm" class="booking-form" autocomplete="on">
+        <div class="form-row">
+          <label for="name">Name <span class="req">*</span></label>
+          <input id="name" name="name" type="text" required>
+        </div>
+        <div class="form-row">
+          <label for="mobile">Mobile Number <span class="req">*</span></label>
+          <input id="mobile" name="mobile" type="tel" pattern="[0-9+\s\-]+" required>
+        </div>
+        <div class="form-row">
+          <label for="location">Location <span class="req"></span></label>
+          <input id="location" name="location" type="text" required>
+        </div>
+        <div class="form-row">
+          <label for="notes">Query</label>
+          <textarea id="notes" name="notes" rows="4" placeholder="Any special requirements or notes"></textarea>
+        </div>
+
+        <!-- Consent Line Above Submit Button -->
+        <p class="consent-text">
+          I authorize Toast4Health representative to contact me.  
+          I understand that this will override the DND status on my mobile number.
+        </p>
+
+        <div class="form-actions">
+  <button type="submit" class="btn-orange">Request a Callback</button>
+  <a class="btn-whatsapp" href="https://wa.me/9152101398" target="_blank" rel="noopener">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" class="whatsapp-icon">
+  </a>
+</div>
+
+      </form>
     </div>
-  </section>
+  </div>
+</section>
 
   <!-- FAQ Section -->
  <section id="care-faq" class="py-5">
