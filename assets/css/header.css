@@ -731,4 +731,19 @@ footer {
             .footer-column {
                 margin: 20px 0;
             }
+            .action-button{
+      flex-direction: column;
+        }
+        action-button a{
+      width: 100px;
+        }
+        }
+        .action-button{
+          width: 100%;
+          display: flex;
+          justify-content: center;
+        }
+          .action-button a{
+          width: 200px;
+          
         }
