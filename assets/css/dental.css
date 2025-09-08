@@ -94,7 +94,7 @@
   color: #555;
 }
 
-.content .btn {
+.request-callback{
   display: inline-block;
   padding: 12px 20px;
   background-color: #1e5bb8;
@@ -105,8 +105,8 @@
   transition: 0.3s;
 }
 
-.content .btn:hover {
-  background-color: #14407c;
+.request-callback:hover {
+  background-color: #2c84ff;
   color: wheat;
 }
 
