@@ -3,6 +3,7 @@
 
 /* Define CSS variables to match style.css */
 :root {
+  --orange:#F15A22;
   --font-primary: 'Montserrat', sans-serif;
   --font-secondary: 'Roboto', sans-serif;
   --fs-h1: 42px;
@@ -330,7 +331,7 @@ border-radius: 10px;
 }
 
 #contactForm .overlay {
-  background: rgba(0, 0, 0, 0.5);
+  background: linear-gradient(to bottom, #d8f9f8, #b6f1ec);
   padding: 60px 20px;
 }
 
