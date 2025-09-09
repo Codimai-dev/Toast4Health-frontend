@@ -37,9 +37,9 @@ body {
   -webkit-font-smoothing: antialiased;
   scroll-behavior: smooth;
 }
-.container{
+/* .container{
    box-shadow:  0 2px 8px rgba(0, 0, 0, 0.1);
-}
+} */
 /* Hero Section */
 #hero {
   width: 100%;
@@ -709,7 +709,7 @@ body {
 }
 
 #contact-form-section .overlay {
-  background: rgba(0, 0, 0, 0.5);
+  background: linear-gradient(to bottom, #d8f9f8, #b6f1ec);
   padding: 60px 20px;
 }
 

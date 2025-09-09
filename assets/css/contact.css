@@ -1,7 +1,7 @@
 /* HERO SECTION */
 .hero {
   position: relative;
-  height: 300px;
+  height: 500px;
   background: url('../images/attractive-female-doctor-front-medical-600nw-291144536.webp') no-repeat center/cover;
   display: flex;
   align-items: center;
@@ -44,7 +44,7 @@
 }
 
 #contact-form-section .overlay {
-  background: rgba(0, 0, 0, 0.5);
+  background: linear-gradient(to bottom, #d8f9f8, #b6f1ec);
   padding: 60px 20px;
 }
 

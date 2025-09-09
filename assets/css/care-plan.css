@@ -66,13 +66,15 @@ p {
 
 /* HERO SECTION */
 .hero {
+    width: 100%;
+  min-height: 100vh;
   position: relative;
   height: 420px;
   background: url('../images/home doct.jpg') no-repeat center/cover;
   background-size: cover;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: start;
   color: var(--teal);
   box-sizing: border-box;
 }
@@ -664,7 +666,7 @@ p {
 }
 
 #contact-form-section .overlay {
-  background: rgba(0, 0, 0, 0.5);
+  background: linear-gradient(to bottom, #d8f9f8, #b6f1ec);
   padding: 60px 20px;
 }
 
