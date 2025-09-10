@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Toast4Health - Book Service</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="../assets/css/header.css">
+  <link rel="stylesheet" href="../assets/css/book.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Roboto:wght@400;500;700&display=swap"
+    rel="stylesheet">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <!-- Font Awesome (only if you don't already have it) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+</head>
+
+<body>
+  <header class="header">
+    <div class="container-fluid">
+      <nav class="navbar navbar-expand-lg navbar-light"> <a class="navbar-brand" href="../index.html"> <img
+            src="../assets/images/logo.jpg" alt="Toast4Health Logo" class="img-fluid"> </a> <button
+          class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav"
+          aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="main-nav">
+          <ul class="navbar-nav mx-auto" id="mainNav">
+            <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
+            <li class="nav-item dropdown"><a class="nav-link dropdown-toggle active" href="#" id="servicesDropdown"
+                role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Services
+              </a>
+              <div class="dropdown-menu" aria-labelledby="servicesDropdown">
+                <div class="row">
+                  <div class="col-6"> <a class="dropdown-item" href="./elder-care.html">Elder Care</a> <a
+                      class="dropdown-item" href="./medical-equipment-rental-sale.html">Medical Equipment Rental
+                      Sale</a> <a class="dropdown-item" href="./nursing-care-at-home.html">Nursing Care at Home</a> <a
+                      class="dropdown-item" href="./nutrition-consultation.html">Nutrition Consultation</a> <a
+                      class="dropdown-item" href="./patient-support-program.html">Patient Support Program</a>
+                    <a class="dropdown-item" href="./Dental-care-at-home.html">Dental care at home</a>
+                  </div>
+                  <div class="col-6"> <a class="dropdown-item" href="labtest.html">Lab Tests</a> <a
+                      class="dropdown-item" href="./trained-patient-care-attendant.html">Trained Patient Care
+                      Attendant</a> <a class="dropdown-item" href="./yoga.html">Yoga Online Batches</a> <a
+                      class="dropdown-item" href="./physiotherapy-at-home.html">Physiotherapy at Home</a> <a
+                      class="dropdown-item" href="pharmacy.html">Pharmacy Services</a>
+                    <a class="dropdown-item" href="./ICU-at-home.html">ICU at Home</a>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="../about.html">About Us</a></li>
+            <li class="nav-item"><a class="nav-link" href="../care-plan.html">Care Plan</a></li>
+            <li class="nav-item"><a class="nav-link " href="../corporatewellness.html">Corporate Wellness</a></li>
+            <li class="nav-item"><a class="nav-link" href="../contact.html">Contact Us</a></li>
+          </ul>
+          <ul class="navbar-nav" id="bookNav">
+            <li class="nav-item"><a href="#book" class="nav-link book-button">Book Appointment</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <section class="booking-section">
+    <h2 class="section-title">Book Service</h2>
+    <div class="booking-content">
+      <!-- Left Section -->
+      <div class="booking-txt">
+        <h2 class="">About us</h2>
+        <div class="about-paragraph">
+        <p >
+          Welcome to Dent@Home, India’s first portable and at-home dental company. We are committed to providing
+          high-quality dental services to those who cannot travel to a traditional dental clinic.
+        <p>At Dent@Home, we understand that visiting a dental clinic can be challenging for some individuals, especially
+          those who are elderly, disabled, or living in remote areas. Our mission is to make dental care accessible to
+          everyone by bringing our services directly to your home.</p>
+
+        </p>
+        </div>
+      </div>
+
+      <!-- Right Section (Form) -->
+      <div class="contact-form-container">
+        <h3 class="form-title">Send us a message</h3>
+        <form id="contact-form" class="contact-form">
+          <div>
+            <label for="name" class="form-label">Name</label>
+            <input type="text" id="name" name="name" class="form-input">
+          </div>
+          <div>
+            <label for="form-email" class="form-label">Email</label>
+            <input type="email" id="form-email" name="email" class="form-input">
+          </div>
+          <div>
+            <label for="message" class="form-label">Message</label>
+            <textarea id="message" name="message" rows="4" class="form-input"></textarea>
+          </div>
+          <button type="submit" class="btn-king">
+            Send Message
+          </button>
+        </form>
+        <div id="status-message" class="status-message"></div>
+      </div>
+    </div>
+    </div>
+    <section class="collaboration">
+      <div class="container">
+        <p><i>ToastforHealth now provides dental care at home services in collaboration with Denta@Home</i></p>
+      </div>
+    </section>
+  </section>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/flexslider/2.7.2/jquery.flexslider.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      $('.flexslider').flexslider({
+        animation: "slide",
+        controlNav: false,
+        directionNav: true,
+        slideshowSpeed: 5000,
+        animationSpeed: 600
+      });
+      $(window).scroll(function () {
+        if ($(this).scrollTop() > 50) {
+          $('.header').addClass('scrolled');
+        } else {
+          $('.header').removeClass('scrolled');
+        }
+      });
+    });
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script src="animations.js"></script> <!-- Our custom file -->
+
+  <script>
+    // Initialize AOS
+    AOS.init({
+      duration: 1000,    // Animation speed in ms
+      easing: "ease-in-out",
+      once: true,        // Run animation only once
+      offset: 100        // How early animation triggers
+    });
+
+    // Auto-add AOS attributes to sections
+  </script>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const selectors = [
+        ".hero-title",
+        ".hero-sub",
+        ".hero-cta",
+        "h2",
+        ".service-container",
+        ".service-image",
+        ".service-content",
+        ".about-section",
+        ".contact-section"
+      ];
+
+      selectors.forEach(selector => {
+        document.querySelectorAll(selector).forEach(el => {
+          if (el.classList.contains("hero-title")) {
+            el.setAttribute("data-aos", "fade-in"); // For hero title
+          } else if (el.classList.contains("hero-sub") || el.tagName === "P") {
+            el.setAttribute("data-aos", "fade-in"); // For hero sub text
+          } else if (el.classList.contains("hero-cta")) {
+            el.setAttribute("data-aos", "zoom-in"); // For button
+          } else if (el.tagName === "H2") {
+            el.setAttribute("data-aos", "fade-up");
+          } else if (el.classList.contains("service-image")) {
+            el.setAttribute("data-aos", "zoom-in");
+          } else {
+            el.setAttribute("data-aos", "fade-right");
+          }
+        });
+      });
+
+      // Initialize AOS after setting attributes
+      AOS.init({
+        duration: 400,
+        easing: "ease-in-out",
+        once: true,
+        offset: 100,
+        mirror: false
+      });
+    });
+  </script>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    // Smooth scroll with sticky navbar offset
+    document.querySelectorAll('a[href^="#"]').forEach(a => {
+      a.addEventListener('click', function (e) {
+        const href = this.getAttribute('href');
+        if (!href || href === '#') return;
+        if (href.startsWith('#')) {
+          e.preventDefault();
+          const target = document.querySelector(href);
+          if (target) {
+            const nav = document.querySelector('.navbar-branding');
+            const offset = nav ? nav.offsetHeight : 0;
+            const top = target.getBoundingClientRect().top + window.pageYOffset - offset;
+            window.scrollTo({ top, behavior: 'smooth' });
+
+            // Close nav on mobile after click
+            const navCollapse = document.getElementById('mainNav');
+            if (navCollapse && navCollapse.classList.contains('show')) {
+              new bootstrap.Collapse(navCollapse).hide();
+            }
+          }
+        }
+      });
+    });
+  </script>
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
