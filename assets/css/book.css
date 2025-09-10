@@ -61,7 +61,7 @@ body{
 /* ===== Contact Form Styling ===== */
 .contact-form-container {
   width: 100%;
-  max-width: 450px;
+  max-width: 600px;
   background: var(--white);
   padding: 30px;
   border-radius: 12px;
