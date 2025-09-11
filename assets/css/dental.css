@@ -165,6 +165,9 @@
   .btn {
     margin: 0 auto;
   }
+  .image-container {
+  margin-top: 50px;
+}
 }
 .booking-section {
   background: linear-gradient(to bottom, #d8f9f8, #b6f1ec);
