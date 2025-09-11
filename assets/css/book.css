@@ -41,6 +41,11 @@ body{
     grid-template-columns: 60% 40%;
     place-items: center;
     padding: 100px;
+    gap: 50px;
+}
+.booking-txt h2{
+    color: var(--teal);
+    text-align: left;
 }
 
 @media (max-width:1100px){
@@ -48,10 +53,9 @@ body{
     grid-template-columns:1fr;
     grid-template-rows: auto auto;
 }
-}
 .booking-txt h2{
-    color: var(--teal);
-    text-align: left;
+    text-align: center;
+}
 }
 .about-paragraph{
     text-align: justify;
@@ -179,4 +183,7 @@ textarea {
   .collaboration p {
     font-size: 14px;
   }
+  .booking-content{
+    padding: 10px;
+}
 }
