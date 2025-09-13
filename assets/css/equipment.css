@@ -97,3 +97,11 @@
  font-weight: bold;
    font-size: 1.1rem;
 }
+.grid{
+  display: grid;
+  grid-template-columns:auto auto;
+}
+.grid-item i{
+  font-size: 1.5rem;
+  color:#36C2C9; ;
+}
