@@ -1,3 +1,25 @@
+:root {
+  --teal: #36C2C9;
+  --orange: #F15A22;
+  --black: #000000;
+  --white: #FFFFFF;
+
+  --font-primary: 'Montserrat', sans-serif;
+  --font-secondary: 'Roboto', sans-serif;
+
+  --fs-h1: 42px;
+  --fs-h2: 32px;
+  --fs-h3: 26px;
+  --fs-body: 16px;
+  --fs-small: 14px;
+
+  --lh-tight: 1.2;
+  --lh-normal: 1.5;
+  --lh-loose: 1.8;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto:wght@400;700&display=swap');
+
 .equipment{
     width: 100%;
     display: flex;
@@ -104,4 +126,47 @@
 .grid-item i{
   font-size: 1.5rem;
   color:#36C2C9; ;
+}
+#product{
+  width: 100%;
+  max-width: 600px;
+  color: #36C2C9;
+  z-index: 1;
+  background: rgba(224, 230, 235,0.2);
+  padding: 30px;
+  backdrop-filter: blur(20px);
+  border-radius: 20px;
+}
+@media (max-width:1200){
+  #product{
+      margin: 0 auto;
+  }
+}
+#product h1 {
+  font-family: var(--font-primary);
+  font-size: var(--fs-h1);
+  font-weight: 700;
+  margin-bottom: 10px;
+  line-height: var(--lh-tight);
+  /* color: var(--teal); */
+  text-transform: uppercase;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+#product p {
+  font-family: var(--font-secondary);
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  line-height: var(--lh-normal);
+  color: #e0e6eb;
+}
+#product img{
+  width: 100px;
+  height: 100px;
+}
+#product .images{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
 }
