@@ -1,7 +1,8 @@
 .main-box{
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content:center;
+    gap: 100px;
     margin: 100px 0;
 }
 @media (max-width:800px){
