@@ -1,6 +1,6 @@
 :root {
   --teal: #36C2C9;
-  --orange: #F15A22;
+  --orange: rgb(241, 90, 34);
   --black: #000000;
   --white: #FFFFFF;
 
@@ -136,7 +136,7 @@
   justify-content: space-around;
   color: #36C2C9;
   z-index: 1;
-  background: rgba(224, 230, 235,0.2);
+  background:var(--orange);
   padding: 30px;
   backdrop-filter: blur(20px);
   border-radius: 20px;
