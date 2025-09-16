@@ -11,7 +11,7 @@
     }
 }
 .card{
-    height: auto;
+    /* height: auto; */
     padding: 10px 3px ;
 }
 .card h3{
