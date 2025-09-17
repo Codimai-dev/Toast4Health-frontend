@@ -1,365 +1,562 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Book reliable lab tests at home with Toast4Health. NABL-certified, fast results, and affordable packages for routine check-ups and specialized diagnostics.">
-  <meta name="keywords" content="lab tests, home lab test, NABL-certified, blood test, health check-up, Toast4Health">
-  <meta name="author" content="Toast4Health">
-  <title>Lab Tests - Toast4Health</title>
-    <link rel="stylesheet" href="../assets/css/elder-care.css">
-  <link rel="stylesheet" href="../assets/css/header.css">
-  <link rel="stylesheet" href="../assets/css/lab.css">
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
- <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
-  <!-- Font Awesome (only if you don't already have it) -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-<link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
-<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Book reliable lab tests at home with Toast4Health. NABL-certified, fast results, and affordable packages for routine check-ups and specialized diagnostics."
+    />
+    <meta
+      name="keywords"
+      content="lab tests, home lab test, NABL-certified, blood test, health check-up, Toast4Health"
+    />
+    <meta name="author" content="Toast4Health" />
+    <title>Lab Tests - Toast4Health</title>
+    <link rel="stylesheet" href="../assets/css/elder-care.css" />
+    <link rel="stylesheet" href="../assets/css/header.css" />
+    <link rel="stylesheet" href="../assets/css/lab.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome (only if you don't already have it) -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  </head>
+  <body>
+    <!-- Common Navbar -->
+    <header class="header">
+      <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg navbar-light">
+          <a class="navbar-brand" href="../index.html">
+            <img
+              src="../assets/images/logo.jpg"
+              alt="Toast4Health Logo"
+              class="img-fluid"
+            />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#main-nav"
+            aria-controls="main-nav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="main-nav">
+            <ul class="navbar-nav mx-auto" id="mainNav">
+              <li class="nav-item">
+                <a class="nav-link" href="../index.html">Home</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle active"
+                  href="#"
+                  id="servicesDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Services
+                </a>
+                <div class="dropdown-menu" aria-labelledby="servicesDropdown">
+                  <div class="row">
+                    <div class="col-6">
+                      <a class="dropdown-item" href="./elder-care.html"
+                        >Elder Care</a
+                      >
+                      <a
+                        class="dropdown-item"
+                        href="./medical-equipment-rental-sale.html"
+                        >Medical Equipment Rental Sale</a
+                      >
+                      <a
+                        class="dropdown-item"
+                        href="./nursing-care-at-home.html"
+                        >Nursing Care at Home</a
+                      >
+                      <a
+                        class="dropdown-item"
+                        href="./nutrition-consultation.html"
+                        >Nutrition Consultation</a
+                      >
+                      <a
+                        class="dropdown-item"
+                        href="./patient-support-program.html"
+                        >Patient Support Program</a
+                      >
+                      <a class="dropdown-item" href="./Dental-care-at-home.html"
+                        >Dental care at home</a
+                      >
+                    </div>
+                    <div class="col-6">
+                      <a class="dropdown-item active" href="labtest.html"
+                        >Lab Tests</a
+                      >
+                      <a
+                        class="dropdown-item"
+                        href="./trained-patient-care-attendant.html"
+                        >Trained Patient Care Attendant</a
+                      >
+                      <a class="dropdown-item" href="./yoga.html"
+                        >Yoga Online Batches</a
+                      >
+                      <a
+                        class="dropdown-item"
+                        href="./physiotherapy-at-home.html"
+                        >Physiotherapy at Home</a
+                      >
+                      <a class="dropdown-item" href="pharmacy.html"
+                        >Pharmacy Services</a
+                      >
+                      <a class="dropdown-item" href="./ICU-at-home.html"
+                        >ICU at Home</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../about.html">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../care-plan.html">Care Plan</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../corporatewellness.html"
+                  >Corporate Wellness</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../contact.html">Contact Us</a>
+              </li>
+            </ul>
+            <ul class="navbar-nav" id="bookNav">
+              <li class="nav-item">
+                <a href="#booking" class="nav-link book-button"
+                  >Book Appointment</a
+                >
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
 
-</head>
-<body>
-  <!-- Common Navbar -->
-  <header class="header">
-    <div class="container-fluid">
-      <nav class="navbar navbar-expand-lg navbar-light">
-        <a class="navbar-brand" href="../index.html">
-          <img src="../assets/images/logo.jpg" alt="Toast4Health Logo" class="img-fluid">
-        </a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
-  <span class="navbar-toggler-icon"></span>
-</button>
-        <div class="collapse navbar-collapse" id="main-nav">
-          <ul class="navbar-nav mx-auto" id="mainNav">
-            <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
-            <li class="nav-item dropdown">
-             <a class="nav-link dropdown-toggle active" href="#" id="servicesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-  Services
-</a>
-               <div class="dropdown-menu" aria-labelledby="servicesDropdown">
-              <div class="row">
-                <div class="col-6">
-                  <a class="dropdown-item" href="./elder-care.html">Elder Care</a>
-                  <a class="dropdown-item" href="./medical-equipment-rental-sale.html">Medical Equipment Rental Sale</a>
-                  <a class="dropdown-item" href="./nursing-care-at-home.html">Nursing Care at Home</a>
-                 <a class="dropdown-item" href="./nutrition-consultation.html">Nutrition Consultation</a>
-                  <a class="dropdown-item" href="./patient-support-program.html">Patient Support Program</a>
-                     <a class="dropdown-item" href="./Dental-care-at-home.html">Dental care at home</a>
-                </div>
-                <div class="col-6">
-                  <a class="dropdown-item active" href="labtest.html">Lab Tests</a>
-                  <a class="dropdown-item" href="./trained-patient-care-attendant.html">Trained Patient Care Attendant</a>
-                  <a class="dropdown-item" href="./yoga.html">Yoga Online Batches</a>
-                  <a class="dropdown-item" href="./physiotherapy-at-home.html">Physiotherapy at Home</a>
-                  <a class="dropdown-item" href="pharmacy.html">Pharmacy Services</a>
-                  <a class="dropdown-item" href="./ICU-at-home.html">ICU at Home</a>
-                </div>
-              </div>
+    <!-- Hero Section -->
+    <section
+      id="hero"
+      style="background-image: url('../assets/images/lab-hero.jpg')"
+    >
+      <div class="hero-content">
+        <h1>Book Reliable Lab Tests from Home – Fast, Safe & Affordable</h1>
+        <p>
+          Get NABL-certified lab tests done at your doorstep with accurate
+          reports, quick results, and expert recommendations.
+        </p>
+        <a href="#booking" class="btn-primary">Book a Lab Test Now</a>
+      </div>
+    </section>
+
+    <!-- Service Overview -->
+    <section id="service-overview" class="section-padding">
+      <div class="container">
+        <h2 class="section-title">
+          Hassle-Free Lab Testing Services at Your Convenience
+        </h2>
+        <p class="section-paragraph">
+          Regular health check-ups are essential for early diagnosis and disease
+          prevention. At Toast4Health, we offer a wide range of NABL-certified
+          lab tests with home sample collection to ensure safety, accuracy, and
+          convenience. Whether you need a routine check-up, chronic disease
+          monitoring, or specialized tests, we bring healthcare to your doorstep
+          with quick reports and expert consultation.
+        </p>
+        <div class="service-container">
+          <!-- Left Side: Image -->
+          <div class="service-image">
+            <img
+              src="../assets/images/labtest-second.jpg"
+              alt="Elder Care Service"
+            />
+          </div>
+
+          <!-- Right Side: Benefits Cards with Icons -->
+          <div class="service-benefits">
+            <div class="benefit-card">
+              <span class="benefit-icon"
+                ><i class="fas fa-user-nurse"></i
+              ></span>
+              <h3>NABL-Certified Labs</h3>
+              <p>Ensuring accuracy and reliability of test results.</p>
             </div>
-            </li>
-            <li class="nav-item"><a class="nav-link" href="../about.html">About Us</a></li>
-            <li class="nav-item"><a class="nav-link" href="../care-plan.html">Care Plan</a></li>
-             <li class="nav-item"><a class="nav-link " href="../corporatewellness.html">Corporate Wellness</a></li>
-            <li class="nav-item"><a class="nav-link" href="../contact.html">Contact Us</a></li>
-          </ul>
-          <ul class="navbar-nav" id="bookNav">
-            <li class="nav-item"><a href="#booking" class="nav-link book-button">Book Appointment</a></li>
-          </ul>
-        </div>
-      </nav>
-    </div>
-  </header>
-
-  <!-- Hero Section -->
-  <section id="hero" style="background-image: url('../assets/images/lab-hero.jpg');">
-    <div class="hero-content">
-      <h1>Book Reliable Lab Tests from Home – Fast, Safe & Affordable</h1>
-      <p>Get NABL-certified lab tests done at your doorstep with accurate reports, quick results, and expert recommendations.</p>
-      <a href="#booking" class="btn-primary">Book a Lab Test Now</a>
-    </div>
-  </section>
-
-  <!-- Service Overview -->
-  <section id="service-overview" class="section-padding">
-    <div class="container">
-      <h2 class="section-title">Hassle-Free Lab Testing Services at Your Convenience</h2>
-      <p class="section-paragraph">Regular health check-ups are essential for early diagnosis and disease prevention. At Toast4Health, we offer a wide range of NABL-certified lab tests with home sample collection to ensure safety, accuracy, and convenience. Whether you need a routine check-up, chronic disease monitoring, or specialized tests, we bring healthcare to your doorstep with quick reports and expert consultation.</p>
-       <div class="service-container">
-        <!-- Left Side: Image -->
-        <div class="service-image">
-          <img src="../assets/images/labtest-second.jpg" alt="Elder Care Service">
-        </div>
-
-        <!-- Right Side: Benefits Cards with Icons -->
-        <div class="service-benefits">
-          <div class="benefit-card">
-            <span class="benefit-icon"><i class="fas fa-user-nurse"></i></span>
-            <h3>NABL-Certified Labs </h3>
-            <p>Ensuring accuracy and reliability of test results.</p>
-          </div>
-          <div class="benefit-card">
-            <span class="benefit-icon"><i class="fas fa-clipboard-list"></i></span>
-            <h3>Home Sample Collection </h3>
-            <p>No need to visit a clinic, we come to you.</p>
-          </div>
-          <div class="benefit-card">
-            <span class="benefit-icon"><i class="fas fa-heart"></i></span>
-            <h3>Fast & Secure Results</h3>
-            <p>Get reports online within 24-48 hours.</p>
-          </div>
-          <div class="benefit-card">
-            <span class="benefit-icon"><i class="fas fa-hands-helping"></i></span>
-            <h3>Affordable Pricing & Packages</h3>
-            <p>Cost-effective health check-up plans.</p>
-          </div>
-          <div class="benefit-card">
-            <span class="benefit-icon"><i class="fas fa-hospital"></i></span>
-            <h3> Expert Consultation </h3>
-            <p>Guidance from certified healthcare professionals.</p>
-          </div>
-          <div class="benefit-card">
-            <span class="benefit-icon"><i class="fas fa-clock"></i></span>
-            <h3>Safe & Hygienic Procedures</h3>
-            <p>Following strict quality and safety protocols.</p>
+            <div class="benefit-card">
+              <span class="benefit-icon"
+                ><i class="fas fa-clipboard-list"></i
+              ></span>
+              <h3>Home Sample Collection</h3>
+              <p>No need to visit a clinic, we come to you.</p>
+            </div>
+            <div class="benefit-card">
+              <span class="benefit-icon"><i class="fas fa-heart"></i></span>
+              <h3>Fast & Secure Results</h3>
+              <p>Get reports online within 24-48 hours.</p>
+            </div>
+            <div class="benefit-card">
+              <span class="benefit-icon"
+                ><i class="fas fa-hands-helping"></i
+              ></span>
+              <h3>Affordable Pricing & Packages</h3>
+              <p>Cost-effective health check-up plans.</p>
+            </div>
+            <div class="benefit-card">
+              <span class="benefit-icon"><i class="fas fa-hospital"></i></span>
+              <h3>Expert Consultation</h3>
+              <p>Guidance from certified healthcare professionals.</p>
+            </div>
+            <div class="benefit-card">
+              <span class="benefit-icon"><i class="fas fa-clock"></i></span>
+              <h3>Safe & Hygienic Procedures</h3>
+              <p>Following strict quality and safety protocols.</p>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
     <section class="main-service">
-    <div class="container">
-      <div class="main-box">
-        <button class="tab  btn-king">Diagnostic test</button>
-        <button class="tab btn-king">Tab 2</button>
-        <button class="tab btn-king"> Tab 3</button>
-      </div>
-      <div class="service-grid">
-        <div class="service-item card"> 
-          <img src="../assets/images/Vitamin-B12.jpg" alt="">
-          <h3>Vitamin B12 </h3>
-          <button class="btn-king">Enquire now</button>
+      <div class="container">
+        <div class="main-box">
+          <button class="tab btn-king Diagnostic active">Diagnostic test</button>
+          <button class="tab btn-king Advance-diagnostics">Advance diagnostics</button>
+          <button class="tab btn-king">Tab 3</button>
         </div>
-        <div class="service-item card"> 
-          <img src="../assets/images/vit-d.jpg" alt="">
-          <h3>vit D </h3>
-          <button class="btn-king">Enquire now</button>
+        <h2 class="section-title" id="tittle">Diagnostic test</h2>
+        <div class="service-grid" id="Diagnostic-test">
+          <div class="service-item card">
+            <img src="../assets/images/Vitamin-B12.jpg" alt="" />
+            <h3>Vitamin B12</h3>
+            <button class="btn-king">Enquire now</button>
+          </div>
+          <div class="service-item card">
+            <img src="../assets/images/vit-d.jpg" alt="" />
+            <h3>vit D</h3>
+            <button class="btn-king">Enquire now</button>
+          </div>
+          <div class="service-item card">
+            <img src="../assets/images/Liver-function-test.jpg" alt="" />
+            <h3>Liver function test</h3>
+            <button class="btn-king">Enquire now</button>
+          </div>
+          <div class="service-item card">
+            <img src="../assets/images/kidney-test.jpg" alt="" />
+            <h3>kidney function test</h3>
+            <button class="btn-king">Enquire now</button>
+          </div>
+          <div class="service-item card">
+            <img src="../assets/images/thyroid.jpg" alt="" />
+            <h3>thyroid profile</h3>
+            <button class="btn-king">Enquire now</button>
+          </div>
+          <div class="service-item card">
+            <img src="../assets/images/Lipid-profile.jpg" alt="" />
+            <h3>Lipid profile</h3>
+            <button class="btn-king">Enquire now</button>
+          </div>
+          <div class="service-item card">
+            <img src="../assets/images/HIV-test.jpg" alt="" />
+            <h3>HIV test</h3>
+            <button class="btn-king">Enquire now</button>
+          </div>
+          <div class="service-item card">
+            <img src="../assets/images/Female-hormone-test.jpg" alt="" />
+            <h3>
+              Female hormone test ( LH ,FSH , Total testosterone , prolactin )
+            </h3>
+            <button class="btn-king">Enquire now</button>
+          </div>
+          <div class="service-item card">
+            <img src="../assets/images/PSA.jpg" alt="" />
+            <h3>PSA</h3>
+            <button class="btn-king">Enquire now</button>
+          </div>
+          <div class="service-item card">
+            <img src="../assets/images/CBC.jpg" alt="" />
+            <h3>CBC</h3>
+            <button class="btn-king">Enquire now</button>
+          </div>
+          <div class="service-item card">
+            <img src="../assets/images/Blood-sugar-fasting+PP.jpg" alt="" />
+            <h3>Blood sugar fasting +PP</h3>
+            <button class="btn-king">Enquire now</button>
+          </div>
+          <div class="service-item card">
+            <img src="../assets/images/Insulin-fasting.jpg" alt="" />
+            <h3>Insulin fasting</h3>
+            <button class="btn-king">Enquire now</button>
+          </div>
         </div>
-        <div class="service-item card"> 
-          <img src="../assets/images/Liver-function-test.jpg" alt="">
-          <h3>Liver function test</h3>
-          <button class="btn-king">Enquire now</button>
-        </div>
-        <div class="service-item card"> 
-          <img src="../assets/images/kidney-test.jpg" alt="">
-          <h3>kidney function test</h3>
-          <button class="btn-king">Enquire now</button>
-        </div>
-        <div class="service-item card"> 
-          <img src="../assets/images/thyroid.jpg" alt="">
-          <h3>thyroid profile </h3>
-          <button class="btn-king">Enquire now</button>
-        </div>
-        <div class="service-item card"> 
-          <img src="../assets/images/Lipid-profile.jpg" alt="">
-          <h3>Lipid profile </h3>
-          <button class="btn-king">Enquire now</button>
-        </div>
-        <div class="service-item card"> 
-          <img src="../assets/images/HIV-test.jpg" alt="">
-          <h3>HIV test </h3>
-          <button class="btn-king">Enquire now</button>
-        </div>
-        <div class="service-item card"> 
-          <img src="../assets/images/Female-hormone-test.jpg" alt="">
-          <h3>Female hormone test ( LH ,FSH , Total testosterone , prolactin )</h3>
-          <button class="btn-king">Enquire now</button>
-        </div>
-        <div class="service-item card"> 
-          <img src="../assets/images/PSA.jpg" alt="">
-          <h3>PSA </h3>
-          <button class="btn-king">Enquire now</button>
-        </div>
-        <div class="service-item card"> 
-          <img src="../assets/images/CBC.jpg" alt="">
-          <h3>CBC</h3>
-          <button class="btn-king">Enquire now</button>
-        </div>
-        <div class="service-item card"> 
-          <img src="../assets/images/Blood-sugar-fasting+PP.jpg" alt="">
-          <h3>Blood sugar fasting +PP </h3>
-          <button class="btn-king">Enquire now</button>
-        </div>
-        <div class="service-item card"> 
-          <img src="../assets/images/Insulin-fasting.jpg" alt="">
-          <h3>Insulin fasting</h3>
-          <button class="btn-king">Enquire now</button>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Lab Test Categories -->
-  <section id="lab-test-categories" class="section-padding">
-    <div class="container">
-      <h2 class="section-title">Wide Range of Lab Tests for Your Health Needs</h2>
-      <p class="section-paragraph">We offer a comprehensive list of lab tests, from basic health check-ups to advanced diagnostics, helping you stay proactive about your well-being.</p>
-      <div class="service-grid">
-        <div class="service-item service-card" style="background-image: url('../assets/images/boold.jpg');">
-          <div class="overlay-card"></div>
-          <h3>Complete Blood Count (CBC)</h3>
-<button class="en-button">Enquire now</button>         </div>
-        <div class="service-item service-card" style="background-image: url('../assets/images/diabities.jpg');">
-           <div class="overlay-card"></div>
-          <h3>Diabetes & Blood Sugar Tests</h3>
-<button class="en-button">Enquire now</button>         </div>
-        <div class="service-item service-card" style="background-image: url('../assets/images/labtest.jpg');">
-           <div class="overlay-card"></div>
-          <h3>Lipid Profile & Cholesterol Check</h3>
-<button class="en-button">Enquire now</button>         </div>
-        <div class="service-item service-card" style="background-image: url('../assets/images/liver.jpg');">
-         <div class="overlay-card"></div>
-          <h3>Liver Function Test (LFT)</h3>
-<button class="en-button">Enquire now</button>         </div>
-        <div class="service-item service-card" style="background-image: url('../assets/images/kidny.jpg');">
-          <div class="overlay-card"></div>
-          <h3>Kidney Function Test (KFT)</h3>
-<button class="en-button">Enquire now</button>         </div>
-        <div class="service-item service-card" style="background-image: url('../assets/images/thyroid.jpg');">
-           <div class="overlay-card"></div>
-          <h3>Thyroid Function Tests (T3, T4, TSH)</h3>
-<button class="en-button">Enquire now</button>         </div>
-        <div class="service-item service-card" style="background-image: url('../assets/images/vitamin.jpg');">
-       <div class="overlay-card"></div>
-          <h3>Vitamin & Mineral Tests</h3>
-<button class="en-button">Enquire now</button>         </div>
-        <div class="service-item service-card" style="background-image: url('../assets/images/Infectious.jpg');">
-        <div class="overlay-card"></div>
-          <h3>Infectious Disease Tests</h3>
-<button class="en-button">Enquire now</button>         </div>
-        <div class="service-item service-card" style="background-image: url('../assets/images/women.jpg');">
-    <div class="overlay-card"></div>
-          <h3>Women’s Health Tests</h3>
-<button class="en-button">Enquire now</button>         </div>
-        <div class="service-item service-card" style="background-image: url('../assets/images/body.jpg');">
-           <div class="overlay-card"></div>
-          <h3>Full Body Health Check-Up Packages</h3>
-<button class="en-button">Enquire now</button>         </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Test Packages & Pricing -->
-  <section id="pricing" class="section-padding">
-    <div class="container">
-      <h2 class="section-title">Affordable Lab Test Packages – Choose the Best for You</h2>
-      <p class="section-paragraph">Our affordable lab test packages cater to different health needs, ensuring you get comprehensive diagnostics at cost-effective rates. Select from individual tests or full-body health check-ups.</p>
-      <div class="center flex-col-center">
-        <table class="care-pricing-table">
-          <thead>
-            <tr>
-              <th>Package Name</th>
-              <th>Tests Included</th>
-              <th>Ideal For</th>
-              <!-- <th>Price (Starting at)</th> -->
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Basic Health Check-Up</td>
-              <td>CBC, Blood Sugar, Lipid Profile</td>
-              <td>Routine health screening</td>
-              <!-- <td>₹999</td> -->
-            </tr>
-            <tr>
-              <td>Diabetes Panel</td>
-              <td>HbA1c, Fasting Sugar, Kidney Function</td>
-              <td>Diabetic patients</td>
-              <!-- <td>₹1499</td> -->
-            </tr>
-            <tr>
-              <td>Liver & Kidney Function</td>
-              <td>LFT, KFT, Uric Acid</td>
-              <td>Liver & kidney monitoring</td>
-              <!-- <td>₹1299</td> -->
-            </tr>
-            <tr>
-              <td>Thyroid Profile</td>
-              <td>T3, T4, TSH</td>
-              <td>Thyroid function evaluation</td>
-              <!-- <td>₹1199</td> -->
-            </tr>
-            <tr>
-              <td>Full Body Check-Up</td>
-              <td>CBC, LFT, KFT, Lipid Profile, Sugar, Vitamin D, B12</td>
-              <td>Preventive healthcare</td>
-              <!-- <td>₹2999</td> -->
-            </tr>
-          </tbody>
-        </table>
-      </div>
-      <a href="#booking" class="btn-center btn-king">Get a Free Consultation</a>
-    </div>
-  </section>
-
-  <!-- How It Works? -->
-  <section id="how-it-works" class="py-5 bg-light">
-    <div class="container">
-      <h2 class="section-title text-center" data-aos="fade-up" data-aos-duration="1000">How to Book a Lab Test at Home?</h2>
-     <div class="steps-container">
-      <div class="step" data-aos="fade-up" data-aos-delay="100">
-        <div class="step-icon"><i class="fas fa-vial"></i></div>
-        <div class="step-content">
-          <h4>1. Select Your Test</h4>
-          <p>Choose an individual test or package online.</p>
+        <div class="service-grid hidden" id="Advance-diagnostics">
+          <div class="service-item card">
+            <img src="../assets/images/Sleep-study-diagnostics.jpg" alt="" />
+            <h3>Sleep study</h3>
+            <button class="btn-king">Enquire now</button>
+          </div>
+          <div class="service-item card">
+            <img src="../assets/images/Ambulatory Blood pressure Monitoring.avif" alt="" />
+            <h3>Ambulatory Blood pressure Monitoring</h3>
+            <button class="btn-king">Enquire now</button>
+          </div>
+             <div class="service-item card">
+            <img src="../assets/images/holter.jpg" alt="" />
+            <h3>Holter monitoring</h3>
+            <button class="btn-king">Enquire now</button>
+          </div>
+              <div class="service-item card">
+            <img src="../assets/images/ecgimg.jpg" alt="" />
+            <h3> ECG at home</h3>
+            <button class="btn-king">Enquire now</button>
+          </div>
         </div>
       </div>
-      <div class="step" data-aos="fade-up" data-aos-delay="200">
-  <div class="step-icon"><i class="fas fa-calendar-check"></i></div>
-  <div class="step-content">
-    <h4>2. Book a Home Sample Collection</h4>
-    <p>Pick a convenient time slot.</p>
-  </div>
-</div>
+    </section>
 
-<div class="step" data-aos="fade-up" data-aos-delay="300">
-  <div class="step-icon"><i class="fas fa-user-nurse"></i></div>
-  <div class="step-content">
-    <h4>3. Sample Collection by Expert Technician</h4>
-    <p>Safe and hygienic procedure at home.</p>
-  </div>
-</div>
+    <!-- Lab Test Categories -->
+    <section id="lab-test-categories" class="section-padding">
+      <div class="container">
+        <h2 class="section-title">
+          Wide Range of Lab Tests for Your Health Needs
+        </h2>
+        <p class="section-paragraph">
+          We offer a comprehensive list of lab tests, from basic health
+          check-ups to advanced diagnostics, helping you stay proactive about
+          your well-being.
+        </p>
+        <div class="service-grid">
+          <div
+            class="service-item service-card"
+            style="background-image: url('../assets/images/boold.jpg')"
+          >
+            <div class="overlay-card"></div>
+            <h3>Complete Blood Count (CBC)</h3>
+            <button class="en-button">Enquire now</button>
+          </div>
+          <div
+            class="service-item service-card"
+            style="background-image: url('../assets/images/diabities.jpg')"
+          >
+            <div class="overlay-card"></div>
+            <h3>Diabetes & Blood Sugar Tests</h3>
+            <button class="en-button">Enquire now</button>
+          </div>
+          <div
+            class="service-item service-card"
+            style="background-image: url('../assets/images/labtest.jpg')"
+          >
+            <div class="overlay-card"></div>
+            <h3>Lipid Profile & Cholesterol Check</h3>
+            <button class="en-button">Enquire now</button>
+          </div>
+          <div
+            class="service-item service-card"
+            style="background-image: url('../assets/images/liver.jpg')"
+          >
+            <div class="overlay-card"></div>
+            <h3>Liver Function Test (LFT)</h3>
+            <button class="en-button">Enquire now</button>
+          </div>
+          <div
+            class="service-item service-card"
+            style="background-image: url('../assets/images/kidny.jpg')"
+          >
+            <div class="overlay-card"></div>
+            <h3>Kidney Function Test (KFT)</h3>
+            <button class="en-button">Enquire now</button>
+          </div>
+          <div
+            class="service-item service-card"
+            style="background-image: url('../assets/images/thyroid.jpg')"
+          >
+            <div class="overlay-card"></div>
+            <h3>Thyroid Function Tests (T3, T4, TSH)</h3>
+            <button class="en-button">Enquire now</button>
+          </div>
+          <div
+            class="service-item service-card"
+            style="background-image: url('../assets/images/vitamin.jpg')"
+          >
+            <div class="overlay-card"></div>
+            <h3>Vitamin & Mineral Tests</h3>
+            <button class="en-button">Enquire now</button>
+          </div>
+          <div
+            class="service-item service-card"
+            style="background-image: url('../assets/images/Infectious.jpg')"
+          >
+            <div class="overlay-card"></div>
+            <h3>Infectious Disease Tests</h3>
+            <button class="en-button">Enquire now</button>
+          </div>
+          <div
+            class="service-item service-card"
+            style="background-image: url('../assets/images/women.jpg')"
+          >
+            <div class="overlay-card"></div>
+            <h3>Women’s Health Tests</h3>
+            <button class="en-button">Enquire now</button>
+          </div>
+          <div
+            class="service-item service-card"
+            style="background-image: url('../assets/images/body.jpg')"
+          >
+            <div class="overlay-card"></div>
+            <h3>Full Body Health Check-Up Packages</h3>
+            <button class="en-button">Enquire now</button>
+          </div>
+        </div>
+      </div>
+    </section>
 
-<div class="step" data-aos="fade-up" data-aos-delay="400">
-  <div class="step-icon"><i class="fas fa-flask"></i></div>
-  <div class="step-content">
-    <h4>4. Test Processing at NABL-Certified Labs</h4>
-    <p>Ensuring accurate diagnostics.</p>
-  </div>
-</div>
+    <!-- Test Packages & Pricing -->
+    <section id="pricing" class="section-padding">
+      <div class="container">
+        <h2 class="section-title">
+          Affordable Lab Test Packages – Choose the Best for You
+        </h2>
+        <p class="section-paragraph">
+          Our affordable lab test packages cater to different health needs,
+          ensuring you get comprehensive diagnostics at cost-effective rates.
+          Select from individual tests or full-body health check-ups.
+        </p>
+        <div class="center flex-col-center">
+          <table class="care-pricing-table">
+            <thead>
+              <tr>
+                <th>Package Name</th>
+                <th>Tests Included</th>
+                <th>Ideal For</th>
+                <!-- <th>Price (Starting at)</th> -->
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Basic Health Check-Up</td>
+                <td>CBC, Blood Sugar, Lipid Profile</td>
+                <td>Routine health screening</td>
+                <!-- <td>₹999</td> -->
+              </tr>
+              <tr>
+                <td>Diabetes Panel</td>
+                <td>HbA1c, Fasting Sugar, Kidney Function</td>
+                <td>Diabetic patients</td>
+                <!-- <td>₹1499</td> -->
+              </tr>
+              <tr>
+                <td>Liver & Kidney Function</td>
+                <td>LFT, KFT, Uric Acid</td>
+                <td>Liver & kidney monitoring</td>
+                <!-- <td>₹1299</td> -->
+              </tr>
+              <tr>
+                <td>Thyroid Profile</td>
+                <td>T3, T4, TSH</td>
+                <td>Thyroid function evaluation</td>
+                <!-- <td>₹1199</td> -->
+              </tr>
+              <tr>
+                <td>Full Body Check-Up</td>
+                <td>CBC, LFT, KFT, Lipid Profile, Sugar, Vitamin D, B12</td>
+                <td>Preventive healthcare</td>
+                <!-- <td>₹2999</td> -->
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <a href="#booking" class="btn-center btn-king"
+          >Get a Free Consultation</a
+        >
+      </div>
+    </section>
 
-<div class="step" data-aos="fade-up" data-aos-delay="500">
-  <div class="step-icon"><i class="fas fa-file-medical"></i></div>
-  <div class="step-content">
-    <h4>5. Receive Reports Online</h4>
-    <p>Get secure results within 24-48 hours.</p>
-  </div>
-</div>
+    <!-- How It Works? -->
+    <section id="how-it-works" class="py-5 bg-light">
+      <div class="container">
+        <h2
+          class="section-title text-center"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+        >
+          How to Book a Lab Test at Home?
+        </h2>
+        <div class="steps-container">
+          <div class="step" data-aos="fade-up" data-aos-delay="100">
+            <div class="step-icon"><i class="fas fa-vial"></i></div>
+            <div class="step-content">
+              <h4>1. Select Your Test</h4>
+              <p>Choose an individual test or package online.</p>
+            </div>
+          </div>
+          <div class="step" data-aos="fade-up" data-aos-delay="200">
+            <div class="step-icon"><i class="fas fa-calendar-check"></i></div>
+            <div class="step-content">
+              <h4>2. Book a Home Sample Collection</h4>
+              <p>Pick a convenient time slot.</p>
+            </div>
+          </div>
 
-<div class="step" data-aos="fade-up" data-aos-delay="600">
-  <div class="step-icon"><i class="fas fa-headset"></i></div>
-  <div class="step-content">
-    <h4>6. Consultation with Experts</h4>
-    <p>Interpretation of results for better health management.</p>
-  </div>
-</div>
-</div>
-    </div>
-  </section>
+          <div class="step" data-aos="fade-up" data-aos-delay="300">
+            <div class="step-icon"><i class="fas fa-user-nurse"></i></div>
+            <div class="step-content">
+              <h4>3. Sample Collection by Expert Technician</h4>
+              <p>Safe and hygienic procedure at home.</p>
+            </div>
+          </div>
 
-  <!-- Patient Testimonials -->
-  <!-- <section id="testimonials" class="section-padding">
+          <div class="step" data-aos="fade-up" data-aos-delay="400">
+            <div class="step-icon"><i class="fas fa-flask"></i></div>
+            <div class="step-content">
+              <h4>4. Test Processing at NABL-Certified Labs</h4>
+              <p>Ensuring accurate diagnostics.</p>
+            </div>
+          </div>
+
+          <div class="step" data-aos="fade-up" data-aos-delay="500">
+            <div class="step-icon"><i class="fas fa-file-medical"></i></div>
+            <div class="step-content">
+              <h4>5. Receive Reports Online</h4>
+              <p>Get secure results within 24-48 hours.</p>
+            </div>
+          </div>
+
+          <div class="step" data-aos="fade-up" data-aos-delay="600">
+            <div class="step-icon"><i class="fas fa-headset"></i></div>
+            <div class="step-content">
+              <h4>6. Consultation with Experts</h4>
+              <p>Interpretation of results for better health management.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Patient Testimonials -->
+    <!-- <section id="testimonials" class="section-padding">
     <div class="container">
       <h2 class="section-title">Real Stories from Our Happy Customers</h2>
       <div class="testimonials-container">
@@ -375,247 +572,330 @@
     </div>
   </section> -->
 
-  <!-- Booking & Contact Section -->
-  <section id="contactForm">
-    <div class="overlay">
-    <div class="container">
-      <h2 class="section-title">Book Your Lab Test Now – Safe, Quick & Hassle-Free!</h2>
-      <p class="section-paragraph">Fill out the form below, and our team will contact you shortly to schedule your test.</p>
-       <div class="form-wrapper">
-        <form class="booking-form" action="#" method="POST">
-          <div class="form-row">
-          <label for="name">Name *</label>
-          <input type="text" id="name" name="name" required>
-          </div>
-           <div class="form-row">
-          <label for="mobile">Mobile Number *</label>
-          <input type="tel" id="mobile" name="mobile" required>
-          </div>
-           <div class="form-row">
-          <label for="email">Email (Optional)</label>
-          <input type="email" id="email" name="email">
-          </div>
-           <div class="form-row">
-          <label for="test">Test or Package Required</label>
-          <select id="test" name="test">
-            <option value="basic-checkup">Basic Health Check-Up</option>
-            <option value="diabetes-panel">Diabetes Panel</option>
-            <option value="liver-kidney">Liver & Kidney Function</option>
-            <option value="thyroid-profile">Thyroid Profile</option>
-            <option value="full-body">Full Body Check-Up</option>
-          </select>
-          </div>
-           <div class="form-row">
-          <label for="date-time">Preferred Date & Time</label>
-          <input type="datetime-local" id="date-time" name="date-time" required>
-          </div>
-           <div class="form-row">
-          <label for="notes">Additional Notes</label>
-          <textarea id="notes" name="notes" rows="4"></textarea>
-          </div>
-<div class="form-actions">
-  <button type="submit" class="btn-orange">Request a Callback</button>
-  <a class="btn-whatsapp" href="https://wa.me/9152101398" target="_blank" rel="noopener">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" class="whatsapp-icon">
-  </a>
-</div>        </form>
-       </div>
-    </div>
-  </div>
-  </section>
-
-  <!-- FAQ Section -->
-<section id="care-faq" class="py-5">
-  <div class="container">
-    <h2 class="section-title text-center" style="color:#36C2C9;">Frequently Asked Questions (FAQs)</h2>
-
-    <div class="accordion mt-4" id="labFaqAccordion">
-
-      <!-- FAQ 1 -->
-      <div class="accordion-item mb-2">
-        <h2 class="accordion-header" id="faqHeading1">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#labFaq1" aria-expanded="false" aria-controls="labFaq1">
-             Are your lab tests NABL-certified?
-          </button>
-        </h2>
-        <div id="labFaq1" class="accordion-collapse collapse" aria-labelledby="faqHeading1" data-bs-parent="#labFaqAccordion">
-          <div class="accordion-body">
-            Yes, all our lab tests are conducted by NABL-accredited laboratories.
-          </div>
-        </div>
-      </div>
-
-      <!-- FAQ 2 -->
-      <div class="accordion-item mb-2">
-        <h2 class="accordion-header" id="faqHeading2">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#labFaq2" aria-expanded="false" aria-controls="labFaq2">
-             How soon can I get my reports?
-          </button>
-        </h2>
-        <div id="labFaq2" class="accordion-collapse collapse" aria-labelledby="faqHeading2" data-bs-parent="#labFaqAccordion">
-          <div class="accordion-body">
-            Most reports are delivered within 24–48 hours via email and WhatsApp.
+    <!-- Booking & Contact Section -->
+    <section id="contactForm">
+      <div class="overlay">
+        <div class="container">
+          <h2 class="section-title">
+            Book Your Lab Test Now – Safe, Quick & Hassle-Free!
+          </h2>
+          <p class="section-paragraph">
+            Fill out the form below, and our team will contact you shortly to
+            schedule your test.
+          </p>
+          <div class="form-wrapper">
+            <form class="booking-form" action="#" method="POST">
+              <div class="form-row">
+                <label for="name">Name *</label>
+                <input type="text" id="name" name="name" required />
+              </div>
+              <div class="form-row">
+                <label for="mobile">Mobile Number *</label>
+                <input type="tel" id="mobile" name="mobile" required />
+              </div>
+              <div class="form-row">
+                <label for="email">Email (Optional)</label>
+                <input type="email" id="email" name="email" />
+              </div>
+              <div class="form-row">
+                <label for="test">Test or Package Required</label>
+                <select id="test" name="test">
+                  <option value="basic-checkup">Basic Health Check-Up</option>
+                  <option value="diabetes-panel">Diabetes Panel</option>
+                  <option value="liver-kidney">Liver & Kidney Function</option>
+                  <option value="thyroid-profile">Thyroid Profile</option>
+                  <option value="full-body">Full Body Check-Up</option>
+                </select>
+              </div>
+              <div class="form-row">
+                <label for="date-time">Preferred Date & Time</label>
+                <input
+                  type="datetime-local"
+                  id="date-time"
+                  name="date-time"
+                  required
+                />
+              </div>
+              <div class="form-row">
+                <label for="notes">Additional Notes</label>
+                <textarea id="notes" name="notes" rows="4"></textarea>
+              </div>
+              <div class="form-actions">
+                <button type="submit" class="btn-orange">
+                  Request a Callback
+                </button>
+                <a
+                  class="btn-whatsapp"
+                  href="https://wa.me/9152101398"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  <img
+                    src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg"
+                    alt="WhatsApp"
+                    class="whatsapp-icon"
+                  />
+                </a>
+              </div>
+            </form>
           </div>
         </div>
       </div>
+    </section>
 
-      <!-- FAQ 3 -->
-      <div class="accordion-item mb-2">
-        <h2 class="accordion-header" id="faqHeading3">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#labFaq3" aria-expanded="false" aria-controls="labFaq3">
-             Is home sample collection safe?
-          </button>
+    <!-- FAQ Section -->
+    <section id="care-faq" class="py-5">
+      <div class="container">
+        <h2 class="section-title text-center" style="color: #36c2c9">
+          Frequently Asked Questions (FAQs)
         </h2>
-        <div id="labFaq3" class="accordion-collapse collapse" aria-labelledby="faqHeading3" data-bs-parent="#labFaqAccordion">
-          <div class="accordion-body">
-            Absolutely! Our trained technicians follow strict hygiene and safety protocols.
+
+        <div class="accordion mt-4" id="labFaqAccordion">
+          <!-- FAQ 1 -->
+          <div class="accordion-item mb-2">
+            <h2 class="accordion-header" id="faqHeading1">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#labFaq1"
+                aria-expanded="false"
+                aria-controls="labFaq1"
+              >
+                Are your lab tests NABL-certified?
+              </button>
+            </h2>
+            <div
+              id="labFaq1"
+              class="accordion-collapse collapse"
+              aria-labelledby="faqHeading1"
+              data-bs-parent="#labFaqAccordion"
+            >
+              <div class="accordion-body">
+                Yes, all our lab tests are conducted by NABL-accredited
+                laboratories.
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ 2 -->
+          <div class="accordion-item mb-2">
+            <h2 class="accordion-header" id="faqHeading2">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#labFaq2"
+                aria-expanded="false"
+                aria-controls="labFaq2"
+              >
+                How soon can I get my reports?
+              </button>
+            </h2>
+            <div
+              id="labFaq2"
+              class="accordion-collapse collapse"
+              aria-labelledby="faqHeading2"
+              data-bs-parent="#labFaqAccordion"
+            >
+              <div class="accordion-body">
+                Most reports are delivered within 24–48 hours via email and
+                WhatsApp.
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ 3 -->
+          <div class="accordion-item mb-2">
+            <h2 class="accordion-header" id="faqHeading3">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#labFaq3"
+                aria-expanded="false"
+                aria-controls="labFaq3"
+              >
+                Is home sample collection safe?
+              </button>
+            </h2>
+            <div
+              id="labFaq3"
+              class="accordion-collapse collapse"
+              aria-labelledby="faqHeading3"
+              data-bs-parent="#labFaqAccordion"
+            >
+              <div class="accordion-body">
+                Absolutely! Our trained technicians follow strict hygiene and
+                safety protocols.
+              </div>
+            </div>
           </div>
         </div>
+
+        <!-- CTA Button -->
+        <a
+          href="./contact.html"
+          class="btn btn-cta mt-4 d-block"
+          style="background-color: #f15a22; color: #fff"
+        >
+          Still Have Questions? Contact Us Now!
+        </a>
       </div>
-
-    </div>
-
-    <!-- CTA Button -->
-    <a href="./contact.html" class="btn btn-cta mt-4 d-block" style="background-color:#F15A22; color:#fff;">
-      Still Have Questions? Contact Us Now!
-    </a>
-  </div>
-</section>
-<!-- footer  -->
+    </section>
+    <!-- footer  -->
     <footer>
-        <div class="footer-container">
-            <div class="footer-column">
-                <div class="footer-logo">
-                    <img src="../assets/images/logo.jpg" alt="Company Logo">
-                    <p>Providing professional home care services right to your doorstep.</p>
-                </div>
-            </div>
-
-            <div class="footer-column">
-                <h3>Connect with Us</h3>
-                <ul class="contact-info">
-                    <li><a href="[Link to Booking Page]">Book an Appointment</a></li>
-                    <li><a href="mailto:support@toast4health.com">support@toast4health.com</a></li>
-                    <li><a href="tel:+919876543210">+91 98765 43210</a></li>
-                    <li>[Your Street Address], [City], [Postal Code]</li>
-                </ul>
-                <div class="social-icons">
-                    <a href="https://www.linkedin.com/company/toast4health1/"><i class="fab fa-linkedin"></i></a>
-                    <a href="https://www.facebook.com/p/Toast4health-100093648007913/"><i class="fab fa-facebook"></i></a>
-                    <a href="[Link to Instagram]"><i class="fab fa-instagram"></i></a>
-                </div>
-            </div>
-            
-            <div class="footer-column">
-                <h3>Services</h3>
-                <ul>
-                    <li><a href="#">Doctor at Home</a></li>
-                    <li><a href="./nursing-care-at-home.html">Nurse Care</a></li>
-                    <li><a href="./physiotherapy-at-home.html">Physiotherapy</a></li>
-                    <li><a href="./labtest.html">Lab Tests</a></li>
-                </ul>
-            </div>
-
-            <div class="footer-column">
-                <h3>Legal</h3>
-                <ul>
-                    <li><a href="../privacy.html">Privacy Policy</a></li>
- <li><a href="../Terms-of-Service.html">Shipping And Cancellation</a></li>
-                </ul>
-            </div>
+      <div class="footer-container">
+        <div class="footer-column">
+          <div class="footer-logo">
+            <img src="../assets/images/logo.jpg" alt="Company Logo" />
+            <p>
+              Providing professional home care services right to your doorstep.
+            </p>
+          </div>
         </div>
 
-        <div class="footer-bottom">
-            &copy; 2024 Toast4health. All Rights Reserved.
+        <div class="footer-column">
+          <h3>Connect with Us</h3>
+          <ul class="contact-info">
+            <li><a href="[Link to Booking Page]">Book an Appointment</a></li>
+            <li>
+              <a href="mailto:support@toast4health.com"
+                >support@toast4health.com</a
+              >
+            </li>
+            <li><a href="tel:+919876543210">+91 98765 43210</a></li>
+            <li>[Your Street Address], [City], [Postal Code]</li>
+          </ul>
+          <div class="social-icons">
+            <a href="https://www.linkedin.com/company/toast4health1/"
+              ><i class="fab fa-linkedin"></i
+            ></a>
+            <a href="https://www.facebook.com/p/Toast4health-100093648007913/"
+              ><i class="fab fa-facebook"></i
+            ></a>
+            <a href="[Link to Instagram]"><i class="fab fa-instagram"></i></a>
+          </div>
         </div>
+
+        <div class="footer-column">
+          <h3>Services</h3>
+          <ul>
+            <li><a href="#">Doctor at Home</a></li>
+            <li><a href="./nursing-care-at-home.html">Nurse Care</a></li>
+            <li><a href="./physiotherapy-at-home.html">Physiotherapy</a></li>
+            <li><a href="./labtest.html">Lab Tests</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h3>Legal</h3>
+          <ul>
+            <li><a href="../privacy.html">Privacy Policy</a></li>
+            <li>
+              <a href="../Terms-of-Service.html">Shipping And Cancellation</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        &copy; 2024 Toast4health. All Rights Reserved.
+      </div>
     </footer>
+<script src="../assets/Javascript/lab.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="animations.js"></script>
+    <!-- Our custom file -->
+    <script>
+      // Initialize AOS
+      AOS.init({
+        duration: 1000, // Animation speed in ms
+        easing: "ease-in-out",
+        once: true, // Run animation only once
+        offset: 100, // How early animation triggers
+      });
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-<script src="animations.js"></script> <!-- Our custom file -->
+      // Auto-add AOS attributes to sections
+    </script>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const selectors = [
+          ".hero-title",
+          ".hero-sub",
+          ".hero-cta",
+          "h2",
+          ".service-container",
+          ".service-image",
+          ".service-content",
+          ".about-section",
+          ".contact-section",
+        ];
 
-<script>
-  // Initialize AOS
-  AOS.init({
-    duration: 1000,    // Animation speed in ms
-    easing: "ease-in-out",
-    once: true,        // Run animation only once
-    offset: 100        // How early animation triggers
-  });
+        selectors.forEach((selector) => {
+          document.querySelectorAll(selector).forEach((el) => {
+            if (el.classList.contains("hero-title")) {
+              el.setAttribute("data-aos", "fade-in"); // For hero title
+            } else if (
+              el.classList.contains("hero-sub") ||
+              el.tagName === "P"
+            ) {
+              el.setAttribute("data-aos", "fade-in"); // For hero sub text
+            } else if (el.classList.contains("hero-cta")) {
+              el.setAttribute("data-aos", "zoom-in"); // For button
+            } else if (el.tagName === "H2") {
+              el.setAttribute("data-aos", "fade-up");
+            } else if (el.classList.contains("service-image")) {
+              el.setAttribute("data-aos", "zoom-in");
+            } else {
+              el.setAttribute("data-aos", "fade-right");
+            }
+          });
+        });
 
-  // Auto-add AOS attributes to sections
-</script>
-<script>
-document.addEventListener("DOMContentLoaded", () => {
-  const selectors = [
-    ".hero-title",
-    ".hero-sub",
-    ".hero-cta",
-    "h2",
-    ".service-container",
-    ".service-image",
-    ".service-content",
-    ".about-section",
-    ".contact-section"
-  ];
+        // Initialize AOS after setting attributes
+        AOS.init({
+          duration: 400,
+          easing: "ease-in-out",
+          once: true,
+          offset: 100,
+          mirror: false,
+        });
+      });
+    </script>
 
-  selectors.forEach(selector => {
-    document.querySelectorAll(selector).forEach(el => {
-      if (el.classList.contains("hero-title")) {
-        el.setAttribute("data-aos", "fade-in"); // For hero title
-      } else if (el.classList.contains("hero-sub") || el.tagName === "P") {
-        el.setAttribute("data-aos", "fade-in"); // For hero sub text
-      } else if (el.classList.contains("hero-cta")) {
-        el.setAttribute("data-aos", "zoom-in"); // For button
-      } else if (el.tagName === "H2") {
-        el.setAttribute("data-aos", "fade-up");
-      } else if (el.classList.contains("service-image")) {
-        el.setAttribute("data-aos", "zoom-in");
-      } else {
-        el.setAttribute("data-aos", "fade-right");
-      }
-    });
-  });
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+      // Smooth scroll with sticky navbar offset
+      document.querySelectorAll('a[href^="#"]').forEach((a) => {
+        a.addEventListener("click", function (e) {
+          const href = this.getAttribute("href");
+          if (!href || href === "#") return;
+          if (href.startsWith("#")) {
+            e.preventDefault();
+            const target = document.querySelector(href);
+            if (target) {
+              const nav = document.querySelector(".navbar-branding");
+              const offset = nav ? nav.offsetHeight : 0;
+              const top =
+                target.getBoundingClientRect().top +
+                window.pageYOffset -
+                offset;
+              window.scrollTo({ top, behavior: "smooth" });
 
-  // Initialize AOS after setting attributes
-  AOS.init({
-    duration: 400,
-    easing: "ease-in-out",
-    once: true,
-    offset: 100,
-    mirror: false
-  });
-});
-</script>
-
-<!-- Scripts -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-<script>
-// Smooth scroll with sticky navbar offset
-document.querySelectorAll('a[href^="#"]').forEach(a => {
-  a.addEventListener('click', function(e) {
-    const href = this.getAttribute('href');
-    if (!href || href === '#') return;
-    if (href.startsWith('#')) {
-      e.preventDefault();
-      const target = document.querySelector(href);
-      if (target) {
-        const nav = document.querySelector('.navbar-branding');
-        const offset = nav ? nav.offsetHeight : 0;
-        const top = target.getBoundingClientRect().top + window.pageYOffset - offset;
-        window.scrollTo({ top, behavior: 'smooth' });
-
-        // Close nav on mobile after click
-        const navCollapse = document.getElementById('mainNav');
-        if (navCollapse && navCollapse.classList.contains('show')) {
-          new bootstrap.Collapse(navCollapse).hide();
-        }
-      }
-      }
-  });
-});
-</script>
-<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-</body>
+              // Close nav on mobile after click
+              const navCollapse = document.getElementById("mainNav");
+              if (navCollapse && navCollapse.classList.contains("show")) {
+                new bootstrap.Collapse(navCollapse).hide();
+              }
+            }
+          }
+        });
+      });
+    </script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </body>
 </html>

@@ -1,18 +1,53 @@
+:root {
+  --teal: #36C2C9;
+  --orange: rgb(241, 90, 34);
+  --black: #000000;
+  --white: #FFFFFF;
+
+  --font-primary: 'Montserrat', sans-serif;
+  --font-secondary: 'Roboto', sans-serif;
+
+  --fs-h1: 42px;
+  --fs-h2: 32px;
+  --fs-h3: 26px;
+  --fs-body: 16px;
+  --fs-small: 14px;
+
+  --lh-tight: 1.2;
+  --lh-normal: 1.5;
+  --lh-loose: 1.8;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto:wght@400;700&display=swap');
+
 .main-box{
     width: 100%;
     display: flex;
     justify-content:center;
+    align-items: center;
     gap: 100px;
     margin: 100px 0;
+}
+.main-box button{
+    background-color: white;
+    width: 150px;
+    font-size: 1.1rem;
+    color: #000000;
 }
 @media (max-width:800px){
     .main-box{
         flex-direction: column;
     }
 }
+#Diagnostic-test div{
+     height: 350px;
+}
+#Advance-diagnostics .card{
+    height: 350px;
+}
 .card{
     /* height: auto; */
-    padding: 10px 3px ;
+    padding: 0px 3px ;
 }
 .card h3{
     color: black;
@@ -20,4 +55,11 @@
 .card img{
     width: 100%;
     height: 200px;
+}
+.main-box .active{
+    background-color: var(--orange);
+}
+
+.hidden{
+    display: none;
 }
