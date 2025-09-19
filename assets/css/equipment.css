@@ -96,7 +96,7 @@
 }
 .mini-card{
   width: 200px;
-  max-width: 50%;
+  /* max-width: 50%; */
   height: 200px;
   border: 2px solid black;
   border-radius: 20px;
@@ -181,5 +181,21 @@
 }
 #product p {
   font-size: 1.5rem;
+}
+.equipment .card{
+  height: 300px;
+}
+.card .img img{
+  height: 130px;
+}
+.card .content{
+  height: 170px;
+}
+.flex{
+  gap: 10px;
+}
+.mini-card{
+  max-width: 100%;
+  width: 280px;
 }
 }
