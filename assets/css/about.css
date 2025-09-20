@@ -473,16 +473,16 @@ section {
   display: inline-block;
   font-size: 28px;
   margin-bottom: 8px;
-  color: #0096a5;
+  color:var(--teal);
 }
 .benefit-card h3 {
   margin: 10px 0 5px;
-  color: #004c54;
+ color:var(--teal);
   font-size: 18px;
 }
 .benefit-card p {
   font-size: 14px;
-  color: #333;
+ color:var(--teal);
 }
 
 /* Responsive */
