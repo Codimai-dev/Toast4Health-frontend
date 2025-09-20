@@ -780,7 +780,7 @@ p {
 }
 
 /* WhatsApp Icon */
-.btn-whatsapp .whatsapp-icon {
+.btn-whatsapp .whatsapp-icons {
   width: 30px;
   height: 30px;
   display: block;
@@ -1100,3 +1100,6 @@ p {
         height: 160px;
       }
     }
+.swiper-pagination span{
+  backcolor: var(--orange);
+}
