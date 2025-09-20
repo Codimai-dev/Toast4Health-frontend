@@ -29,6 +29,7 @@
     margin: 100px 0;
 }
 .main-box button{
+    height: 100px;
     background-color: white;
     width: 150px;
     font-size: 1.1rem;
@@ -90,4 +91,10 @@
 .card-box li{
   font-size: 1rem;
   font-weight: 700;
+}
+.card{
+    height: 400px;
+}
+.card img{
+    height: 200px;
 }

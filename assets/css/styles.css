@@ -916,8 +916,14 @@ h2{
     font-size: 0.9rem;
   }
 }
+.overlay{
+  width: 100%;
+  height:auto;    background: linear-gradient(to bottom, #d8f9f8, #b6f1ec);
+  padding: 20px 0;
+  box-sizing: border-box;
+}
 .contact-card {
-    background-color: #fff;
+  background: white;
     box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
     border-radius: 1rem;
     padding: 3rem;
