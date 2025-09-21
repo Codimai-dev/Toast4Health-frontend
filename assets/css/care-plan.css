@@ -988,7 +988,7 @@ p {
     .plan-card {
       background: #fff;
       border-radius: 16px;
-      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+      /* box-shadow: 0 4px 15px rgba(0,0,0,0.1); */
       overflow: hidden;
       text-align: center;
       transition: transform 0.3s ease;
