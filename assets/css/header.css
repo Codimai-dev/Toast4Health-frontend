@@ -761,3 +761,6 @@ footer {
 .whatsapp-icon img{
   width: 50px;
 }
+.navbar-toggler {
+  border: none !important;
+}
