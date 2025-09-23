@@ -120,6 +120,7 @@ header.header.scrolled {
   content: "";
   position: absolute;
   background-image: url('../images/call.png');
+  background-repeat: no-repeat;
   background-size: contain;
   width: 64px;
   height: 100%;
@@ -283,7 +284,7 @@ header.header.scrolled {
   padding: 15px 10px;
   background-color: #d94d1e;
   color: white;
-    border: 1px solid black;
+    /* border: 1px solid black; */
 border-radius: 20px;
 }
 .btn-king:hover{
