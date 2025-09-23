@@ -78,7 +78,7 @@ header.header.scrolled {
   font-family: var(--font-primary);
   font-size: var(--fs-body);
   font-weight: 600;
-  padding: 0.5rem 1.5rem;
+  padding: 2rem;
   transition: all 0.3s ease;
   font-weight: 800;
 }
@@ -763,4 +763,26 @@ footer {
 }
 .navbar-toggler {
   border: none !important;
+}
+
+@media (max-width:1400px){
+
+ .navbar-nav#mainNav .nav-link{
+ padding: 1rem 0.9rem;
+ font-size: 0.9rem;
+ }
+}
+@media (max-width:1200px){
+
+ .navbar-nav#mainNav .nav-link{
+ padding: 1rem 0.7rem;
+ font-size: 0.7rem;
+ }
+}
+@media (max-width:1000px){
+
+ .navbar-nav#mainNav .nav-link{
+ padding: 1rem 0.6rem;
+ font-size: 0.6rem;
+ }
 }
