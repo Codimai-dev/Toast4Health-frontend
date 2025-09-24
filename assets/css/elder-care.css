@@ -378,6 +378,8 @@ body {
   color: #fff;
   z-index: 2;
   background-color:var(--teal);
+   border-radius: 5px;
+  padding: 2px;
 }
 
 /* Button Styling */
