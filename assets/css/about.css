@@ -1,8 +1,4 @@
-/* =========================
-   TYPOGRAPHY SYSTEM
-   ========================= */
 
-/* Brand Colors */
 :root {      
   --teal: #36C2C9;     /* Primary Brand Color (Headings, Links) */
   --orange: #F15A22;   /* Accent Color (Buttons, CTAs) */

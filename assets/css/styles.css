@@ -380,6 +380,7 @@ h1, h2, h3, h4, h5, h6 { font-family: var(--font-primary); }
   font-size: 1.2rem;
   font-weight: 700;
   color: #fff;
+  background-color:var(--teal);
 }
 
 /* Button Styling */

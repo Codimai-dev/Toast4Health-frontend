@@ -377,7 +377,7 @@ body {
   font-weight: 700;
   color: #fff;
   z-index: 2;
-  background-color: gray;
+  background-color:var(--teal);
 }
 
 /* Button Styling */
