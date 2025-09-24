@@ -127,19 +127,17 @@
   font-size: 1.5rem;
   color:#36C2C9; ;
 }
-/* #product{
- /* width: 100%;
+#product{
+  width: 100%;
   height: 600px;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  align-items: center;
+  text-align: center;
   color: #36C2C9;
   z-index: 1;
-  background:var(--orange);
-  padding: 30px;
-  backdrop-filter: blur(20px);
-  border-radius: 20px;
-} */
+  padding: 0px;
+}
 #product h1 {
   font-family: var(--font-primary);
   font-size: var(--fs-h1);
@@ -149,6 +147,7 @@
   /* color: var(--teal); */
   text-transform: uppercase;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  text-align: center;
 }
 
 #product p {
@@ -176,7 +175,6 @@
   #product img{
   width: 100px;
   height: 75px;
-
 }
 #product p {
   font-size: 1.5rem;
@@ -209,21 +207,68 @@
   }
 }
 
-#hero{
-  justify-content: center;
+#hero {
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  min-height: 100vh;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  padding: 40px 0;
 }
+
+#hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.4);
+}
+
+#hero .container {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
 .swiper {
-      width: 100%;
-      /* padding-bottom: 50px; */
-      padding: 0 20px 50px;
-    }
+  width: 100%;
+  height: 100%;
+}
+.swiper-wrapper{
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+@media (min-width:919px) {
+  .swiper-wrapper{
+      gap: 50px;
+}
+}
 
-    .swiper-wrapper {
-      display: flex;
-      align-items: stretch;
-     /* padding: 0 30px; */
-    }
+.swiper-slide {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+}
 
-  .hero-content{
-    width: auto;
-  }
+/* Swiper buttons & pagination */
+.swiper-button-prev, .swiper-button-next {
+  color: #fff;
+  background: rgba(0,0,0,0.3);
+  border-radius: 50%;
+  width: 40px; height: 40px;
+}
+
+.swiper-pagination-bullet {
+  background: rgba(255,255,255,0.5);
+}
+
+.swiper-pagination-bullet-active {
+  background: #fff;
+}
