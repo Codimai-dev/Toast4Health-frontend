@@ -29,11 +29,13 @@
     margin: 100px 0;
 }
 .main-box button{
-    height: 100px;
+    height: 70px;
     background-color: white;
     width: 150px;
     font-size: 1.1rem;
     color: #000000;
+    border: 1px solid var(--orange);
+    font-weight: bold;
 }
 @media (max-width:800px){
     .main-box{

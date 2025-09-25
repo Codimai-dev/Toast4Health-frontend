@@ -235,9 +235,9 @@ h1, h2, h3, h4, h5, h6 { font-family: var(--font-primary); }
   justify-content: center;
 }
 .service-image img {
-  max-width: 500px;
+  max-width: 550px;
   width: 100%;
-  height: 400px;
+  height: 700px;
   border-radius: 12px;
   object-fit: cover;
 }
