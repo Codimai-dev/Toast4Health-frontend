@@ -260,9 +260,11 @@
 /* Swiper buttons & pagination */
 .swiper-button-prev, .swiper-button-next {
   color: #fff;
-  background: rgba(0,0,0,0.3);
   border-radius: 50%;
   width: 40px; height: 40px;
+}
+.swiper-button-prev div, .swiper-button-next div{
+  background-color: var(--orange);
 }
 
 .swiper-pagination-bullet {
@@ -271,4 +273,8 @@
 
 .swiper-pagination-bullet-active {
   background: #fff;
+}
+
+.swiper-pagination span{
+  background-color: var(--orange);
 }

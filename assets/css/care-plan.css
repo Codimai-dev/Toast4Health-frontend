@@ -1102,5 +1102,5 @@ p {
       }
     }
 .swiper-pagination span{
-  backcolor: var(--orange);
+  background-color: var(--orange);
 }
