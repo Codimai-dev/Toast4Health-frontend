@@ -27,19 +27,22 @@
     align-items: center;
     gap: 100px;
     margin: 100px 0;
+    background-color:rgb(0, 55, 71);
+      border-radius: 20px;
 }
 .main-box button{
     height: 70px;
-    background-color: white;
     width: 150px;
     font-size: 1.1rem;
-    color: #000000;
-    border: 1px solid var(--orange);
-    font-weight: bold;
+    background: transparent;
+    color: #ffffff;
+    border: none;
+    outline: none;
 }
 @media (max-width:800px){
     .main-box{
         flex-direction: column;
+        gap: 10px;
     }
 }
 #Diagnostic-test div{
@@ -60,7 +63,7 @@
     height: 200px;
 }
 .main-box .active{
-    background-color: var(--orange);
+    color: yellow;
 }
 
 .hidden{

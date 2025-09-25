@@ -98,6 +98,9 @@
 }
 .known-section .container{
   display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
 }
 .content {
   flex: 1;
