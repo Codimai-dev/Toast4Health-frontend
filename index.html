@@ -157,7 +157,7 @@
                   quality care to your doorstep.
                 </p>
                 <div class="buttons">
-                <a href="#services" class="btn-primary mt-3"
+                <a href="#benefits" class="btn-primary mt-3"
                   >Explore Services</a
                 >
                 <a
@@ -169,7 +169,7 @@
       </div>
     </section>
     <div class="whatsapp-icon">
-      <a href=""><img src="./assets/images/whatsapp-icon.png" alt="whatsapp-icon"></a>
+      <a href="https://wa.me/9152101398"><img src="./assets/images/whatsapp-icon.png" alt="whatsapp-icon"></a>
     </div>
     <!-- Introduction: Who We Are -->
     <section id="service-overview" class="section-padding">
@@ -258,7 +258,7 @@
           >
             <div class="overlay">
               <h3>Nursing Care at Home</h3>
-              <button class="en-button">Enquire now</button>
+              <a href="./services/nursing-care-at-home.html"><button class="en-button">Enquire now</button></a>
             </div>
           </div>
 
@@ -270,7 +270,7 @@
           >
             <div class="overlay">
               <h3>Physiotherapy at Home</h3>
-              <button class="en-button">Enquire now</button>
+              <a href="./services/physiotherapy-at-home.html"><button class="en-button">Enquire now</button></a>
             </div>
           </div>
 
@@ -282,7 +282,7 @@
           >
             <div class="overlay">
               <h3>Elder Care Services</h3>
-              <button class="en-button">Enquire now</button>
+              <a href="./services/elder-care.html"><button class="en-button">Enquire now</button></a>
             </div>
           </div>
 
@@ -292,7 +292,7 @@
           >
             <div class="overlay">
               <h3>Patient Care Attendants</h3>
-              <button class="en-button">Enquire now</button>
+              <a href="./services/trained-patient-care-attendant.html"><button class="en-button">Enquire now</button></a>
             </div>
           </div>
 
@@ -304,7 +304,7 @@
           >
             <div class="overlay">
               <h3>Medical Equipment Rental & Sales</h3>
-              <button class="en-button">Enquire now</button>
+              <a href="./services/medical-equipment-rental-sale.html"><button class="en-button">Enquire now</button></a>
             </div>
           </div>
 
@@ -314,7 +314,7 @@
           >
             <div class="overlay">
               <h3>Lab Tests at Home</h3>
-              <button class="en-button">Enquire now</button>
+              <a href="./services/labtest.html"><button class="en-button">Enquire now</button></a>
             </div>
           </div>
 
@@ -324,7 +324,7 @@
           >
             <div class="overlay">
               <h3>Pharmacy Services</h3>
-              <button class="en-button">Enquire now</button>
+              <a href="./services/pharmacy.html"><button class="en-button">Enquire now</button></a>
             </div>
           </div>
 
@@ -334,7 +334,7 @@
           >
             <div class="overlay">
               <h3>Nutrition & Wellness Programs</h3>
-              <button class="en-button">Enquire now</button>
+              <a href="./services/nutrition-consultation.html"><button class="en-button">Enquire now</button></a>
             </div>
           </div>
         </div>
@@ -507,15 +507,15 @@
                 <form id="contact-form" class="contact-form">
                     <div>
                         <label for="name" class="form-label">Name</label>
-                        <input type="text" id="name" name="name" class="form-input">
+                        <input type="text" id="name" name="name" class="form-input" required>
                     </div>
                     <div>
-                        <label for="form-email" class="form-label">Mobile</label>
-                        <input type="email" id="form-email" name="email" class="form-input">
+                        <label for="form-email" class="form-label">Email</label>
+                        <input type="email" id="form-email" name="email" class="form-input" required>
                     </div>
                     <div>
                         <label for="message" class="form-label">Message</label>
-                        <textarea id="message" name="message" rows="4" class="form-input"></textarea>
+                        <textarea id="message" name="message" rows="4" class="form-input" required></textarea>
                     </div>
                     <button type="submit" class="btn-king">
                         Send Message
@@ -624,5 +624,6 @@
         });
       });
     </script>
+    <script src="./assets/Javascript/whatsapp.js"></script>
   </body>
 </html>
