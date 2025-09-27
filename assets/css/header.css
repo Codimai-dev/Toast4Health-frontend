@@ -301,6 +301,7 @@ header.header.scrolled {
     border: none;
     outline: none;
 border-radius: 20px;
+text-decoration: none;
 }
 .btn-king:hover{
   text-decoration: none;
@@ -665,8 +666,8 @@ border-radius: 20px;
   color: #fff;
 }
 footer {
-            background-color: #1a2333; /* Dark blue-gray for a professional look */
-            color: #f0f2f5; /* Light text for contrast */
+            background-color: #f0f2f5; /* Dark blue-gray for a professional look */
+            color: #000000; /* Light text for contrast */
             padding: 30px 20px;
             font-family: Arial, sans-serif;
             margin-top: 0px;
@@ -692,7 +693,7 @@ footer {
         .footer-column h3 {
             font-size: 1.2em;
             margin-bottom: 20px;
-            color: #b0b5c1;
+            color: #000000;
         }
 
         .footer-column ul {
@@ -710,7 +711,7 @@ footer {
         }
 
         .footer-column a {
-            color: #f0f2f5;
+            color: #000000;
             text-decoration: none;
             transition: color 0.3s ease;
         }
@@ -728,7 +729,7 @@ footer {
         }
         .footer-logo p {
             font-size: 0.9em;
-            color: #b0b5c1;
+          color: #000000;
             line-height: 1.5;
         }
 
@@ -736,7 +737,7 @@ footer {
         .social-icons a {
             font-size: 1.5em;
             margin-right: 15px;
-            color: #f0f2f5;
+           color: #000000;
             transition: color 0.3s ease;
         }
 
@@ -753,7 +754,7 @@ footer {
         .contact-info li {
             margin-bottom: 8px;
             font-size: 0.9em;
-            color: white;
+            color: #000000;
         }
 
         /* Bottom Bar */
@@ -763,7 +764,7 @@ footer {
             margin-top: 40px;
             padding-top: 20px;
             border-top: 1px solid #334054;
-            color: #88909c;
+            color: #000000;
             font-size: 0.85em;
         }
 

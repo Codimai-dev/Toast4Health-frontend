@@ -117,7 +117,7 @@
 }
 .mini-card p{
  font-weight: bold;
-   font-size: 1.1rem;
+   font-size: 0.8rem;
 }
 .grid{
   display: grid;
@@ -277,4 +277,7 @@
 
 .swiper-pagination span{
   background-color: var(--orange);
+}
+.btn-king{
+  padding: 9px 10px;
 }

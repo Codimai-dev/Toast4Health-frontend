@@ -395,8 +395,8 @@ body {
   font-size: 0.9rem;
   transition: background 0.3s ease;
   z-index: 2;
+  text-decoration: none;
 }
-
 .en-button:hover {
   background: #05abb3;
 }
