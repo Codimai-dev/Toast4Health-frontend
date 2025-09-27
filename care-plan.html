@@ -167,6 +167,15 @@
       </p>
           </div>
   </section>
+ <section id="care-plans" class="py-5 ">
+    <div class="container text-center">
+      <h2 class="section-title mb-3">Find the Right Care Plan for Your Needs</h2>
+      <p class="section-sub mb-4">
+        Our flexible care plans are designed to cater to different medical needs, ensuring the right level of support at
+        home. Choose from our range of expert-led healthcare services.
+      </p>
+          </div>
+  </section>
  <section id="plans">
   <div class="container">
   <div class="swiper mySwiper">
@@ -180,12 +189,12 @@
             <p>Sweet Life, Smart Choices - Diabetes Under Control</p>
             <div class="button-box">
               <button class="active-plan price-button " plan="Diabetes" validity="Monthly">Monthly Plan</button>
-              <button class=" price-button " plan="Diabetes" validity="Quarterly">Quarterly Plan</button>
+              <button class="price-button " plan="Diabetes" validity="Quarterly">Quarterly Plan</button>
               <button class=" price-button " plan="Diabetes" validity="Annual">Annual Plan</button>
             </div>
             <div class="Diabetes-price price">₹2,499 </div>
             <h4>Plan Inclusions:</h4>
-            <ul class="inclusions">
+            <ul class="inclusions" id="Diabetes-list">
               <li>1 Virtual GP Consultations/month</li>
               <li>Free Glucose monitoring kit</li>
               <li>20% discount on diabetes medications</li>
@@ -223,7 +232,7 @@
 
             <!-- Plan Inclusions -->
             <h4>Plan Inclusions:</h4>
-            <ul class="inclusions">
+            <ul class="inclusions" id="Elder-list">
               <li>1 Virtual GP Consultations/month</li>
               <li>1 Virtual consultation with geriatric specialists every quarter</li>
               <li>Free comprehensive health screening every 6 months</li>
@@ -259,7 +268,7 @@
 
             <!-- Plan Inclusions -->
             <h4>Plan Inclusions:</h4>
-            <ul class="inclusions">
+            <ul class="inclusions" id="Cardiac-list">
               <li>1 GP Virtual consultations/month</li>
               <li>Free ECG monitoring at home - 1 / month</li>
               <li>20% discount on cardiac medications</li>
@@ -293,7 +302,7 @@
 
             <!-- Plan Inclusions -->
             <h4>Plan Inclusions:</h4>
-            <ul class="inclusions">
+            <ul class="inclusions" id="PCOS-PCOD-list">
               <li>1 Nutrition Virtual consultations/month</li>
               <li>1 Consultation with gynecologists – Quarterly</li>
               <li>20% discount on hormonal medications and supplements</li>
@@ -328,7 +337,7 @@
 
             <!-- Plan Inclusions -->
             <h4>Plan Inclusions:</h4>
-            <ul class="inclusions">
+            <ul class="inclusions" id="Obesity-list">
               <li>1 Virtual consultations/month with Dr</li>
               <li>Free weighing scale</li>
               <li>20% discount on medication</li>
@@ -361,7 +370,7 @@
 
             <!-- Plan Inclusions -->
             <h4>Plan Inclusions:</h4>
-            <ul class="inclusions">
+            <ul class="inclusions" id="Wellness-list">
               <li>1 Virtual GP consultation/month</li>
               <li>Annual health check-up- 1 free </li>
               <li>Upto 20% discount on all medications </li>
@@ -394,7 +403,7 @@
 
             <!-- Plan Inclusions -->
             <h4>Plan Inclusions:</h4>
-            <ul class="inclusions">
+            <ul class="inclusions" id="Wellness-list">
               <li>2 Virtual consultations/month </li>
               <li>Comprehensive annual  health check-up-1 free </li>
               <li>Upto 20% discount on all medications</li>
@@ -591,18 +600,53 @@
 
       <div class="footer-column">
         <h3>Services</h3>
-        <ul>
-          <li><a href="./services/Dental-care-at-home.html">Doctor at Home</a></li>
-          <li><a href="./services/nursing-care-at-home.html">Nurse Care</a></li>
-          <li><a href="./services/physiotherapy-at-home.html">Physiotherapy</a></li>
-          <li><a href="./services/labtest.html">Lab Tests</a></li>
-          <li><a href="./services/elder-care.html">Elder Care</a></li>
-                     <li><a href="./services/medical-equipment-rental-sale.html">Medical Equipment Rental Sale</a> </li>
-                      <li><a href="./services/nursing-care-at-home.html">Nursing Care at Home</a></li>
-                       <li><a href="./services/nutrition-consultation.html">Nutrition Consultation</a> </li>
-                       <li><a href="./services/patient-support-program.html">Patient Support Program</a></li>
-                    <li><a href="./services/trained-patient-care-attendant.html">Trained Patient Care</a></li>
-        </ul>
+          <ul>
+            <li>
+              <a href="./services/elder-care.html">Elder Care</a>
+            </li>
+            <li>
+              <a href="./services/labtest.html">Lab Test</a>
+            </li>
+            <li>
+              <a href="./services/medical-equipment-rental-sale.html">Medical Equipment Rental</a>
+            </li>
+            <li>
+              <a href="./services/nursing-care-at-home.html">Nursing Care at Home</a>
+            </li>
+            <li><a href="./services/nutrition-consultation.html">Nutrition Consultation</a></li>
+            <li><a href="./services/patient-support-program.html">Patient Support Program</a></li>
+            <li>
+              <a href="./services/Dental-care-at-home.html"
+                >Dental care at home</a
+              >
+            </li>
+            <li>
+              <a href="./services/trained-patient-care-attendant.html"
+                >Trained Patient Care
+                      Attendant</a
+              >
+            </li>
+            <li>
+              <a href="./services/yoga.html"
+                >Yoga Online Batches</a
+              >
+            </li>
+            <li>
+              <a href="./services/physiotherapy-at-home.html"
+                >Physiotherapy at Home</a
+              >
+            </li>
+            <li>
+              <a href="./services/pharmacy.html"
+                >Pharmacy Service</a
+              >
+            </li>
+              <li>
+              <a href="./services/ICU-at-home.html"
+                >ICU at Home</a
+              >
+            </li>
+          </ul>
       </div>
 
       <div class="footer-column">
@@ -636,6 +680,7 @@
 
     // Auto-add AOS attributes to sections
   </script>
+  <script src="./assets/Javascript/care-plan.js"></script>
   <script>
       const swiper = new Swiper('.mySwiper', {
       direction: 'horizontal',

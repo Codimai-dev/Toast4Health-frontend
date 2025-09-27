@@ -72,7 +72,7 @@
 .card-box{
     max-width: 100%;
     width: 300px;
-    height:975px;
+    height:1200px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -81,6 +81,7 @@
     padding: auto;
     border: 1px solid black;
     border-radius: 10px;
+    position: relative;
 }
 .card-box img{
     width: 100%;
@@ -103,3 +104,38 @@
 .card img{
     height: 200px;
 }
+.price-box {
+      margin: 15px;
+      text-align: center;
+      background: #f9f9f9;
+      padding: 12px;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+      position: absolute;
+     bottom: 0%;
+    }
+
+    .price-box .mrp {
+      text-decoration: line-through;
+      color: #888;
+      font-size: 14px;
+      display: block;
+    }
+
+    .price-box .offer-price {
+      font-size: 20px;
+      font-weight: bold;
+      color: #28a745;
+      display: block;
+      margin-top: 5px;
+    }
+
+    .price-box .save {
+      background: #ff5252;
+      color: #fff;
+      font-size: 13px;
+      padding: 4px 10px;
+      border-radius: 12px;
+      display: inline-block;
+      margin-top: 8px;
+    }
