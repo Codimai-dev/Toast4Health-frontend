@@ -324,6 +324,9 @@ h1, h2, h3, h4, h5, h6 { font-family: var(--font-primary); }
   .banner-container{
     height: 90vh;
   }
+  .service-image img {
+  height: 300px;
+}
 }
 
 /* Services Offered */
@@ -738,6 +741,7 @@ h1, h2, h3, h4, h5, h6 { font-family: var(--font-primary); }
   background: #f9f9f9;
   padding: 60px 20px;
   position: relative;
+  margin: 0 auto;
 }
 
 #how-it-works .section-title {

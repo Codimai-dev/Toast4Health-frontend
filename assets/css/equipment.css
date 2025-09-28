@@ -69,14 +69,15 @@
 }
 .card .content h3{
   font-weight: bolder;
-  color: #36C2C9;
+  color: #000000;
+  background-color: var(--teal);
   font-size: 1.3rem;
 }
 .card .content p{
   font-size: 1rem;
   font-weight: bold;
 }
-.card .content button{
+.card .content a{
   font-size: 1rem;
   font-weight: bold;
   border: none;
@@ -205,6 +206,7 @@
   .grid{
     grid-template-columns: auto;
   }
+
 }
 
 #hero {
@@ -255,6 +257,7 @@
   flex-direction: column;
   align-items: center;
   margin: 0 auto;
+  /* height: 70%; */
 }
 
 /* Swiper buttons & pagination */
@@ -280,4 +283,9 @@
 }
 .btn-king{
   padding: 9px 10px;
+}
+@media (max-width:700px){
+    #hero {
+    background-position: right;
+  }
 }
