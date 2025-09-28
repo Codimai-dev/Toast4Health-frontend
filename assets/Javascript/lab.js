@@ -94,7 +94,6 @@ form.addEventListener("submit", sendMessage);
       card.querySelector('.price-box').innerHTML = `
         <span class="mrp">MRP: ₹${priceInfo.mrp}</span>
         <span class="offer-price">₹${priceInfo.rate}</span>
-        <div class="save">Save ₹${savings} (${discountPercentage}% OFF)</div>
       `;
     }
   });
