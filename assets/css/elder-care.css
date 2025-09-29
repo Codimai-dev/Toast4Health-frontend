@@ -351,9 +351,10 @@ body {
 .overlay-card{
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.4);
+  background: rgba(0, 0, 0, 0.2);
   position: absolute;
   top: 0;
+  z-index: -1;
 }
 .service-item .overlay {
   position: absolute;
@@ -375,7 +376,7 @@ body {
   font-weight: 700;
   color: #fff;
   z-index: 2;
-  background-color:var(--teal);
+  /* background-color:var(--teal); */
    border-radius: 5px;
   padding: 2px;
 }

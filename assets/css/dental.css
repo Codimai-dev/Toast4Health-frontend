@@ -45,25 +45,29 @@
   font-size: 30px;
   margin-bottom: 15px;
   color: #003d66;
+  z-index: 100;
 }
 .icon{
       font-size: 30px;
   margin-bottom: 15px;
   color: #003d66;
+  z-index: 100;
 }
 
 .dental-card h3 {
   font-size: 1.2rem;
   margin-bottom: 10px;
   color: white;
+  z-index: 100;
 }
 
 .dental-card p {
   font-size: 0.95rem;
   line-height: 1.4;
   margin-bottom: 15px;
-  color: #e7f5ff;
+  color: #ffffff;
   text-align: justify;
+  z-index: 100;
 }
 
 .read-more {
