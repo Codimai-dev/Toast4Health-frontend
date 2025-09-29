@@ -202,7 +202,7 @@ h1, h2, h3, h4, h5, h6 { font-family: var(--font-primary); }
   transform: translateX(-50%);
   width: 60px;
   height: 4px;
-  background: linear-gradient(to right, var(--teal), var(--orange));
+  /* background: linear-gradient(to right, var(--teal), var(--orange)); */
   border-radius: 3px;
   transition: width 0.3s ease;
 }
