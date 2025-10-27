@@ -1,3 +1,5 @@
+@import url(https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Oswald:wght@400;700&display=swap);
+
 :root {
   --teal: #36C2C9;
   --orange: #F15A22;
@@ -5,7 +7,7 @@
   --white: #FFFFFF;
 
   --font-primary: 'Montserrat', sans-serif;
-  --font-secondary: 'Roboto', sans-serif;
+  --font-secondary:  "Open Sans", sans-serif;
 
   --fs-h1: 42px;
   --fs-h2: 32px;
