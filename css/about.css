@@ -1,0 +1,375 @@
+/* =========================
+   TYPOGRAPHY SYSTEM
+   ========================= */
+
+/* Brand Colors */
+:root {      
+  --teal: #36C2C9;     /* Primary Brand Color (Headings, Links) */
+  --orange: #F15A22;   /* Accent Color (Buttons, CTAs) */
+  --black: #000000;    /* Body Text */
+  --white: #FFFFFF;    /* Backgrounds, Neutral Space */
+}
+
+/* Base Settings */
+html, body {
+  height: 100%;
+  margin: 0;
+  font-family: 'Roboto', sans-serif;   /* Secondary Font for Body */
+  color: var(--black);
+  line-height: 1.6;
+  font-size: 16px; /* Base font size for consistency */
+}
+
+/* =========================
+   Headings: Montserrat
+   ========================= */
+h1, h2, h3, h4, h5, h6,
+.section-title {
+  font-family: 'Montserrat', sans-serif;  /* Primary Font for Headlines */
+  font-weight: 700;
+  color: var(--teal);
+  line-height: 1.2;
+  margin-bottom: 0.5em;
+}
+
+/* Font Sizes - Responsive via Clamp */
+h1 { font-size: clamp(2rem, 4vw, 3rem); }   /* Main Hero Titles */
+h2 { font-size: clamp(1.5rem, 3vw, 2.25rem); } /* Section Titles */
+h3 { font-size: clamp(1.25rem, 2.5vw, 1.75rem); }
+h4 { font-size: 1.25rem; }
+h5 { font-size: 1.1rem; }
+h6 { font-size: 1rem; }
+
+/* =========================
+   Paragraphs & Body Text
+   ========================= */
+p, li, a, span {
+  font-family: 'Roboto', sans-serif;   /* Body Font */
+  font-size: 1rem;
+  color: var(--black);
+  margin-bottom: 1em;
+}
+
+/* Smaller text (for captions, footnotes) */
+.small-text {
+  font-size: 0.875rem;
+  color: #555;
+}
+
+/* =========================
+   Links & Buttons
+   ========================= */
+
+/* Links */
+a {
+  color: var(--teal);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+a:hover {
+  color: #2ba4a9;
+}
+
+/* Buttons */
+.btn-cta {
+  background: var(--orange);
+  color: var(--white);
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  padding: 0.7rem 1.2rem;
+  border: none;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  transition: background 0.3s ease;
+}
+.btn-cta:hover {
+  background: #d84d1c;
+}
+
+/* =========================
+   Section Spacing
+   ========================= */
+section {
+  padding: 110px 0; /* Ample white space for sections */
+}
+@media (max-width: 992px) { section { padding: 90px 0; } }
+@media (max-width: 768px) { section { padding: 70px 0; } }
+
+/* =========================
+   Text Alignment Utilities
+   ========================= */
+.text-center { text-align: center; }
+.text-start  { text-align: left; }
+.text-end    { text-align: right; }
+
+
+/* ===== Hero ===== */
+.hero{
+  background:url('../images/home\ doct.jpg') no-repeat center center/cover;
+  min-height:70vh;
+  position:relative;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  color:var(--white);
+  padding:0 1rem;
+}
+.hero::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  background:rgba(0,0,0,.4);
+}
+.hero .container{ position:relative; z-index:1; }
+.hero h1{ font-size:clamp(2rem, 4vw, 3rem); }
+#about p {
+  color: #ffffff !important;  /* Change this to your desired text color */
+}
+/* ===== Buttons ===== */
+.btn-cta{
+  background:var(--orange);
+  color:var(--white);
+  border:none;
+  font-weight:700;
+  padding:.7rem 1.2rem;
+  border-radius:.5rem;
+}
+.btn-cta:hover{ background:#d84d1c; color:var(--white); }
+
+/* Links (site-wide) */
+a{ color:var(--teal); text-decoration:none; }
+
+
+/* Sections */
+/* ===== Section Spacing ===== */
+section {
+  padding: 110px 0;   /* More space for desktop */
+}
+
+/* Special: Hero already full height, so leave it */
+.hero {
+  min-height: 75vh;  /* Full-screen feel but slightly smaller than 100vh */
+}
+
+/* On smaller screens, reduce padding so it doesn't look too big */
+@media (max-width: 992px) {
+  section {
+    padding: 90px 0;
+  }
+}
+
+@media (max-width: 768px) {
+  section {
+    padding: 70px 0;
+  }
+}
+/* Mission Section Image Styling */
+#mission img {
+  width: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+#about p {
+  color: black !important;
+}
+
+/* Lists */
+.highlight-list li{ margin-bottom:.5rem; }
+
+
+/* Center and equal height for value cards */
+#values .row {
+  justify-content: center;
+}
+/* Value Cards */
+.value-card {
+  background: #ffe3cb;
+  border: 1px solid rgba(0, 0, 0, .06);
+  border-radius: 1rem;
+  padding: 1.25rem .75rem;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, .05);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between; /* Equal spacing inside card */
+  text-align: center;
+  gap: .5rem;
+  height: 100%; /* Full height of the column */
+  min-height: 120px; /* Equal card height */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover animation */
+.value-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+.value-card i {
+  font-size: 1.6rem;
+  color: var(--teal);
+}
+
+.value-card span {
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+/* Fix for mobile spacing */
+@media (max-width: 576px) {
+  .value-card {
+    min-height: 150px;
+  }
+}
+
+
+/* Social icons */
+.social-icons a{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  width:42px; height:42px;
+  border-radius:50%;
+  margin:0 .25rem;
+  background:var(--teal);
+  color:var(--white);
+}
+.social-icons a:hover{ opacity:.85; }
+
+/* WhatsApp floating button */
+.whatsapp-float{
+  position:fixed;
+  right:20px; bottom:20px;
+  width:56px; height:56px;
+  border-radius:50%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  background:#25D366;
+  color:#fff;
+  box-shadow:0 6px 20px rgba(0,0,0,.2);
+  z-index:999;
+  text-decoration:none;
+  font-size:1.5rem;
+}
+.whatsapp-float:hover{ opacity:.9; }
+.accordion-button:not(.collapsed) {
+  background-color: #36C2C9;   /* Orange when open */
+  color: white;
+
+}
+
+#faq, 
+#care-faq {
+  background: #ffffff; /* Light background */
+  padding: 60px 20px;
+}
+
+#faq .section-title, 
+#care-faq .section-title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--teal);
+  line-height: 1.2;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+/* Accordion Buttons */
+#faq .accordion-button, 
+#care-faq .accordion-button {
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  color: var(--black);
+  background-color: #ffd8d8;
+  border: none;
+  box-shadow: none;
+  padding: 15px 20px;
+  transition: background 0.3s ease;
+  border-radius: 6px;
+}
+
+/* Active/Open Accordion Button */
+#faq .accordion-button:not(.collapsed), 
+#care-faq .accordion-button:not(.collapsed) {
+  background-color: var(--teal);
+  color: var(--white);
+  border-color: #49f3ff !important;
+  box-shadow: none !important;
+}
+
+/* Accordion Body */
+#faq .accordion-body, 
+#care-faq .accordion-body {
+  font-size: 16px;
+  color: #000000;
+  padding: 15px 20px;
+  background: #ffdbdb;
+}
+
+/* Accordion Items */
+#faq .accordion-item, 
+#care-faq .accordion-item {
+  border: none;
+  margin-bottom: 10px;
+  border-radius: 6px;
+  overflow: hidden;
+  background: #ffe0e0;
+}
+
+/* CTA Button */
+#faq .btn-cta, 
+#care-faq .btn-cta {
+  display: inline-block;
+  background-color: var(--orange);
+  color: var(--white);
+  font-size: 16px;
+  font-weight: 700;
+  padding: 12px 30px;
+  border-radius: 6px;
+  text-align: center;
+  transition: background 0.3s ease;
+  text-decoration: none;
+  margin-top: 20px;
+}
+
+#faq .btn-cta:hover, 
+#care-faq .btn-cta:hover {
+  background-color: #d84d1c;
+  color: #fff;
+}
+
+
+
+/* Initial hidden state */
+.fade-section {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.4s ease-out;
+}
+
+/* Animate when visible */
+.fade-section.animate {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Optional: animate hero heading & button separately */
+.hero h1, .hero p, .hero .btn-cta {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.8s ease-out;
+  transition-delay: 0.2s;
+}
+
+.hero.animate h1,
+.hero.animate p,
+.hero.animate .btn-cta {
+  opacity: 1;
+  transform: translateY(0);
+}

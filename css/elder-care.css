@@ -1,0 +1,520 @@
+/*
+Author URI: http://webthemez.com/
+Description: Styles for Toast4Health Elder Care Page
+Last Updated: August 25, 2025, 09:40 AM IST
+*/
+
+@import url(https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Oswald:wght@400;700&display=swap);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+
+body {
+  font-size: 16px;
+  line-height: 1.7;
+  color: #555;
+  background: #f8f9fa;
+  -webkit-font-smoothing: antialiased;
+  scroll-behavior: smooth;
+}
+
+/* Hero Section */
+#hero {
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+  background: url('../images/1.jpg') no-repeat center center/cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  padding: 20px 0;
+}
+
+#hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3));
+  z-index: 1;
+  transition: opacity 0.3s ease;
+}
+
+#hero:hover::before { opacity: 0.8; }
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  color: #fff;
+  padding: 30px;
+  max-width: 900px;
+  border-radius: 15px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.hero-content h1 {
+  font-size: clamp(2.8rem, 6vw, 4rem);
+  font-weight: 700;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  color: #f0f4f8;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.hero-content p {
+  font-size: clamp(1.3rem, 3vw, 1.8rem);
+  margin-bottom: 25px;
+  line-height: 1.6;
+  color: #e0e6eb;
+}
+
+.hero-content .btn-primary {
+  background: linear-gradient(45deg, #1e87d7, #a43e89);
+  color: white;
+  padding: 14px 30px;
+  border: none;
+  border-radius: 10px;
+  text-decoration: none;
+  transition: all 0.4s ease;
+  font-size: clamp(1.1rem, 1.8vw, 1.4rem);
+  box-shadow: 0 5px 15px rgba(30, 135, 215, 0.4);
+}
+
+.hero-content .btn-primary:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 7px 20px rgba(30, 135, 215, 0.5);
+}
+
+/* Section Styling */
+.section-padding {
+  padding: 90px 0;
+  background-color: #f8f9fa;
+  position: relative;
+  overflow: hidden;
+}
+
+.section-title {
+  font-size: clamp(2.8rem, 4.5vw, 3.5rem);
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 35px;
+  color: #1e87d7;
+  position: relative;
+  padding-bottom: 12px;
+}
+
+.section-title::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 4px;
+  background: linear-gradient(to right, #1e87d7, #a43e89);
+  border-radius: 3px;
+  transition: width 0.3s ease;
+}
+
+.section-title:hover::after { width: 80px; }
+
+.section-paragraph {
+  font-size: clamp(1.2rem, 2.2vw, 1.5rem);
+  line-height: 1.8;
+  text-align: center;
+  margin-bottom: 45px;
+  color: #666;
+  max-width: 850px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Service Overview */
+.benefits-list {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 45px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 25px;
+}
+
+.benefits-list li {
+  font-size: clamp(1.1rem, 2vw, 1.3rem);
+  margin-bottom: 20px;
+  display: flex;
+  align-items: flex-start;
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.4s ease;
+  border-left: 5px solid #1e87d7;
+}
+
+.benefits-list li:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.benefit-icon {
+  margin-right: 15px;
+  color: #1e87d7;
+  font-size: 1.4rem;
+}
+
+/* Elder Care Services */
+.service-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 35px;
+  margin-bottom: 45px;
+  padding: 0 20px;
+}
+
+.service-item {
+  text-align: center;
+  padding: 25px;
+  background: linear-gradient(135deg, #ffffff, #f5f7fa);
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  transition: all 0.4s ease;
+  border-left: 5px solid #1e87d7;
+  overflow: hidden;
+}
+
+.service-item:hover {
+  transform: translateY(-12px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+}
+
+.service-item::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, rgba(30, 135, 215, 0.1) 0%, transparent 70%);
+  transition: transform 0.6s ease;
+  z-index: 0;
+}
+
+.service-item:hover::before { transform: rotate(45deg); }
+
+.service-icon {
+  font-size: 2.2rem;
+  margin-bottom: 18px;
+  color: #1e87d7;
+  background: rgba(30, 135, 215, 0.15);
+  border-radius: 50%;
+  padding: 12px;
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+
+.service-item:hover .service-icon { transform: scale(1.1); }
+
+.service-item h3 {
+  font-size: clamp(1.3rem, 2.8vw, 1.6rem);
+  margin-bottom: 15px;
+  color: #333;
+  font-weight: 600;
+}
+
+.service-item p {
+  font-size: clamp(1.1rem, 2vw, 1.3rem);
+  color: #777;
+  line-height: 1.6;
+}
+
+/* Pricing & Packages */
+.pricing-table {
+  width: 100%;
+  margin-bottom: 45px;
+  overflow-x: auto;
+}
+
+.pricing-table table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+}
+
+.pricing-table th,
+.pricing-table td {
+  padding: 18px;
+  text-align: center;
+  border-bottom: 2px solid #f0f0f0;
+  font-size: clamp(1.1rem, 2vw, 1.3rem);
+}
+
+.pricing-table th {
+  background: linear-gradient(to right, #1e87d7, #a43e89);
+  color: #fff;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.pricing-table tr:last-child td {
+  border-bottom: none;
+}
+
+.pricing-table tr:hover {
+  background: #f9fbfd;
+  transition: background 0.3s ease;
+}
+
+/* How It Works */
+.process-list {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 45px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 25px;
+}
+
+.process-list li {
+  font-size: clamp(1.1rem, 2vw, 1.3rem);
+  margin-bottom: 20px;
+  display: flex;
+  align-items: flex-start;
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.4s ease;
+  border-left: 5px solid #1e87d7;
+}
+
+.process-list li:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.process-icon {
+  margin-right: 15px;
+  color: #1e87d7;
+  font-size: 1.4rem;
+}
+
+.process-visual {
+  margin-bottom: 30px;
+  text-align: center;
+  padding: 20px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Testimonials */
+.testimonials-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+  gap: 35px;
+  margin-bottom: 45px;
+}
+
+.testimonial-item {
+  padding: 25px;
+  background: linear-gradient(135deg, #ffffff, #f5f7fa);
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  transition: all 0.4s ease;
+  border-left: 5px solid #1e87d7;
+}
+
+.testimonial-item:hover {
+  transform: translateY(-12px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+}
+
+.testimonial-text {
+  font-size: clamp(1.1rem, 2vw, 1.3rem);
+  margin-bottom: 15px;
+  color: #444;
+  font-style: italic;
+}
+
+.testimonial-author {
+  font-size: clamp(1rem, 1.7vw, 1.2rem);
+  text-align: right;
+  color: #777;
+  font-weight: 600;
+}
+
+/* Booking & Contact Section */
+.booking-section {
+  background: linear-gradient(135deg, #f0f4f8, #ffffff);
+  padding: 50px;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+  margin-bottom: 45px;
+}
+
+.booking-section h2 {
+  font-size: clamp(2.2rem, 3.5vw, 2.8rem);
+  margin-bottom: 25px;
+  color: #1e87d7;
+}
+
+.booking-form label {
+  font-size: clamp(1.1rem, 2vw, 1.3rem);
+  margin-bottom: 8px;
+  display: block;
+  color: #333;
+}
+
+.booking-form input,
+.booking-form select,
+.booking-form textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: clamp(1rem, 1.8vw, 1.2rem);
+  transition: border-color 0.3s ease;
+}
+
+.booking-form input:focus,
+.booking-form select:focus,
+.booking-form textarea:focus {
+  border-color: #1e87d7;
+  outline: none;
+}
+
+.booking-form button {
+  background: linear-gradient(45deg, #1e87d7, #a43e89);
+  color: white;
+  padding: 14px 30px;
+  border: none;
+  border-radius: 10px;
+  transition: all 0.4s ease;
+  font-size: clamp(1.1rem, 1.8vw, 1.4rem);
+  box-shadow: 0 5px 15px rgba(30, 135, 215, 0.4);
+}
+
+.booking-form button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 7px 20px rgba(30, 135, 215, 0.5);
+}
+
+.whatsapp-chat {
+  display: inline-block;
+  margin-top: 15px;
+  font-size: clamp(1.1rem, 1.8vw, 1.4rem);
+  color: #25d366;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.whatsapp-chat:hover { color: #128c7e; text-decoration: underline; }
+
+/* FAQ Section */
+.faq-section .accordion {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.faq-section .card {
+  border: none;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.faq-section .card-header {
+  background: #fff;
+  padding: 18px;
+  border-bottom: 2px solid #f0f0f0;
+}
+
+.faq-section .card-header button {
+  font-size: clamp(1.1rem, 2vw, 1.3rem);
+  color: #333;
+  text-align: left;
+  width: 100%;
+  padding: 0;
+  background: none;
+  border: none;
+  transition: color 0.3s ease;
+}
+
+.faq-section .card-header button:hover,
+.faq-section .card-header button:focus {
+  color: #1e87d7;
+  text-decoration: none;
+}
+
+.faq-section .card-body {
+  padding: 18px;
+  font-size: clamp(1.1rem, 2vw, 1.3rem);
+  color: #666;
+  background: #f9fbfd;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 1200px) {
+  .service-grid { grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); }
+  .testimonials-container { grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); }
+}
+
+@media (max-width: 991px) {
+  #hero { min-height: 70vh; }
+  .hero-content h1 { font-size: clamp(2.2rem, 5vw, 2.8rem); }
+  .hero-content p { font-size: clamp(1.1rem, 2.5vw, 1.4rem); }
+  .service-grid, .benefits-list, .process-list, .testimonials-container {
+    grid-template-columns: 1fr;
+  }
+  .pricing-table { width: 100%; }
+  .booking-section { padding: 30px; }
+  .faq-section .accordion { max-width: 100%; }
+}
+
+@media (max-width: 768px) {
+  #hero { min-height: 60vh; }
+  .hero-content { padding: 20px; }
+  .section-title { font-size: clamp(2rem, 4.5vw, 2.5rem); }
+  .section-paragraph { font-size: clamp(1.1rem, 2.5vw, 1.3rem); }
+  .service-item, .testimonial-item { padding: 20px; }
+  .pricing-table th, .pricing-table td { padding: 12px; }
+}
+
+@media (max-width: 576px) {
+  #hero { min-height: 50vh; }
+  .hero-content { padding: 15px; }
+  .hero-content h1 { font-size: clamp(1.8rem, 5vw, 2.2rem); }
+  .hero-content p { font-size: clamp(0.9rem, 2.5vw, 1.1rem); }
+  .section-title { font-size: clamp(1.6rem, 4vw, 2rem); }
+  .section-paragraph { font-size: clamp(1rem, 2.5vw, 1.2rem); }
+  .service-item, .testimonial-item { padding: 15px; }
+  .booking-form input, .booking-form select, .booking-form textarea { font-size: clamp(0.9rem, 1.5vw, 1.1rem); }
+  .booking-form button { font-size: clamp(1rem, 2vw, 1.2rem); }
+  .faq-section .card-header button { font-size: clamp(1rem, 2vw, 1.2rem); }
+  .faq-section .card-body { font-size: clamp(1rem, 2vw, 1.2rem); }
+}
