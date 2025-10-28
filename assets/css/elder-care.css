@@ -77,6 +77,8 @@ body {
   max-width: 900px;
   animation: fadeIn 1s ease-in-out;
   margin-left: 10px;
+  /* background-color: rgba(0,0,0,0.4);
+  border-radius: 30px; */
 }
 
 @keyframes fadeIn {
