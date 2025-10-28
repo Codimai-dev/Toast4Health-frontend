@@ -666,7 +666,7 @@ text-decoration: none;
   color: #fff;
 }
 footer {
-            background-color: #f0f2f5; /* Dark blue-gray for a professional look */
+            background-color: rgba(255, 255, 255, 0.95); /* Dark blue-gray for a professional look */
             color: #000000; /* Light text for contrast */
             padding: 40px 20px 20px;
             font-family: Arial, sans-serif;
@@ -710,6 +710,10 @@ footer {
 
         .footer-column ul li {
             margin-bottom: 10px;
+        }
+        .footer-column ul li i{
+            color: var(--orange);
+            margin-right: 4px;
         }
 
         .footer-column a {
