@@ -176,6 +176,9 @@ h1, h2, h3, h4, h5, h6 { font-family: var(--font-primary); }
 }
 
 /* Introduction */
+#service-box{
+  margin-top: 10px;
+}
 .benefits-list {
   list-style: none;
   padding: 0;
