@@ -631,7 +631,7 @@ flex-wrap: wrap;
   object-fit: contain; /* Ensure logos scale properly */
 }
 
-@media (max-width:1300px) {
+@media (max-width:900px) {
   .service-grid{
         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   }
