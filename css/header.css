@@ -256,3 +256,17 @@ header.header.scrolled {
     font-size: var(--fs-small);
   }
 }
+.btn-king{
+  padding: 15px 10px;
+  background-color: #d94d1e;
+  color: white;
+    border: 1px solid black;
+border-radius: 10px;
+}
+.btn-king:hover{
+  text-decoration: none;
+  color: white;
+ background: #cf3f0f;
+  transform: translateY(-2px);
+  box-shadow: 0 7px 20px rgba(54, 194, 201, 0.5);
+}

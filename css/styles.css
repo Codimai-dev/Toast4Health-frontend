@@ -639,3 +639,6 @@ flex-wrap: wrap;
         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   }
 }
+h2{
+  font-size: 24px;
+}

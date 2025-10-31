@@ -209,7 +209,7 @@ body {
 /* Elder Care Services */
 .service-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+grid-template-columns: repeat(4,1fr);
   gap: 35px;
   margin-bottom: 45px;
   padding: 0 20px;
@@ -566,4 +566,9 @@ body {
   .booking-form button { font-size: calc(var(--fs-small) * 0.9); }
   .faq-section .card-header button { font-size: calc(var(--fs-small) * 0.9); }
   .faq-section .card-body { font-size: calc(var(--fs-small) * 0.9); }
+}
+@media (max-width:900px) {
+  .service-grid{
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
 }

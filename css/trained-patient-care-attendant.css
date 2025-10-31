@@ -218,12 +218,13 @@ body {
 .service-item {
   text-align: center;
   padding: 25px;
-  background: linear-gradient(135deg, var(--white), #f5f7fa);
+  background-color: white;
   border-radius: 12px;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
   transition: all 0.4s ease;
   border-left: 5px solid var(--teal);
   overflow: hidden;
+  position: relative;
 }
 
 .service-item:hover {
@@ -241,6 +242,7 @@ body {
   background: radial-gradient(circle, rgba(54, 194, 201, 0.1) 0%, transparent 70%);
   transition: transform 0.6s ease;
   z-index: 0;
+  opacity: 0;
 }
 
 .service-item:hover::before { transform: rotate(45deg); }
