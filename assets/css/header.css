@@ -304,12 +304,11 @@ border-radius: 10px;
 }
 
 #contactForm {
-  position: relative;
-  max-width: 700px;
+    position: relative;
+  background: url('Image/624185.jpg') no-repeat center center/cover;
   padding: 60px 0;
   color: var(--black);
   font-family: 'Roboto', sans-serif;
-  margin: 0 auto;
 
 }
 
@@ -331,7 +330,6 @@ border-radius: 10px;
   border-radius: 16px;
   box-shadow: 0 8px 24px rgba(0,0,0,0.2);
   transition: transform 0.2s ease;
-  width: 100%;
   box-sizing: border-box;
 }
 
@@ -456,4 +454,157 @@ border-radius: 10px;
 @keyframes fadeIn {
   from { opacity: 0; transform: translateY(-5px); }
   to { opacity: 1; transform: translateY(0); }
+}
+#faq {
+  background: #ffffff;
+  padding: 60px 20px;
+}
+
+#faq .section-title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 28px;
+  color: #222;
+  margin-bottom: 30px;
+}
+
+.accordion-button {
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  color: #333;
+  background-color: #fff;
+  border: none;
+  box-shadow: none;
+  padding: 15px;
+  transition: 0.3s ease;
+}
+
+.accordion-button:hover {
+  background: #eef6ff;
+  color: #ff6a00;
+}
+
+.accordion-body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  color: #555;
+  background: #fff;
+  padding: 15px 20px;
+}
+
+.accordion-item {
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  margin-bottom: 10px;
+  overflow: hidden;
+}
+
+.btn-consult {
+  display: inline-block;
+  background-color: #F15A22;
+  color: #ffffff;
+  padding: 12px 24px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 6px;
+  transition: 0.3s ease;
+}
+
+.btn-consult:hover {
+  background-color: #d94e1e;
+}
+#faq .btn-container {
+  text-align: center; /* Centers the button */
+  margin-top: 30px;
+}
+.hero [data-aos] {
+  opacity: 0;
+  transition: all 1s ease !important;
+}
+
+/* =========================
+   Shared FAQ Styles
+   ========================= */
+#faq, 
+#care-faq {
+  background: #ffffff; /* Light background */
+  padding: 60px 20px;
+}
+
+#faq .section-title, 
+#care-faq .section-title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--teal);
+  line-height: 1.2;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+/* Accordion Buttons */
+#faq .accordion-button, 
+#care-faq .accordion-button {
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  color: var(--black);
+  background-color: #ffdddd;
+  border: none;
+  box-shadow: none;
+  padding: 15px 20px;
+  transition: background 0.3s ease;
+  border-radius: 6px;
+}
+
+/* Active/Open Accordion Button */
+#faq .accordion-button:not(.collapsed), 
+#care-faq .accordion-button:not(.collapsed) {
+  background-color: var(--teal);
+  color: var(--white);
+  border-color: #49f3ff !important;
+  box-shadow: none !important;
+}
+
+/* Accordion Body */
+#faq .accordion-body, 
+#care-faq .accordion-body {
+  font-size: 16px;
+  color: #000000;
+  padding: 15px 20px;
+  background: #ffdddd;
+}
+
+/* Accordion Items */
+#faq .accordion-item, 
+#care-faq .accordion-item {
+  border: none;
+  margin-bottom: 10px;
+  border-radius: 6px;
+  overflow: hidden;
+  background: #ffd7d7;
+}
+
+/* CTA Button */
+#faq .btn-cta, 
+#care-faq .btn-cta {
+  display: inline-block;
+  background-color: var(--orange);
+  color: var(--white);
+  font-size: 16px;
+  font-weight: 700;
+  padding: 12px 30px;
+  border-radius: 6px;
+  text-align: center;
+  transition: background 0.3s ease;
+  text-decoration: none;
+  margin-top: 20px;
+}
+
+#faq .btn-cta:hover, 
+#care-faq .btn-cta:hover {
+  background-color: #d84d1c;
+  color: #fff;
 }

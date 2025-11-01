@@ -36,7 +36,9 @@ body {
   -webkit-font-smoothing: antialiased;
   scroll-behavior: smooth;
 }
-
+.container{
+   box-shadow:  0 2px 8px rgba(0, 0, 0, 0.1);
+}
 /* Hero Section */
 #hero {
   width: 100%;

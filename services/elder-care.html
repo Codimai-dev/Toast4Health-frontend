@@ -1,51 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Elder Care Services - Toast4Health</title>
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
   <link rel="stylesheet" href="../assets/css/elder-care.css">
   <link rel="stylesheet" href="../assets/css/header.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+ <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <!-- Font Awesome (only if you don't already have it) -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
 </head>
-<body>
-  <!-- Header -->
+
+<body> <!-- Header -->
   <header class="header">
     <div class="container-fluid">
-      <nav class="navbar navbar-expand-lg navbar-light">
-        <a class="navbar-brand" href="../index.html">
-          <img src="../assets/images/logo.jpg" alt="Toast4Health Logo" class="img-fluid">
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
+      <nav class="navbar navbar-expand-lg navbar-light"> <a class="navbar-brand" href="../index.html"> <img
+            src="../assets/images/logo.jpg" alt="Toast4Health Logo" class="img-fluid"> </a>  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
         <div class="collapse navbar-collapse" id="main-nav">
           <ul class="navbar-nav mx-auto" id="mainNav">
             <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle active" href="#" id="servicesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Services
-              </a>
-               <div class="dropdown-menu" aria-labelledby="servicesDropdown">
-              <div class="row">
-                <div class="col-6">
-                  <a class="dropdown-item" href="./elder-care.html">Elder Care</a>
-                  <a class="dropdown-item" href="./medical-equipment-rental-sale.html">Medical Equipment Rental Sale</a>
-                  <a class="dropdown-item" href="./nursing-care-at-home.html">Nursing Care at Home</a>
-                 <a class="dropdown-item" href="./nutrition-consultation.html">Nutrition Consultation</a>
-                  <a class="dropdown-item" href="./patient-support-program.html">Patient Support Program</a>
-                </div>
-                <div class="col-6">
-                  <a class="dropdown-item" href="labtest.html">Lab Tests</a>
-                  <a class="dropdown-item" href="./trained-patient-care-attendant.html">Trained Patient Care Attendant</a>
-                  <a class="dropdown-item" href="./yoga.html">Yoga Online Batches</a>
-                  <a class="dropdown-item" href="./physiotherapy-at-home.html">Physiotherapy at Home</a>
-                  <a class="dropdown-item" href="pharmacy.html">Pharmacy Services</a>
+            <li class="nav-item dropdown"><a class="nav-link dropdown-toggle active" href="#" id="servicesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+  Services
+</a>
+              <div class="dropdown-menu" aria-labelledby="servicesDropdown">
+                <div class="row">
+                  <div class="col-6"> <a class="dropdown-item" href="./elder-care.html">Elder Care</a> <a
+                      class="dropdown-item" href="./medical-equipment-rental-sale.html">Medical Equipment Rental
+                      Sale</a> <a class="dropdown-item" href="./nursing-care-at-home.html">Nursing Care at Home</a> <a
+                      class="dropdown-item" href="./nutrition-consultation.html">Nutrition Consultation</a> <a
+                      class="dropdown-item" href="./patient-support-program.html">Patient Support Program</a> </div>
+                  <div class="col-6"> <a class="dropdown-item" href="labtest.html">Lab Tests</a> <a
+                      class="dropdown-item" href="./trained-patient-care-attendant.html">Trained Patient Care
+                      Attendant</a> <a class="dropdown-item" href="./yoga.html">Yoga Online Batches</a> <a
+                      class="dropdown-item" href="./physiotherapy-at-home.html">Physiotherapy at Home</a> <a
+                      class="dropdown-item" href="pharmacy.html">Pharmacy Services</a> </div>
                 </div>
               </div>
-            </div>
             </li>
             <li class="nav-item"><a class="nav-link" href="../about.html">About Us</a></li>
             <li class="nav-item"><a class="nav-link" href="../care-plan.html">Care Plan</a></li>
@@ -57,300 +56,377 @@
         </div>
       </nav>
     </div>
-  </header>
-
-  <!-- Hero Section -->
+  </header> <!-- Hero Section -->
   <section id="hero">
     <div class="hero-content">
       <h1>Compassionate Elder Care Services – Ensuring Comfort, Dignity, and Well-Being</h1>
-      <p>Professional at-home elder care services tailored to support seniors with daily activities, companionship, and medical assistance, ensuring a dignified and independent life.</p>
-      <a href="#booking" class="btn-primary">Book Elder Care Services Now</a>
+      <p>Professional at-home elder care services tailored to support seniors with daily activities, companionship, and
+        medical assistance, ensuring a dignified and independent life.</p> <a href="#booking" class="btn-primary">Book
+        Elder Care Services Now</a>
     </div>
-  </section>
-
-  <!-- Service Overview -->
-<section id="service-overview" class="section-padding">
-    <div class="container">
-      <!-- Title & Paragraph -->
+  </section> <!-- Service Overview -->
+  <section id="service-overview" class="section-padding">
+    <div class="container"> <!-- Title & Paragraph -->
       <h2 class="section-title">Personalized Elder Care for a Healthier, Happier Life at Home</h2>
-      <p class="section-paragraph">
-        At Toast4Health, we offer specialized elder care services that cater to the unique needs of seniors. 
-        Whether your loved one requires daily assistance, companionship, medical supervision, or post-hospitalization support, 
-        our trained caregivers ensure that they receive the best care in the comfort of their home. 
-        Our goal is to promote independence, dignity, and a better quality of life for elderly individuals.
-      </p>
-
-      <!-- Layout: Image + Content -->
-      <div class="service-container">
-        <!-- Left Side: Image -->
-        <div class="service-image">
-          <img src="../assets/images/624185.jpg" alt="Elder Care Service">
-        </div>
-
+      <p class="section-paragraph"> At Toast4Health, we offer specialized elder care services that cater to the unique
+        needs of seniors. Whether your loved one requires daily assistance, companionship, medical supervision, or
+        post-hospitalization support, our trained caregivers ensure that they receive the best care in the comfort of
+        their home. Our goal is to promote independence, dignity, and a better quality of life for elderly individuals.
+      </p> <!-- Right Side: Benefits Cards with Icons -->
+      <div class="service-container"> <!-- Left Side: Image -->
+        <div class="service-image"> <img src="../assets/images/624185.jpg" alt="Elder Care Service"> </div>
         <!-- Right Side: Benefits Cards with Icons -->
         <div class="service-benefits">
-          <div class="service-item">
-            <span class="benefit-icon"><i class="fas fa-user-nurse"></i></span>
-            <h3>Certified & Compassionate Caregivers</h3>
-            <p>Trained professionals dedicated to elderly care.</p>
+          <div class="service-item"> <span class="benefit-icon"><i class="fas fa-user-nurse"></i></span>
+            <h3>NABL-Certified Labs</h3>
+            <p>Ensuring accuracy and reliability of test results.</p>
           </div>
-          <div class="service-item">
-            <span class="benefit-icon"><i class="fas fa-clipboard-list"></i></span>
-            <h3>Customized Elder Care Plans</h3>
-            <p>Tailored assistance for medical and non-medical needs.</p>
+          <div class="service-item"> <span class="benefit-icon"><i class="fas fa-clipboard-list"></i></span>
+            <h3>Home Sample Collection </h3>
+            <p>No need to visit a clinic, we come to you.</p>
           </div>
-          <div class="service-item">
-            <span class="benefit-icon"><i class="fas fa-heart"></i></span>
-            <h3>Companionship & Emotional Support</h3>
-            <p>Prevents loneliness and improves mental well-being.</p>
+          <div class="service-item"> <span class="benefit-icon"><i class="fas fa-heart"></i></span>
+            <h3>Fast & Secure Results</h3>
+            <p>Get reports online within 24-48 hours.</p>
           </div>
-          <div class="service-item">
-            <span class="benefit-icon"><i class="fas fa-hands-helping"></i></span>
-            <h3>Daily Living Assistance</h3>
-            <p>Help with bathing, dressing, eating, and mobility.</p>
+          <div class="service-item"> <span class="benefit-icon"><i class="fas fa-hands-helping"></i></span>
+            <h3>Affordable Pricing & Packages</h3>
+            <p>Cost-effective health check-up plans.</p>
           </div>
-          <div class="service-item">
-            <span class="benefit-icon"><i class="fas fa-hospital"></i></span>
-            <h3>Post-Hospitalization & Palliative Care</h3>
-            <p>Ensuring comfort and support for recovery.</p>
+          <div class="service-item"> <span class="benefit-icon"><i class="fas fa-hospital"></i></span>
+            <h3> Expert Consultation </h3>
+            <p>Guidance from certified healthcare professionals.</p>
           </div>
-          <div class="service-item">
-            <span class="benefit-icon"><i class="fas fa-clock"></i></span>
-            <h3>Flexible Hourly, Daily, or Live-in Care</h3>
-            <p>Choose a plan that suits your loved one’s needs.</p>
+          <div class="service-item"> <span class="benefit-icon"><i class="fas fa-clock"></i></span>
+            <h3>Safe & Hygienic Procedures</h3>
+            <p>Following strict quality and safety protocols.</p>
           </div>
         </div>
       </div>
     </div>
-  </section>
-
-  <!-- Elder Care Services Offered -->
+    </div>
+  </section> <!-- Elder Care Services Offered -->
   <section id="elder-care-services" class="section-padding">
     <div class="container">
       <h2 class="section-title">Comprehensive Elder Care Services – Tailored for Every Need</h2>
-      <p class="section-paragraph">Our elder care services are designed to support seniors with their unique needs, ensuring they receive compassionate and professional care at home.</p>
+      <p class="section-paragraph">Our elder care services are designed to support seniors with their unique needs,
+        ensuring they receive compassionate and professional care at home.</p>
       <div class="service-grid">
         <div class="service-item service-card" style="background-image: url('../assets/images/2.jpg');">
-          <h3>Daily Assistance & Personal Care</h3>
-          <button class="en-button">Enquire now</button>
+          <h3>Daily Assistance & Personal Care</h3> <button class="en-button">Enquire now</button>
         </div>
         <div class="service-item service-card" style="background-image: url('../assets/images/1.jpg');">
-          <h3>Companionship & Emotional Support</h3>
-<button class="en-button">Enquire now</button>        </div>
+          <h3>Companionship & Emotional Support</h3> <button class="en-button">Enquire now</button>
+        </div>
         <div class="service-item service-card" style="background-image: url('../assets/images/3.jpg');">
-          <h3>Mobility & Exercise Assistance</h3>
-<button class="en-button">Enquire now</button>        </div>
-        <div class="service-item service-card" style="background-image: url('../assets/images/624185.jpg');background-position: center;">
-          <h3>Post-Hospitalization & Recovery Care</h3>
-<button class="en-button">Enquire now</button>        </div>
-        <div class="service-item service-card" style="background-image: url('../assets/images/attractive-female-doctor-front-medical-600nw-291144536.webp');">
-          <h3>Dementia & Alzheimer’s Care</h3>
-<button class="en-button">Enquire now</button>        </div>
+          <h3>Mobility & Exercise Assistance</h3> <button class="en-button">Enquire now</button>
+        </div>
+        <div class="service-item service-card"
+          style="background-image: url('../assets/images/624185.jpg');background-position: center;">
+          <h3>Post-Hospitalization & Recovery Care</h3> <button class="en-button">Enquire now</button>
+        </div>
+        <div class="service-item service-card"
+          style="background-image: url('../assets/images/attractive-female-doctor-front-medical-600nw-291144536.webp');">
+          <h3>Dementia & Alzheimer’s Care</h3> <button class="en-button">Enquire now</button>
+        </div>
         <div class="service-item service-card" style="background-image: url('../assets/images/2.jpg');">
-          <h3>Palliative & End-of-Life Care</h3>
-<button class="en-button">Enquire now</button>        </div>
+          <h3>Palliative & End-of-Life Care</h3> <button class="en-button">Enquire now</button>
+        </div>
         <div class="service-item service-card" style="background-image: url('../assets/images/home\ doct.jpg');">
-          <h3>Medication Reminders & Health Monitoring</h3>
-<button class="en-button">Enquire now</button>        </div>
+          <h3>Medication Reminders & Health Monitoring</h3> <button class="en-button">Enquire now</button>
+        </div>
       </div>
     </div>
-  </section>
-
-  <!-- Service Plans & Pricing -->
+  </section> <!-- Service Plans & Pricing -->
   <section id="pricing" class="section-padding">
     <div class="container">
       <h2 class="section-title">Flexible Elder Care Plans – Choose What’s Best for Your Loved One</h2>
-      <p class="section-paragraph">We offer a variety of affordable elder care plans to meet different levels of care requirements. Whether you need short-term assistance or long-term support, we provide flexible options for peace of mind.</p>
+      <p class="section-paragraph">We offer a variety of affordable elder care plans to meet different levels of care
+        requirements. Whether you need short-term assistance or long-term support, we provide flexible options for peace
+        of mind.</p>
       <div class="center flex-col-center">
         <table class="care-pricing-table">
           <thead>
             <tr>
               <th>Service Type</th>
               <th>Duration</th>
-              <th>Best For</th>
-              <!-- <th>Price (Starting at)</th> -->
+              <th>Best For</th> <!-- <th>Price (Starting at)</th> -->
             </tr>
           </thead>
           <tbody>
             <tr>
               <td>Short-Term Elder Care</td>
               <td>4-6 Hours</td>
-              <td>Daily assistance, companionship</td>
-              <!-- <td>₹1500 / Session</td> -->
+              <td>Daily assistance, companionship</td> <!-- <td>₹1500 / Session</td> -->
             </tr>
             <tr>
               <td>Full-Day Care</td>
               <td>12 Hours</td>
-              <td>Post-hospitalization, recovery care</td>
-              <!-- <td>₹3000 / Day</td> -->
+              <td>Post-hospitalization, recovery care</td> <!-- <td>₹3000 / Day</td> -->
             </tr>
             <tr>
               <td>Live-in Care</td>
               <td>24 Hours</td>
-              <td>Dementia, Alzheimer’s, palliative care</td>
-              <!-- <td>₹45000 / Month</td> -->
+              <td>Dementia, Alzheimer’s, palliative care</td> <!-- <td>₹45000 / Month</td> -->
             </tr>
           </tbody>
         </table>
       </div>
     </div>
-  </section>
-
-  <!-- How It Works? -->
+  </section> <!-- How It Works? -->
   <section id="how-it-works" class="section-padding">
     <div class="container">
       <h2 class="section-title">How to Avail Our Elder Care Services?</h2>
-     <ol class="process-list">
-  <li><span class="process-icon">📞</span> Book a Consultation – Call us or fill out the online form to discuss your requirements.</li>
-  <li><span class="process-icon">📝</span> Care Assessment – Our experts evaluate your loved one’s needs for a personalized care plan.</li>
-  <li><span class="process-icon">👩‍⚕️</span> Caregiver Assignment – A trained elder care professional is assigned to provide assistance.</li>
-  <li><span class="process-icon">🔍</span> Ongoing Support & Monitoring – Regular check-ins to ensure quality care.</li>
-</ol>
-
-      <div class="process-visual">
-        <!-- Add your infographic or icons here -->
-      </div>
+      <ol class="process-list">
+        <li><span class="process-icon">📞</span> Book a Consultation – Call us or fill out the online form to discuss
+          your requirements.</li>
+        <li><span class="process-icon">📝</span> Care Assessment – Our experts evaluate your loved one’s needs for a
+          personalized care plan.</li>
+        <li><span class="process-icon">👩‍⚕️</span> Caregiver Assignment – A trained elder care professional is assigned
+          to provide assistance.</li>
+        <li><span class="process-icon">🔍</span> Ongoing Support & Monitoring – Regular check-ins to ensure quality
+          care.</li>
+      </ol>
+      <div class="process-visual"> <!-- Add your infographic or icons here --> </div>
     </div>
   </section>
   <section id="how-it-works" class="py-5 bg-light">
-  <div class="container">
-    <h2 class="section-title text-start" data-aos="fade-up" data-aos-duration="1000">
-      How to Avail Our Elder Care Services?
-    </h2>
-    <div class="steps-container">
-      <div class="step" data-aos="fade-up" data-aos-delay="100">
-        <div class="step-icon">📞</div>
-        <div class="step-content">
-          <h4>1.sBook a Consultation</h4>
-          <p>Call us or fill out the online form to discuss your requirements.</p>
+    <div class="container">
+      <h2 class="section-title text-start" data-aos="fade-up" data-aos-duration="1000"> How to Avail Our Elder Care
+        Services? </h2>
+      <div class="steps-container">
+        <div class="step" data-aos="fade-up" data-aos-delay="100">
+          <div class="step-icon">📞</div>
+          <div class="step-content">
+            <h4>1.sBook a Consultation</h4>
+            <p>Call us or fill out the online form to discuss your requirements.</p>
+          </div>
         </div>
-      </div>
-      <div class="step" data-aos="fade-up" data-aos-delay="200">
-        <div class="step-icon">✅</div>
-        <div class="step-content">
-          <h4>2. Care Assessment </h4>
-          <p>Our experts evaluate your loved one’s needs for a personalized care plan.</p>
+        <div class="step" data-aos="fade-up" data-aos-delay="200">
+          <div class="step-icon">✅</div>
+          <div class="step-content">
+            <h4>2. Care Assessment </h4>
+            <p>Our experts evaluate your loved one’s needs for a personalized care plan.</p>
+          </div>
         </div>
-      </div>
-      <div class="step" data-aos="fade-up" data-aos-delay="300">
-        <div class="step-icon">📅</div>
-        <div class="step-content">
-          <h4>3.Caregiver Assignment </h4>
-          <p> A trained elder care professional is assigned to provide assistance.</p>
+        <div class="step" data-aos="fade-up" data-aos-delay="300">
+          <div class="step-icon">📅</div>
+          <div class="step-content">
+            <h4>3.Caregiver Assignment </h4>
+            <p> A trained elder care professional is assigned to provide assistance.</p>
+          </div>
         </div>
-      </div>
-      <div class="step" data-aos="fade-up" data-aos-delay="400">
-        <div class="step-icon">🏠</div>
-        <div class="step-content">
-          <h4>4. Receive Quality Home Healthcare</h4>
-          <p>Our professionals arrive at your doorstep.</p>
+        <div class="step" data-aos="fade-up" data-aos-delay="400">
+          <div class="step-icon">🏠</div>
+          <div class="step-content">
+            <h4>4. Receive Quality Home Healthcare</h4>
+            <p>Our professionals arrive at your doorstep.</p>
+          </div>
         </div>
-      </div>
+      </div> <a href="#book" class="btn-center btn-king mt-3">Book Your Service Now</a>
     </div>
-    <a href="#book" class="btn-center btn-king mt-3">Book Your Service Now</a>
-  </div>
-</section>
-
-  <!-- Family Testimonials -->
+  </section> <!-- Family Testimonials -->
   <section id="testimonials" class="section-padding">
     <div class="container center-col">
       <h2 class="section-title">What Families Say About Our Elder Care Services</h2>
       <div class="testimonials-container">
         <div class="testimonial-item">
-          <p class="testimonial-text">🗣 "Toast4Health’s caregiver provided outstanding support to my elderly father. Their compassionate service gave us peace of mind!"</p>
+          <p class="testimonial-text">🗣 "Toast4Health’s caregiver provided outstanding support to my elderly father.
+            Their compassionate service gave us peace of mind!"</p>
           <p class="testimonial-author">— Neha R.</p>
         </div>
         <div class="testimonial-item">
-          <p class="testimonial-text">🗣 "The team took excellent care of my grandmother after her surgery. Their patience and professionalism made all the difference."</p>
+          <p class="testimonial-text">🗣 "The team took excellent care of my grandmother after her surgery. Their
+            patience and professionalism made all the difference."</p>
           <p class="testimonial-author">— Rahul S.</p>
         </div>
       </div>
     </div>
-  </section>
-
-  <!-- Booking & Contact Section -->
-   <div class="container">
-     <h2 class="section-title">Book Professional Elder Care Services Today!</h2>
-  <div class="form-wrapper">
-      <form id="contactForm" class="booking-form" autocomplete="on">
-        <div class="form-row">
-          <label for="name">Name <span class="req">*</span></label>
-          <input id="name" name="name" type="text" required>
+  </section> <!-- Booking & Contact Section -->
+  <section id="contactForm" class="py-5">
+    <div class="overlay">
+      <div class="container">
+        <h2 class="section-title">Book Professional Elder Care Services Today!</h2>
+        <div class="form-wrapper">
+          <form class="booking-form" autocomplete="on">
+            <div class="form-row"> <label for="name">Name <span class="req">*</span></label> <input id="name"
+                name="name" type="text" required> </div>
+            <div class="form-row"> <label for="mobile">Mobile Number <span class="req">*</span></label> <input
+                id="mobile" name="mobile" type="tel" pattern="[0-9+\s\-]+" required> </div>
+            <div class="form-row"> <label for="email">Email</label> <input id="email" name="email" type="email"
+                placeholder="Optional"> </div>
+            <div class="form-row"> <label for="location">Location <span class="req"></span></label> <input id="location"
+                name="location" type="text" required> </div>
+            <div class="form-row"> <label for="notes">Query</label> <textarea id="notes" name="notes" rows="4"
+                placeholder="Any special requirements or notes"></textarea> </div>
+            <div class="form-actions"> <button type="submit" class="btn-orange">Request a Callback</button> <a
+                class="btn-whatsapp" href="https://wa.me/9152101398" target="_blank" rel="noopener"> <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp"
+                  class="whatsapp-icon"> </a> </div>
+          </form>
         </div>
-        <div class="form-row">
-          <label for="mobile">Mobile Number <span class="req">*</span></label>
-          <input id="mobile" name="mobile" type="tel" pattern="[0-9+\s\-]+" required>
-        </div>
-        <div class="form-row">
-          <label for="email">Email</label>
-          <input id="email" name="email" type="email" placeholder="Optional">
-        </div>
-        <div class="form-row">
-          <label for="location">Location <span class="req"></span></label>
-          <input id="location" name="location" type="text" required>
-        </div>
-        <div class="form-row">
-          <label for="notes">Query</label>
-          <textarea id="notes" name="notes" rows="4" placeholder="Any special requirements or notes"></textarea>
-        </div>
-       <div class="form-actions">
-  <button type="submit" class="btn-orange">Request a Callback</button>
-  <a class="btn-whatsapp" href="https://wa.me/9152101398" target="_blank" rel="noopener">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" class="whatsapp-icon">
-  </a>
-</div>
-      </form>
       </div>
     </div>
-
-  <!-- FAQ Section -->
-  <section id="faq" class="section-padding faq-section">
-    <div class="container">
-      <h2 class="section-title">Frequently Asked Questions (FAQs)</h2>
-      <div class="accordion" id="faqAccordion">
-        <div class="card">
-          <div class="card-header" id="headingOne">
-            <h2 class="mb-0">
-              <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                Are your caregivers trained for elderly care?
-              </button>
-            </h2>
-          </div>
-          <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#faqAccordion">
-            <div class="card-body">Yes, all our caregivers are certified and experienced in elder care assistance.</div>
-          </div>
-        </div>
-        <div class="card">
-          <div class="card-header" id="headingTwo">
-            <h2 class="mb-0">
-              <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                Can I book a caregiver for just a few hours?
-              </button>
-            </h2>
-          </div>
-          <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#faqAccordion">
-            <div class="card-body">Yes, we offer flexible short-term and long-term elder care plans.</div>
-          </div>
-        </div>
-        <div class="card">
-          <div class="card-header" id="headingThree">
-            <h2 class="mb-0">
-              <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                Do you provide specialized care for dementia patients?
-              </button>
-            </h2>
-          </div>
-          <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#faqAccordion">
-            <div class="card-body">Yes, we offer dementia and Alzheimer’s care with trained professionals.</div>
+  </section> <!-- FAQ Section -->
+<section id="care-faq" class="py-5">
+  <div class="container">
+    <h2 class="section-title text-center">Care Plan FAQs</h2>
+    <div class="accordion mt-4" id="careFaqAccordion">
+      <!-- Q1 -->
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#careFaq1">
+            ❓ Are your caregivers trained for elderly care?
+          </button>
+        </h2>
+        <div id="careFaq1" class="accordion-collapse collapse" data-bs-parent="#careFaqAccordion">
+          <div class="accordion-body">
+            ✔ Yes, all our caregivers are certified and experienced in elder care assistance.
           </div>
         </div>
       </div>
-      <a href="../contact.html" class="btn-king mt-3">Still Have Questions? Contact Us Now!</a>
+      <!-- Q2 -->
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#careFaq2">
+            ❓ Can I book a caregiver for just a few hours?
+          </button>
+        </h2>
+        <div id="careFaq2" class="accordion-collapse collapse" data-bs-parent="#careFaqAccordion">
+          <div class="accordion-body">
+            ✔ Yes, we offer flexible short-term and long-term elder care plans.
+          </div>
+        </div>
+      </div>
+      <!-- Q3 -->
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#careFaq3">
+            ❓ Do you provide specialized care for dementia patients?
+          </button>
+        </h2>
+        <div id="careFaq3" class="accordion-collapse collapse" data-bs-parent="#careFaqAccordion">
+          <div class="accordion-body">
+            ✔ Yes, we offer dementia and Alzheimer’s care with trained professionals.
+          </div>
+        </div>
+      </div>
     </div>
-  </section>
+    <a href="./contact.html" class="btn btn-cta mt-4 d-block mx-auto">Still Have Questions? Contact Us Now!</a>
+  </div>
+</section>
 
-  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/flexslider/2.7.2/jquery.flexslider.min.js"></script>
+<script>
+  $(document).ready(function(){
+    $('.flexslider').flexslider({
+      animation: "slide",
+      controlNav: false,
+      directionNav: true,
+      slideshowSpeed: 5000,
+      animationSpeed: 600
+    });
+    $(window).scroll(function(){
+      if ($(this).scrollTop() > 50) {
+        $('.header').addClass('scrolled');
+      } else {
+        $('.header').removeClass('scrolled');
+      }
+    });
+  });
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<script src="animations.js"></script> <!-- Our custom file -->
+
+<script>
+  // Initialize AOS
+  AOS.init({
+    duration: 1000,    // Animation speed in ms
+    easing: "ease-in-out",
+    once: true,        // Run animation only once
+    offset: 100        // How early animation triggers
+  });
+
+  // Auto-add AOS attributes to sections
+</script>
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const selectors = [
+    ".hero-title",
+    ".hero-sub",
+    ".hero-cta",
+    "h2",
+    ".service-container",
+    ".service-image",
+    ".service-content",
+    ".about-section",
+    ".contact-section"
+  ];
+
+  selectors.forEach(selector => {
+    document.querySelectorAll(selector).forEach(el => {
+      if (el.classList.contains("hero-title")) {
+        el.setAttribute("data-aos", "fade-in"); // For hero title
+      } else if (el.classList.contains("hero-sub") || el.tagName === "P") {
+        el.setAttribute("data-aos", "fade-in"); // For hero sub text
+      } else if (el.classList.contains("hero-cta")) {
+        el.setAttribute("data-aos", "zoom-in"); // For button
+      } else if (el.tagName === "H2") {
+        el.setAttribute("data-aos", "fade-up");
+      } else if (el.classList.contains("service-image")) {
+        el.setAttribute("data-aos", "zoom-in");
+      } else {
+        el.setAttribute("data-aos", "fade-right");
+      }
+    });
+  });
+
+  // Initialize AOS after setting attributes
+  AOS.init({
+    duration: 400,
+    easing: "ease-in-out",
+    once: true,
+    offset: 100,
+    mirror: false
+  });
+});
+</script>
+
+<!-- Scripts -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+// Smooth scroll with sticky navbar offset
+document.querySelectorAll('a[href^="#"]').forEach(a => {
+  a.addEventListener('click', function(e) {
+    const href = this.getAttribute('href');
+    if (!href || href === '#') return;
+    if (href.startsWith('#')) {
+      e.preventDefault();
+      const target = document.querySelector(href);
+      if (target) {
+        const nav = document.querySelector('.navbar-branding');
+        const offset = nav ? nav.offsetHeight : 0;
+        const top = target.getBoundingClientRect().top + window.pageYOffset - offset;
+        window.scrollTo({ top, behavior: 'smooth' });
+
+        // Close nav on mobile after click
+        const navCollapse = document.getElementById('mainNav');
+        if (navCollapse && navCollapse.classList.contains('show')) {
+          new bootstrap.Collapse(navCollapse).hide();
+        }
+      }
+      }
+  });
+});
+</script>
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
+
 </html>
+
+
