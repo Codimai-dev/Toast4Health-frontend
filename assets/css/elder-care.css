@@ -45,7 +45,7 @@ body {
   background: url('../images/1.jpg') no-repeat center center/cover;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   overflow: hidden;
   padding: 20px 0;
 }
@@ -71,13 +71,8 @@ body {
   color: var(--white);
   padding: 30px;
   max-width: 900px;
-  border-radius: 15px;
-  background: rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
   animation: fadeIn 1s ease-in-out;
+  margin-left: 10px;
 }
 
 @keyframes fadeIn {
@@ -176,12 +171,15 @@ body {
   list-style: none;
   padding: 0;
   margin-bottom: 45px;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   gap: 25px;
 }
 
 .benefits-list li {
+  max-width: 500px;
   font-family: var(--font-secondary);
   font-size: var(--fs-body);
   margin-bottom: 20px;
@@ -374,7 +372,7 @@ grid-template-columns: repeat(4,1fr);
 
 .testimonial-item {
   padding: 25px;
-  background: linear-gradient(135deg, var(--white), #f5f7fa);
+  background:rgba(217, 77, 30,0.3);
   border-radius: 12px;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
   transition: all 0.4s ease;
@@ -571,4 +569,404 @@ grid-template-columns: repeat(4,1fr);
   .service-grid{
         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   }
+}
+.flex{
+   height: fit-content;
+  display: flex;
+  flex-direction: row;
+  justify-items: center;
+  align-items: center;
+  gap: 50px;
+}
+.flex-col{
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+  gap:0px;
+}
+.flex-col-center{
+   display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap:0px;
+}
+@media (max-width:1300px) {
+  .flex{
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+}
+}
+.center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.care-pricing-table thead th {
+  background-color: #ff7340; /* dark teal */
+  color: #000000; /* black text */
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  padding: 15px;
+  text-align: center;
+  border-bottom: 2px solid #c2c2c2; /* subtle grey horizontal line */
+  border-right: 2px solid #000000;  /* vertical black line */
+}
+
+/* Remove right border for last header cell */
+.care-pricing-table thead th:last-child {
+  border-right: none;
+}
+
+/* Body cells */
+.care-pricing-table tbody td {
+  padding: 12px;
+  text-align: center;
+  border-bottom: 1px solid #c2c2c2; /* subtle grey horizontal line */
+  border-right: 2px solid #000000;  /* vertical black line */
+  background-color: #dffffa;        /* base teal */
+}
+
+/* Remove right border for last column */
+.care-pricing-table tbody td:last-child {
+  border-right: none;
+}
+
+/* Alternate row background for readability */
+.care-pricing-table tbody tr:nth-child(even) td {
+  background-color: #d0f4f1; /* lighter teal */
+}
+
+/* Optional: hover effect for modern feel */
+.care-pricing-table tbody tr:hover td {
+  background-color: #a1e0dc; /* slightly darker teal on hover */
+  transition: background 0.3s ease;
+}
+#how-it-works {
+  background: #f9f9f9;
+  padding: 60px 20px;
+  position: relative;
+}
+
+#how-it-works .section-title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 40px;
+  margin-left: 30px; /* Shift title slightly right */
+  color: #36C2C9;
+}
+
+.steps-container {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  max-width: 700px;
+  margin: 0 auto;
+  position: relative;
+  padding-left: 40px;
+}
+
+.steps-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50px;
+  width: 4px;
+  height: 100%;
+  background: #F15A22; /* Line color */
+  border-radius: 2px;
+}
+
+.step {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  background: #ffe5e5;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: 0.3s ease;
+  position: relative;
+}
+
+.step:hover {
+  transform: translateY(-5px);
+}
+
+.step-icon {
+  font-size: 28px;
+  background: #F15A22;
+  color: #fff;
+  padding: 15px;
+  border-radius: 50%;
+  flex-shrink: 0;
+  z-index: 1;
+}
+
+.step-content h4 {
+  font-size: 18px;
+  margin-bottom: 5px;
+  font-weight: 600;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.step-content p {
+  font-size: 15px;
+  margin: 0;
+  color: #555;
+  font-family: 'Roboto', sans-serif;
+}.section-padding {
+  padding: 40px 20px;
+  background: white;
+  border-radius: 16px;
+  max-width: 1200px;
+  margin: 40px auto;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Title & Paragraph */
+.section-title {
+  text-align: center;
+  font-size: 32px;
+  font-weight: 700;
+  color: #36C2C9;
+  margin-bottom: 15px;
+}
+.section-paragraph {
+  width: 100%;
+  max-width: none; /* remove any max-width if set */
+  display: block;
+  text-align: center; /* optional: center text */
+  margin: 0 auto 20px; /* add space below */
+}
+
+
+/* Layout: Image + Benefits */
+.service-container {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  align-items: center; /* Vertically centers image */
+}
+
+/* Image Styles */
+.service-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.service-image img {
+  max-width: 400px;
+  width: 100%;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+/* Benefits Grid */
+.service-benefits {
+  flex: 1;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+/* Benefit Cards */
+.benefit-card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: 0.3s;
+  text-align: center;
+}
+.benefit-card:hover {
+  transform: translateY(-5px);
+}
+.benefit-icon {
+  display: block;
+  font-size: 22px;
+  margin-bottom: 8px;
+  color: #0096a5;
+}
+.benefit-card h3 {
+  margin: 10px 0 5px;
+  color: #004c54;
+  font-size: 18px;
+}
+.benefit-card p {
+  font-size: 14px;
+  color: #333;
+}
+
+.benefit-icon {
+  display: inline-block;
+  font-size: 28px;
+  margin-bottom: 8px;
+  color: #0096a5;
+}
+
+/* Responsive */
+@media(max-width: 768px) {
+  .service-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .service-image img {
+    max-width: 100%;
+  }
+}
+#contact-form-section .booking-form {
+  background: #fff;
+  padding: 28px;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.2);
+  transition: transform 0.2s ease;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+#contact-form-section .booking-form:hover {
+  transform: translateY(-3px);
+}
+
+/* Form Fields */
+#contact-form-section .form-row {
+  margin-bottom: 16px;
+  display: flex;
+  flex-direction: column;
+}
+
+#contact-form-section label {
+  font-size: 14px;
+  margin-bottom: 6px;
+  color: #333;
+  font-weight: 500;
+}
+
+#contact-form-section input,
+#contact-form-section select,
+#contact-form-section textarea {
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: 1px solid #ff842d;
+  font-size: 14px;
+  width: 100%;
+  box-sizing: border-box;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+#contact-form-section input:focus,
+#contact-form-section select:focus,
+#contact-form-section textarea:focus {
+  border-color: var(--teal);
+  box-shadow: 0 0 0 3px rgba(54,194,201,0.1);
+  outline: none;
+}
+
+/* Buttons */
+#contact-form-section .form-actions {
+  display: flex;
+  gap: 14px;
+  margin-top: 10px;
+  flex-wrap: wrap;
+}
+
+#contact-form-section .btn-orange,
+#contact-form-section .btn-whatsapp {
+  flex: 1;
+  text-align: center;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  transition: background 0.2s ease;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+#contact-form-section .btn-orange {
+  background: orangered;
+  color: #fff;
+}
+#contact-form-section .btn-orange:hover { background: #d94d1e; }
+
+/* Consent Text Styling */
+.consent-text {
+  font-size: 13px;
+  color: #444;
+  text-align: center;
+  margin: 10px 0 15px;
+  line-height: 1.4;
+}
+/* WhatsApp Round Button */
+.btn-whatsapp {
+  width: 44px;
+  height: 44px;
+  background: #25D366;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.btn-whatsapp:hover {
+  background: #1ebe57;
+  transform: scale(1);
+}
+
+/* WhatsApp Icon */
+.btn-whatsapp .whatsapp-icon {
+  width: 30px;
+  height: 30px;
+  display: block;
+}
+
+
+
+/* Responsive Fix */
+@media (max-width: 600px) {
+  #contact-form-section .form-actions {
+    flex-direction: column;
+    gap: 10px;
+  }
+  #contact-form-section .btn-orange,
+  #contact-form-section .btn-whatsapp {
+    width: 100%;
+    flex: unset;
+  }
+}
+#successMessage {
+  font-size: 16px;
+  color: #36C2C9;
+  text-align: center;
+  margin-bottom: 20px;
+  animation: fadeIn 0.6s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-5px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+btn-orange {
+   width: 44px;
+  height: 44px;
+  background: #F15A22;
+  color: #fff;
+  /* padding: 10px 20px; */
+  text-decoration: none;
+  border-radius: 6px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  transition: background 0.3s ease;
+  display: inline-block;
+}
+
+.btn-orange:hover {
+  background: #d94d1e;
 }

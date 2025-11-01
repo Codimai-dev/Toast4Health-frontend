@@ -270,3 +270,9 @@ border-radius: 10px;
   transform: translateY(-2px);
   box-shadow: 0 7px 20px rgba(54, 194, 201, 0.5);
 }
+.btn-center {
+  max-width: 300px;
+  display: block;
+  margin: 20px auto 0; /* top auto bottom */
+  text-align: center;
+}

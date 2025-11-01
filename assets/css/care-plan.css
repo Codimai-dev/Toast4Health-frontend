@@ -402,6 +402,7 @@ p {
   color: #000000;
   border-radius: 12px; /* rounded corners */
   overflow: hidden;    /* ensures corners stay rounded */
+  border-radius: 10px;
 }
 
 /* Header */
