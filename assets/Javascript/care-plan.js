@@ -239,7 +239,7 @@ buttons.forEach(button=>{
        })
        button.classList.add('active-plan')
        const validity = button.getAttribute('validity');
-       document.querySelector(`.${plan}-price`).innerHTML=planAndPrice[plan][validity]
+      //  document.querySelector(`.${plan}-price`).innerHTML=planAndPrice[plan][validity]
        const contentlist = document.querySelector(`#${plan}-list`);
        contentlist.innerHTML="";
        const content = planAndPrice[plan].Content[validity];
