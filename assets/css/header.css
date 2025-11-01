@@ -401,12 +401,38 @@ border-radius: 10px;
 }
 #contactForm .btn-orange:hover { background: #d94d1e; }
 
-#contactForm .btn-whatsapp {
-  background: #25D366;
-  color: #fff;
+/* Consent Text Styling */
+.consent-text {
+  font-size: 13px;
+  color: #444;
+  text-align: center;
+  margin: 10px 0 15px;
+  line-height: 1.4;
 }
-#contactForm .btn-whatsapp:hover { background: #1ebe57; }
+/* WhatsApp Round Button */
+.btn-whatsapp {
+  width: 44px;
+  height: 44px;
+  background: #25D366;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
 
+.btn-whatsapp:hover {
+  background: #1ebe57;
+  transform: scale(1);
+}
+
+/* WhatsApp Icon */
+.btn-whatsapp .whatsapp-icon {
+  width: 30px;
+  height: 30px;
+  display: block;
+}
 /* Responsive Fix */
 @media (max-width: 600px) {
   #contactForm .form-actions {
