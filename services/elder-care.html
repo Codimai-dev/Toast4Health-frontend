@@ -7,6 +7,8 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <link rel="stylesheet" href="../assets/css/elder-care.css">
   <link rel="stylesheet" href="../assets/css/header.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
 </head>
 <body>
   <!-- Header -->
@@ -128,41 +130,28 @@
       <h2 class="section-title">Comprehensive Elder Care Services – Tailored for Every Need</h2>
       <p class="section-paragraph">Our elder care services are designed to support seniors with their unique needs, ensuring they receive compassionate and professional care at home.</p>
       <div class="service-grid">
-        <div class="service-item" style="background-image: url('../assets/images/2.jpg');">
-          <span class="service-icon" >1️⃣</span>
+        <div class="service-item service-card" style="background-image: url('../assets/images/2.jpg');">
           <h3>Daily Assistance & Personal Care</h3>
-          <p>Support with grooming, dressing, bathing, and hygiene.</p>
+          <button class="en-button">Enquire now</button>
         </div>
-        <div class="service-item" style="background-image: url('../assets/images/1.jpg');">
-          <span class="service-icon">2️⃣</span>
+        <div class="service-item service-card" style="background-image: url('../assets/images/1.jpg');">
           <h3>Companionship & Emotional Support</h3>
-          <p>Engaging conversations and activities to prevent loneliness.</p>
-        </div>
-        <div class="service-item" style="background-image: url('../assets/images/3.jpg');">
-          <span class="service-icon">3️⃣</span>
+<button class="en-button">Enquire now</button>        </div>
+        <div class="service-item service-card" style="background-image: url('../assets/images/3.jpg');">
           <h3>Mobility & Exercise Assistance</h3>
-          <p>Helping seniors move safely and stay physically active.</p>
-        </div>
-        <div class="service-item" style="background-image: url('../assets/images/624185.jpg');background-position: center;">
-          <span class="service-icon">4️⃣</span>
+<button class="en-button">Enquire now</button>        </div>
+        <div class="service-item service-card" style="background-image: url('../assets/images/624185.jpg');background-position: center;">
           <h3>Post-Hospitalization & Recovery Care</h3>
-          <p>Ensuring a smooth transition from hospital to home.</p>
-        </div>
-        <div class="service-item" style="background-image: url('../assets/images/attractive-female-doctor-front-medical-600nw-291144536.webp');">
-          <span class="service-icon">5️⃣</span>
+<button class="en-button">Enquire now</button>        </div>
+        <div class="service-item service-card" style="background-image: url('../assets/images/attractive-female-doctor-front-medical-600nw-291144536.webp');">
           <h3>Dementia & Alzheimer’s Care</h3>
-          <p>Specialized support for memory loss and cognitive disorders.</p>
-        </div>
-        <div class="service-item" style="background-image: url('../assets/images/2.jpg');">
-          <span class="service-icon">6️⃣</span>
+<button class="en-button">Enquire now</button>        </div>
+        <div class="service-item service-card" style="background-image: url('../assets/images/2.jpg');">
           <h3>Palliative & End-of-Life Care</h3>
-          <p>Comfort-focused care for critically ill seniors.</p>
-        </div>
-        <div class="service-item" style="background-image: url('../assets/images/home\ doct.jpg');">
-          <span class="service-icon">7️⃣</span>
+<button class="en-button">Enquire now</button>        </div>
+        <div class="service-item service-card" style="background-image: url('../assets/images/home\ doct.jpg');">
           <h3>Medication Reminders & Health Monitoring</h3>
-          <p>Ensuring timely medication intake and vital checks.</p>
-        </div>
+<button class="en-button">Enquire now</button>        </div>
       </div>
     </div>
   </section>
@@ -211,12 +200,13 @@
   <section id="how-it-works" class="section-padding">
     <div class="container">
       <h2 class="section-title">How to Avail Our Elder Care Services?</h2>
-      <ol class="process-list">
-        <li><span class="process-icon">1️⃣</span> Book a Consultation – Call us or fill out the online form to discuss your requirements.</li>
-        <li><span class="process-icon">2️⃣</span> Care Assessment – Our experts evaluate your loved one’s needs for a personalized care plan.</li>
-        <li><span class="process-icon">3️⃣</span> Caregiver Assignment – A trained elder care professional is assigned to provide assistance.</li>
-        <li><span class="process-icon">4️⃣</span> Ongoing Support & Monitoring – Regular check-ins to ensure quality care.</li>
-      </ol>
+     <ol class="process-list">
+  <li><span class="process-icon">📞</span> Book a Consultation – Call us or fill out the online form to discuss your requirements.</li>
+  <li><span class="process-icon">📝</span> Care Assessment – Our experts evaluate your loved one’s needs for a personalized care plan.</li>
+  <li><span class="process-icon">👩‍⚕️</span> Caregiver Assignment – A trained elder care professional is assigned to provide assistance.</li>
+  <li><span class="process-icon">🔍</span> Ongoing Support & Monitoring – Regular check-ins to ensure quality care.</li>
+</ol>
+
       <div class="process-visual">
         <!-- Add your infographic or icons here -->
       </div>
@@ -279,13 +269,15 @@
   </section>
 
   <!-- Booking & Contact Section -->
-  <section id="contact-form-section" class="section-padding">
-    <div class="container" class="overlay>
-      <h2 class="section-title">Book Professional Elder Care Services Today!</h2>
-      <p class="ection-subtitle" id="successMessage" style="display:none;">Fill out the form below, and our team will contact you shortly to arrange personalized elder care services.</p>
-      <div class="form-wrapper">
-        <form  id="contactForm" class="booking-form" autocomplete="on">
- <div class="form-row">
+   <div class="container">
+     <h2 class="section-title">Book Professional Elder Care Services Today!</h2>
+  <div class="form-wrapper">
+      <form id="contactForm" class="booking-form" autocomplete="on">
+        <div class="form-row">
+          <label for="name">Name <span class="req">*</span></label>
+          <input id="name" name="name" type="text" required>
+        </div>
+        <div class="form-row">
           <label for="mobile">Mobile Number <span class="req">*</span></label>
           <input id="mobile" name="mobile" type="tel" pattern="[0-9+\s\-]+" required>
         </div>
@@ -296,32 +288,18 @@
         <div class="form-row">
           <label for="location">Location <span class="req"></span></label>
           <input id="location" name="location" type="text" required>
-        </div>    
-         <div class="form-row">      
-        <label for="service">Elder Care Service *</label>
-          <select id="service" name="service">
-            <option value=""></option>
-            <option value="daily-assistance">Daily Assistance & Personal Care</option>
-            <option value="companionship">Companionship & Emotional Support</option>
-            <option value="mobility">Mobility & Exercise Assistance</option>
-            <option value="post-hospitalization">Post-Hospitalization & Recovery Care</option>
-            <option value="dementia">Dementia & Alzheimer’s Care</option>
-            <option value="palliative">Palliative & End-of-Life Care</option>
-            <option value="medication">Medication Reminders & Health Monitoring</option>
-          </select>
-          <label for="notes">Additional Notes</label>
-          <textarea id="notes" name="notes" rows="4"></textarea>
-          <div class="form-actions">
-  <button type="submit" class="btn-orange">Request a Callback</button>
-  <a class="btn-whatsapp" href="https://wa.me/9152101398" target="_blank" rel="noopener">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" class="whatsapp-icon">
-  </a>
         </div>
-        </form>
+        <div class="form-row">
+          <label for="notes">Query</label>
+          <textarea id="notes" name="notes" rows="4" placeholder="Any special requirements or notes"></textarea>
         </div>
+        <div class="form-actions">
+          <button type="submit" class="btn-orange">Request a Callback</button>
+          <a class="btn-whatsapp" href="https://wa.me/9152101398" target="_blank" rel="noopener">Chat on WhatsApp</a>
+        </div>
+      </form>
       </div>
     </div>
-  </section>
 
   <!-- FAQ Section -->
   <section id="faq" class="section-padding faq-section">

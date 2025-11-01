@@ -19,16 +19,17 @@
       <a class="navbar-brand" href="./index.html">
         <img src="./assets/images/logo.jpg" alt="Toast4Health Logo" class="img-fluid">
       </a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+ <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
+  <span class="navbar-toggler-icon"></span>
+</button>
       <div class="collapse navbar-collapse" id="main-nav">
         <ul class="navbar-nav mx-auto" id="mainNav">
           <li class="nav-item"><a class="nav-link active" href="./index.html">Home</a></li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Services
-            </a>
+           <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+  Services
+</a>
+
              <div class="dropdown-menu" aria-labelledby="servicesDropdown">
               <div class="row">
                 <div class="col-6">
@@ -75,7 +76,6 @@
     <p class="section-subtitle" id="successMessage" style="display:none;">
       We’ll get back to you as soon as possible
     </p>
-
     <div class="form-wrapper">
       <form id="contactForm" class="booking-form" autocomplete="on">
         <div class="form-row">
@@ -104,10 +104,11 @@
         </div>
       </form>
     </div>
-  </div>
 </section>
+  </div>
 
 
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
 <script>
   AOS.init({ duration: 1200 });

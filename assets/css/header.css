@@ -276,3 +276,158 @@ border-radius: 10px;
   margin: 20px auto 0; /* top auto bottom */
   text-align: center;
 }
+.en-button{
+  padding:5px  20px ;
+  border:1px solid #36C2C9 ;
+  background-color: transparent;
+  border-radius: 20px;
+}
+.service-card{
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 20px;
+  text-align: center;
+}
+.service-card button{
+  font-size: var(--fs-body);
+  font-weight: 700;
+}
+.section-title {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 12px;
+  font-family: 'Montserrat', sans-serif;
+  color: #36C2C9;
+}
+
+#contactForm {
+  position: relative;
+  max-width: 700px;
+  padding: 60px 0;
+  color: var(--black);
+  font-family: 'Roboto', sans-serif;
+  margin: 0 auto;
+
+}
+
+#contactForm .overlay {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 60px 20px;
+}
+
+/* Centered Form */
+#contactForm .form-wrapper {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Form Card */
+#contactForm .booking-form {
+  background: #fff;
+  padding: 28px;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.2);
+  transition: transform 0.2s ease;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+#contactForm .booking-form:hover {
+  transform: translateY(-3px);
+}
+
+/* Form Fields */
+#contactForm .form-row {
+  margin-bottom: 16px;
+  display: flex;
+  flex-direction: column;
+}
+
+#contactForm label {
+  font-size: 14px;
+  margin-bottom: 6px;
+  color: #333;
+  font-weight: 500;
+}
+
+#contactForm input,
+#contactForm select,
+#contactForm textarea {
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: 1px solid #ff842d;
+  font-size: 14px;
+  width: 100%;
+  box-sizing: border-box;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+#contactForm input:focus,
+#contactForm select:focus,
+#contactForm textarea:focus {
+  border-color: var(--teal);
+  box-shadow: 0 0 0 3px rgba(54,194,201,0.1);
+  outline: none;
+}
+
+/* Buttons */
+#contactForm .form-actions {
+  display: flex;
+  gap: 14px;
+  margin-top: 10px;
+  flex-wrap: wrap;
+}
+
+#contactForm .btn-orange,
+#contactForm .btn-whatsapp {
+  flex: 1;
+  text-align: center;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  transition: background 0.2s ease;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+#contactForm .btn-orange {
+  background: orangered;
+  color: #fff;
+}
+#contactForm .btn-orange:hover { background: #d94d1e; }
+
+#contactForm .btn-whatsapp {
+  background: #25D366;
+  color: #fff;
+}
+#contactForm .btn-whatsapp:hover { background: #1ebe57; }
+
+/* Responsive Fix */
+@media (max-width: 600px) {
+  #contactForm .form-actions {
+    flex-direction: column;
+    gap: 10px;
+  }
+  #contactForm .btn-orange,
+  #contactForm .btn-whatsapp {
+    width: 100%;
+    flex: unset;
+  }
+}
+#successMessage {
+  font-size: 16px;
+  color: #36C2C9;
+  text-align: center;
+  margin-bottom: 20px;
+  animation: fadeIn 0.6s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-5px); }
+  to { opacity: 1; transform: translateY(0); }
+}
