@@ -1,5 +1,3 @@
-@import url(https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Oswald:wght@400;700&display=swap);
-
 :root {
   --teal: #36C2C9;
   --orange: #F15A22;
@@ -7,7 +5,7 @@
   --white: #FFFFFF;
 
   --font-primary: 'Montserrat', sans-serif;
-  --font-secondary:  "Open Sans", sans-serif;
+  --font-secondary: 'Roboto', sans-serif;
 
   --fs-h1: 42px;
   --fs-h2: 32px;
@@ -168,120 +166,109 @@ p {
 }
 
 /* SERVICE SECTION */
-.services-header h2 {
-  background: var(--white);
-  color: var(--teal);
-  padding: 15px 5%;
-  font-weight: 700 !important;
+
+.section-padding {
+  padding: 40px 20px;
+  background: white;
+  width: 100%;
+  margin: 40px auto;
+  border-radius: 0;       /* No rounded corners */
+  box-shadow: none;       /* No shadow box */
 }
 
-
-
-.services-header h2 {
-  margin: 0;
-  font-family: 'Montserrat', sans-serif;
-  text-align: left;
+/* Title & Paragraph */
+.section-title {
+  text-align: center;
+  font-size: 32px;
+  font-weight: 700;
+  color: #36C2C9;
+  margin-bottom: 15px;
+}
+.section-paragraph {
+  width: 100%;
+  display: block;
+  text-align: center;
+  margin: 0 auto 20px;
+  font-size: 1.1rem;
 }
 
-.service-intro {
-  padding: 25px 12%;
-  text-align: justify;
-  font-size: 16px;
-  font-family: 'Roboto', sans-serif;
-  color: var(--black);
-  max-width: 900px;
-  margin: auto;
-  line-height: 1.8;
-}
-
-
- /* SERVICE SECTION */
-
-.services-header h2 {
-  margin: 0;
-  font-family: 'Montserrat', sans-serif;
-  text-align: left;
-  color:teal blue;
-}
-
-/* Container with Image + Content */
+/* Layout: Image + Benefits */
 .service-container {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 30px;
-  padding: 40px 8%;
+  gap: 20px;
   flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;  /* Keeps content centered */
 }
 
-/* Left: Image */
+/* Image Styles */
 .service-image {
-  flex: 1;
-  min-width: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .service-image img {
+  max-width: 400px;
   width: 100%;
-  border-radius: 8px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  border-radius: 12px;
+  object-fit: cover;
 }
 
-/* Right: Content */
-.service-content {
+/* Benefits Grid - Centered cards */
+.service-benefits {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Centers last card */
+  gap: 20px;
   flex: 1;
-  min-width: 320px;
-}
-.service-content p {
-  font-family: 'Roboto', sans-serif;
-  font-size: 16px;
-  line-height: 1.7;
-  margin-bottom: 15px;
-  color: var(--black);
+  max-width: 900px /* Prevents too wide benefit section */
+  
 }
 
-/* Bullet Points */
-.service-points {
-  list-style: none;
-  padding: 0;
-  margin: 0 0 20px;
+/* Benefit Cards */
+.benefit-card {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px #f6cdb8d3;
+  transition: 0.3s;
+  text-align: center;
+  flex: 1 1 280px;  /* Flexible width */
+  max-width: 500px; /* Prevents too wide cards */
 }
-.service-points li {
-  font-family: 'Roboto', sans-serif;
-  font-size: 15px;
-  line-height: 1.6;
-  margin-bottom: 8px;
-  position: relative;
-  padding-left: 24px;
+.benefit-card:hover {
+  transform: translateY(-5px);
 }
-.service-points li::before {
-  content: "✔";
-  position: absolute;
-  left: 0;
-  color: var(--teal);
-}
-
-/* Button */
-.btn {
-  background: var(--orange);
-  color: var(--white);
-  padding: 10px 20px;
-  text-decoration: none;
-  border-radius: 5px;
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 600;
+.benefit-icon {
   display: inline-block;
+  font-size: 28px;
+  margin-bottom: 8px;
+  color: #36C2C9;
+}
+.benefit-card h3 {
+  margin: 10px 0 5px;
+  color: #36C2C9;
+  font-size: 18px;
+  font-weight: 600;
+}
+.benefit-card p {
+  font-size: 14px;
+  color: #333;
 }
 
 /* Responsive */
-@media (max-width: 768px) {
+@media(max-width: 768px) {
   .service-container {
     flex-direction: column;
-    text-align: center;
+    align-items: center;
   }
-  .service-content {
-    text-align: left;
-    margin-top: 20px;
+  .service-image img {
+    max-width: 100%;
   }
 }
+
+
+
  /* CARE PLANS SECTION */
 /* CARE PLANS SECTION LAYOUT FIX */
 #care-plans {
@@ -297,6 +284,14 @@ p {
   color: var(--teal);
   margin-bottom: 10px;
 }
+
+#care-plans .section-sub {
+ 
+  color: #000000;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
 
 #care-plans .care-row {
   display: flex;
@@ -390,6 +385,13 @@ p {
   padding: 0 20px;         /* Adds some inner space on both sides */
   text-align: center;      /* Centers text horizontally */
 }
+#pricing .section-desc {
+  font-size: 1.1rem;  
+  color: #000000;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
 
 /* Table Styling */
 .care-pricing-table {
@@ -402,7 +404,6 @@ p {
   color: #000000;
   border-radius: 12px; /* rounded corners */
   overflow: hidden;    /* ensures corners stay rounded */
-  border-radius: 10px;
 }
 
 /* Header */
@@ -645,47 +646,169 @@ p {
 }
 
 /* BOOKING & CONTACT SECTION */
-#booking-contact {
+.section-title {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 12px;
+  font-family: 'Montserrat', sans-serif;
+  color: #36C2C9;
+}
+
+#contact-form-section {
   position: relative;
-  background: url('Image/624185.jpg') no-repeat center center/cover;
+  
   padding: 60px 0;
   color: var(--black);
   font-family: 'Roboto', sans-serif;
 }
 
-#booking-contact .overlay {
+#contact-form-section .overlay {
   background: rgba(0, 0, 0, 0.5);
   padding: 60px 20px;
 }
 
-/* Titles */
-#booking-contact .section-title {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 30px;
-  font-weight: 700;
-  margin-bottom: 10px;
-  text-align: center;
-  color: #36C2C9;
+/* Centered Form */
+#contact-form-section .form-wrapper {
+  max-width: 600px;
+  margin: 0 auto;
 }
 
-#booking-contact .section-subtitle {
-  font-size: 16px;
-  color: #ddd;
-  margin-bottom: 40px;
-  text-align: center;
+/* Form Card */
+#contact-form-section .booking-form {
+  background: #fff;
+  padding: 28px;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.2);
+  transition: transform 0.2s ease;
+  width: 100%;
+  box-sizing: border-box;
 }
+
+#contact-form-section .booking-form:hover {
+  transform: translateY(-3px);
+}
+
+/* Form Fields */
+#contact-form-section .form-row {
+  margin-bottom: 16px;
+  display: flex;
+  flex-direction: column;
+}
+
+#contact-form-section label {
+  font-size: 14px;
+  margin-bottom: 6px;
+  color: #333;
+  font-weight: 500;
+}
+
+#contact-form-section input,
+#contact-form-section select,
+#contact-form-section textarea {
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: 1px solid #ff842d;
+  font-size: 14px;
+  width: 100%;
+  box-sizing: border-box;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+#contact-form-section input:focus,
+#contact-form-section select:focus,
+#contact-form-section textarea:focus {
+  border-color: var(--teal);
+  box-shadow: 0 0 0 3px rgba(54,194,201,0.1);
+  outline: none;
+}
+
+/* Buttons */
+#contact-form-section .form-actions {
+  display: flex;
+  gap: 14px;
+  margin-top: 10px;
+  flex-wrap: wrap;
+}
+
+#contact-form-section .btn-orange,
+#contact-form-section .btn-whatsapp {
+  flex: 1;
+  text-align: center;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  transition: background 0.2s ease;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+#contact-form-section .btn-orange {
+  background: orangered;
+  color: #fff;
+}
+#contact-form-section .btn-orange:hover { background: #d94d1e; }
+
+/* Consent Text Styling */
+.consent-text {
+  font-size: 13px;
+  color: #444;
+  text-align: center;
+  margin: 10px 0 15px;
+  line-height: 1.4;
+}
+/* WhatsApp Round Button */
+.btn-whatsapp {
+  width: 44px;
+  height: 44px;
+  background: #25D366;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.btn-whatsapp:hover {
+  background: #1ebe57;
+  transform: scale(1);
+}
+
+/* WhatsApp Icon */
+.btn-whatsapp .whatsapp-icon {
+  width: 30px;
+  height: 30px;
+  display: block;
+}
+
+
 
 /* Responsive Fix */
 @media (max-width: 600px) {
-  #booking-contact .form-actions {
+  #contact-form-section .form-actions {
     flex-direction: column;
     gap: 10px;
   }
-  #booking-contact .btn-orange,
-  #booking-contact .btn-whatsapp {
+  #contact-form-section .btn-orange,
+  #contact-form-section .btn-whatsapp {
     width: 100%;
-    flex: unset; /* remove equal width, take full width */
+    flex: unset;
   }
+}
+#successMessage {
+  font-size: 16px;
+  color: #36C2C9;
+  text-align: center;
+  margin-bottom: 20px;
+  animation: fadeIn 0.6s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-5px); }
+  to { opacity: 1; transform: translateY(0); }
 }
 
 

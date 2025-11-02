@@ -79,40 +79,58 @@
 </section>
 
 <!-- SERVICE SECTION -->
-<section id="services">
-  <div class="services-header">
-    <h2 data-aos="fade-up">Comprehensive Home Care Plans for Holistic Health Management</h2>
-  </div>
 
-  <div class="service-container">
-    <!-- Left Side: Image -->
-    <div class="service-image" data-aos="zoom-in">
-      <img src="./assets/images/624185.jpg" alt="Healthcare Service">
-    </div>
-
-    <!-- Right Side: Content -->
-    <div class="service-content" data-aos="fade-left">
-      <p>
-        At Toast4Health, we understand that every individual’s healthcare needs are different. 
-        That’s why we offer customized care plans that integrate multiple healthcare services 
-        such as nursing, physiotherapy, elder care, and wellness programs. Whether you need 
-        short-term recovery support or long-term healthcare management, our expert team ensures 
-        that you or your loved one receives the best possible care at home.
+  <section id="service-overview" class="section-padding">
+    <div class="container">
+      <!-- Title & Paragraph -->
+      <h2 class="section-title">Revolutionizing Home Healthcare with Compassion & Expertise</h2>
+      <p class="section-paragraph">
+        Toast4Health is a leading provider of home healthcare services, dedicated to delivering 
+        personalized medical care to individuals in the comfort of their homes. Our services include nursing care, 
+        physiotherapy, elder care, patient support programs, medical equipment rental, nutrition consultation, yoga, and pharmacy services.
+         We bridge the gap between patients and professional healthcare, ensuring seamless, high-quality, and affordable medical support. Our team of certified doctors, nurses, physiotherapists, and caregivers work together to enhance recovery,
+          promote independence, and improve overall well-being.
       </p>
 
-      <ul class="service-points">
-        <li>Personalized Healthcare Plans – Tailored to individual health conditions and recovery needs.</li>
-        <li>Combination of Multiple Services – Nursing, physiotherapy, elder care, and wellness support.</li>
-        <li>Flexible Short-Term & Long-Term Plans – Designed for post-hospitalization, chronic illness, and ongoing health management.</li>
-        <li>Home-Based Care for Maximum Comfort – Avoid hospital visits and receive care in a familiar environment.</li>
-        <li>Expert Supervision & Regular Monitoring – Ensuring quality, safety, and better recovery.</li>
-      </ul>
+      <!-- Layout: Image + Content -->
+      <div class="service-container">
+        <!-- Left Side: Image -->
+        <div class="service-image">
+          <img src="./assets/images/624185.jpg" alt="Elder Care Service">
+        </div>
 
-      <a href="#contact" class="btn-consult" data-aos="zoom-in">Get Your Care Plan</a>
-     
+        <!-- Right Side: Benefits Cards with Icons -->
+        <div class="service-benefits">
+          <div class="benefit-card">
+            <span class="benefit-icon"><i class="fas fa-user-nurse"></i></span>
+            <h3>Personalized Healthcare Plans</h3>
+            <p>Tailored to individual health conditions and recovery needs
+          </div>
+          <div class="benefit-card">
+            <span class="benefit-icon"><i class="fas fa-clipboard-list"></i></span>
+            <h3>Combination of Multiple Services</h3>
+            <p>Nursing, physiotherapy, elder care, and wellness support</p>
+          </div>
+          <div class="benefit-card">
+            <span class="benefit-icon"><i class="fas fa-heart"></i></span>
+            <h3>Flexible Short-Term & Long-Term Plans</h3>
+            <p>Designed for post-hospitalization, chronic illness, and ongoing health management</p>
+          </div>
+          <div class="benefit-card">
+            <span class="benefit-icon"><i class="fas fa-hands-helping"></i></span>
+            <h3>Home-Based Care for Maximum Comfort</h3>
+            <p>Avoid hospital visits and receive care in a familiar environment</p>
+          </div>
+          <div class="benefit-card">
+            <span class="benefit-icon"><i class="fas fa-hospital"></i></span>
+            <h3> Expert Supervision & Regular Monitoring</h3>
+            <p>Ensuring quality, safety, and better recovery</p>
+          </div>
+          
+        </div>
+      </div>
     </div>
-  </div>
-</section>
+  </section>
 
 <!-- CARE PLANS SECTION -->
 
@@ -192,7 +210,7 @@
       <th>Care Plan Type</th>
       <th>Duration</th>
       <th>Best For</th>
-      <th>Price (Starting at)</th>
+      
     </tr>
   </thead>
   <tbody>
@@ -200,19 +218,16 @@
       <td>Short-Term Recovery Plan</td>
       <td>1 Week</td>
       <td>Post-surgery care, short-term nursing</td>
-      <td>₹XXXX / Week</td>
     </tr>
     <tr>
       <td>Comprehensive Monthly Plan</td>
       <td>1 Month</td>
       <td>Long-term chronic care, elderly support</td>
-      <td>₹XXXX / Month</td>
     </tr>
     <tr>
       <td>Annual Healthcare Plan</td>
       <td>12 Months</td>
       <td>Ongoing health monitoring and wellness</td>
-      <td>₹XXXX / Year</td>
     </tr>
   </tbody>
 </table>
@@ -292,65 +307,58 @@
       </div>
     </div>
 
-    <div class="btn-wrapper mt-4">
-  <a href="testimonials.html" class="btn-consult" data-aos="zoom-in">Read More Testimonials</a>
- 
-</div>
+    
 
   </div>
 </section>
 
-<section id="contactForm" class="py-5"> 
+<!-- CONTACT FORM SECTION -->
+<section id="contact-form-section">
   <div class="overlay">
-    <div class="container">
-      <h2 class="section-title">Get a Personalized Care Plan for Your Loved One!</h2>
-      <p class="section-subtitle">
-        Fill out the form below, and our team will contact you shortly to create a customized care plan.
-      </p>
-      <div class="form-wrapper">
-        <form id="carePlanForm" class="booking-form" autocomplete="on">
-          <div class="form-row">
-            <label for="name">Name <span class="req">*</span></label>
-            <input id="name" name="name" type="text" required>
-          </div>
-          <div class="form-row">
-            <label for="mobile">Mobile Number <span class="req">*</span></label>
-            <input id="mobile" name="mobile" type="tel" pattern="[0-9+\s\-]+" required>
-          </div>
-          <div class="form-row">
-            <label for="email">Email</label>
-            <input id="email" name="email" type="email" placeholder="Optional">
-          </div>
-          <div class="form-row">
-            <label for="location">Location <span class="req">*</span></label>
-            <input id="location" name="location" type="text" required>
-          </div>
-          <div class="form-row">
-            <label for="carePlan">Type of Care Plan Required</label>
-            <select id="carePlan" name="carePlan" required>
-              <option value="" disabled selected>Select Care Plan</option>
-              <option>Short-Term Recovery Plan</option>
-              <option>Comprehensive Monthly Plan</option>
-              <option>Annual Healthcare Plan</option>
-              <option>Home Nursing Care</option>
-              <option>Palliative Care</option>
-            </select>
-          </div>
-          <div class="form-row">
-            <label for="notes">Additional Notes</label>
-            <textarea id="notes" name="notes" rows="4" placeholder="Any special requirements or notes"></textarea>
-          </div>
-          <div class="form-actions">
+    <h2 class="section-title">Get in Touch with Our Care Team Today</h2>
+    
+    <!-- Success Message Hidden Initially -->
+    <p class="section-subtitle" id="successMessage" style="display:none;">
+      We’ll get back to you as soon as possible
+    </p>
+
+    <div class="form-wrapper">
+      <form id="contactForm" class="booking-form" autocomplete="on">
+        <div class="form-row">
+          <label for="name">Name <span class="req">*</span></label>
+          <input id="name" name="name" type="text" required>
+        </div>
+        <div class="form-row">
+          <label for="mobile">Mobile Number <span class="req">*</span></label>
+          <input id="mobile" name="mobile" type="tel" pattern="[0-9+\s\-]+" required>
+        </div>
+        <div class="form-row">
+          <label for="location">Location <span class="req"></span></label>
+          <input id="location" name="location" type="text" required>
+        </div>
+        <div class="form-row">
+          <label for="notes">Query</label>
+          <textarea id="notes" name="notes" rows="4" placeholder="Any special requirements or notes"></textarea>
+        </div>
+
+        <!-- Consent Line Above Submit Button -->
+        <p class="consent-text">
+          I authorize Toast4Health representative to contact me.  
+          I understand that this will override the DND status on my mobile number.
+        </p>
+
+        <div class="form-actions">
   <button type="submit" class="btn-orange">Request a Callback</button>
   <a class="btn-whatsapp" href="https://wa.me/9152101398" target="_blank" rel="noopener">
     <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" class="whatsapp-icon">
   </a>
 </div>
-        </form>
-      </div>
+
+      </form>
     </div>
   </div>
 </section>
+
 
 <!-- Care Plan FAQs -->
 <section id="care-faq" class="py-5">
