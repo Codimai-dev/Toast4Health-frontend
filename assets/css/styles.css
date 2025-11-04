@@ -300,6 +300,7 @@ h1, h2, h3, h4, h5, h6 { font-family: var(--font-primary); }
 
 /* Overlay for Title & Button */
 .service-item .overlay {
+  position: absolute;
   width: 100%;
   height: 100%;
   background: rgba(0, 0, 0, 0.5);
@@ -308,7 +309,7 @@ h1, h2, h3, h4, h5, h6 { font-family: var(--font-primary); }
   justify-content: space-between; /* space title & button apart */
   align-items: center;
   text-align: center;
-  padding: 30px 20px; /* spacing top & bottom */
+  /* padding: 30px 20px; spacing top & bottom */
   box-sizing: border-box;
 }
 
