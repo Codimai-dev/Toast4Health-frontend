@@ -341,24 +341,13 @@ body {
   overflow: hidden;
   transition: transform 0.4s ease, box-shadow 0.4s ease;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 
 
-/* Overlay for Title & Button */
-.service-item .overlay {
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.5);
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between; /* space title & button apart */
-  align-items: center;
-  text-align: center;
-  padding: 30px 20px; /* spacing top & bottom */
-  box-sizing: border-box;
-}
+
 
 /* Title Styling */
 .service-item h3 {
@@ -541,43 +530,60 @@ body {
 }
 
 /* Responsive Table */
-@media (max-width: 768px) {
-  .care-pricing-table {
-    font-size: 14px;
-  }
-
-  .care-pricing-table thead {
-    display: none; /* Hide header on small screens */
-  }
-
-  .care-pricing-table tr {
-    display: block;
-    margin-bottom: 15px;
-    background: #dffffa;
-    border-radius: 10px;
-    padding: 10px;
-    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
-  }
-
-  .care-pricing-table td {
-    display: flex;
-    justify-content: space-between;
-    padding: 10px;
-    border: none;
-    border-bottom: 1px solid #c2c2c2;
-  }
-
-  .care-pricing-table td:last-child {
-    border-bottom: none;
-  }
-
-  .care-pricing-table td::before {
-    content: attr(data-label);
-    font-weight: 600;
-    text-align: left;
-  }
+.care-pricing-table {
+  width: 100%;
+  border-collapse: separate;  /* allows rounded corners */
+  border-spacing: 0;
+  margin: 0 auto;
+  background-color: #b2f0e6; /* light teal */
+  font-family: 'Roboto', sans-serif;
+  color: #000000;
+  border-radius: 12px; /* rounded corners */
+  overflow: hidden;    /* ensures corners stay rounded */
 }
 
+/* Header */
+.care-pricing-table thead th {
+  background-color: #ff7340; /* dark teal */
+  color: #000000; /* black text */
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  padding: 15px;
+  text-align: center;
+  border-bottom: 2px solid #c2c2c2; /* subtle grey horizontal line */
+  border-right: 2px solid #000000;  /* vertical black line */
+}
+
+/* Remove right border for last header cell */
+.care-pricing-table thead th:last-child {
+  border-right: none;
+}
+
+/* Body cells */
+.care-pricing-table tbody td {
+  padding: 12px;
+  text-align: center;
+  border-bottom: 1px solid #c2c2c2; /* subtle grey horizontal line */
+  border-right: 2px solid #000000;  /* vertical black line */
+  background-color: #dffffa;        /* base teal */
+}
+
+/* Remove right border for last column */
+.care-pricing-table tbody td:last-child {
+  border-right: none;
+}
+
+/* Alternate row background for readability */
+.care-pricing-table tbody tr:nth-child(even) td {
+  background-color: #d0f4f1; /* lighter teal */
+}
+
+/* Optional: hover effect for modern feel */
+.care-pricing-table tbody tr:hover td {
+  background-color: #a1e0dc; /* slightly darker teal on hover */
+  transition: background 0.3s ease;
+}
 
 /* How It Works */
 .process-list {
@@ -1125,6 +1131,7 @@ body {
   flex: 1;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  place-items: center;
   gap: 20px;
 }
 
