@@ -321,18 +321,14 @@ body {
 
 /* Service Grid Layout */
 .service-grid {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center; /* Center the last row */
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(300px,1fr)) ;
   gap: 25px;
   margin-bottom: 45px;
   padding: 0 20px;
 }
 
 .service-item {
-  flex: 1 1 calc(25% - 25px); /* 4 per row with spacing */
-  max-width: calc(25% - 25px);
-  min-width: 250px;
   position: relative;
   height: 250px;
   background-size: cover;
