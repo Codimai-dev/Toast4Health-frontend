@@ -1,5 +1,5 @@
 .dental-card{
-    max-width: 300px;
+  width: 300px;
     height: 300px;
       background: #19b4f5;
   color: white;
@@ -11,6 +11,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-between;
 }
 .dental-card .icon {
   font-size: 30px;
@@ -61,5 +62,79 @@
 
   .dental-card p {
     font-size: 0.9rem;
+  }
+}
+.known-section {
+  padding: 60px 20px;
+  background-color: #fff;
+}
+.known-section .container{
+  display: flex;
+}
+.content {
+  flex: 1;
+  min-width: 280px;
+}
+
+.content h2 {
+  font-size: 2rem;
+  color: #1e5bb8;
+  margin-bottom: 15px;
+}
+
+.content .subtitle {
+  font-size: 1rem;
+  margin-bottom: 15px;
+  color: #444;
+}
+
+.content p {
+  margin-bottom: 20px;
+  font-size: 1rem;
+  color: #555;
+}
+
+.content .btn {
+  display: inline-block;
+  padding: 12px 20px;
+  background-color: #1e5bb8;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.content .btn:hover {
+  background-color: #14407c;
+  color: wheat;
+}
+
+/* Right Image */
+.image-container {
+  flex: 1;
+  text-align: center;
+  min-width: 280px;
+}
+
+.image-container img {
+  max-width: 500px;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .content {
+    text-align: center;
+  }
+
+  .btn {
+    margin: 0 auto;
   }
 }
