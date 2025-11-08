@@ -232,8 +232,9 @@ body {
 }
 .service-benefits {
   flex: 1;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  display: flex;
+  flex-wrap:wrap ;
+  justify-content: center;
   gap: 20px;
 }
 .benefits-list {
@@ -267,6 +268,7 @@ body {
   font-size: var(--fs-small);
 }
 .benefit-card {
+  width: 300px;
   background: #fff;
   padding: 20px;
   border-radius: 12px;
@@ -321,14 +323,18 @@ body {
 
 /* Service Grid Layout */
 .service-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit,minmax(300px,1fr)) ;
-  gap: 25px;
+  display: flex;
+  flex-wrap: wrap ;
+  justify-content: center;
+  align-items: center;
+  align-content:center;
+  gap: 20px;
   margin-bottom: 45px;
   padding: 0 20px;
 }
 
 .service-item {
+  width: 300px;
   position: relative;
   height: 250px;
   background-size: cover;
@@ -1136,7 +1142,7 @@ body {
   justify-content: center;
 }
 #service-overview .service-image img {
-  max-width: 400px;
+  max-width: 500px;
   width: 100%;
   border-radius: 12px;
   object-fit: cover;
@@ -1145,9 +1151,9 @@ body {
 /* Right Side: Benefits Grid */
 #service-overview .service-benefits {
   flex: 1;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  place-items: center;
+  display: flex;
+  flex-wrap:wrap ;
+  justify-content: center;
   gap: 20px;
 }
 
